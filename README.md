@@ -1,1 +1,8 @@
-# commission-emulator
+# Commission Emulator
+委托模拟器
+## 注意
+- 目前仅处于测试阶段
+- Bug超多 ~~(能跑就行)~~
+- 完全没有注释 ~~(完全不需要注释，代码即注释)~~
+- 代码可读性极强 ~~(写的一坨答辩)~~
+- 请使用Debug进行构建并运行，Release版会出现`Segment Fault` ~~(我也不知道为什么.jpg)~~
