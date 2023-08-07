@@ -28,6 +28,8 @@ static INT ExtraCommissionIdListCount = sizeof(ExtraCommissionIdList) / sizeof(I
 static INT NightCommissionIdListCount = sizeof(NightCommissionIdList) / sizeof(INT);
 static INT UrgentCommissionIdListCount = sizeof(UrgentCommissionIdList) / sizeof(INT);
 
+ULONGLONG RandomSeedOffset = 0;
+
 INT Random(_In_ INT Min, _In_ INT Max){
     // [ Min, Max )
     if (Min == 0 && Max == 0) {
@@ -36,8 +38,9 @@ INT Random(_In_ INT Min, _In_ INT Max){
     if (Min == Max) {
         return Max;
     }
-    srand((unsigned)time(NULL) + rand());
-    return rand() % (Max - Min + 1) + Min;
+    RandomSeedOffset += clock();
+    srand((unsigned)time(NULL) + RandomSeedOffset + clock());
+    return rand() % (Max - Min) + Min;
 }
 
 BOOL IsCommissionBigSuccess(){
