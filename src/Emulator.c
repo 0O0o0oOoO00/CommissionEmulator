@@ -297,7 +297,8 @@ VOID ClearCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[], _In
                      _In_ INT UrgentListLength, _In_ PCOMMISSION UrgentList[], _In_ INT UrgentTimeList[]){
     RtlFillMemory(DailyList, DailyListLength * sizeof(PCOMMISSION), NONE_DATA);
     RtlFillMemory(DailyTimeList, DailyListLength * sizeof(INT), NONE_DATA);
-    for (int i = 0; i < UrgentListLength && UrgentList[i] != (PCOMMISSION)NONE_DATA; ++i) {
+    for (int i = 0; i < UrgentListLength; ++i) {
+        if (UrgentList[i] == (PCOMMISSION)NONE_DATA) {continue;}
         if (UrgentList[i]->Type != NIGHT_COMMISSION) {
             UrgentList[i] = (PCOMMISSION)NONE_DATA;
             UrgentTimeList[i] = NONE_DATA;
@@ -347,13 +348,15 @@ VOID EmulatorMain(){
         MinusCommissionTime(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingTimeList);
         MinusCommissionTime(MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingTimeList);
 
-        for (int i = 0; i < MAXIMUM_URGENT_COMMISSION_LIST_COUNT && UrgentCommissionWaitingTimeList[i] != NONE_DATA; ++i) {
+        for (int i = 0; i < MAXIMUM_URGENT_COMMISSION_LIST_COUNT; ++i) {
+            if (UrgentCommissionWaitingTimeList[i] == NONE_DATA) {continue;}
             if (IsCommissionReachedTimeLimit(UrgentCommissionWaitingTimeList[i])) {
                 ClearOutdatedCommission(UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList, i);
             }
         }
 
-        for (int i = 0; i < MAXIMUM_DOING_COMMISSION_COUNT && DoingCommissionTimeList[i] != NONE_DATA; ++i) {
+        for (int i = 0; i < MAXIMUM_DOING_COMMISSION_COUNT; ++i) {
+            if (DoingCommissionTimeList[i] == NONE_DATA) {continue;}
             if (IsCommissionFinished(DoingCommissionTimeList[i]) == TRUE) {
                 FinishCommissionAndCalculateIncome(DoingCommissionList, DoingCommissionTimeList, i,
                                                    &TotalIncome, &CommissionRecord);
