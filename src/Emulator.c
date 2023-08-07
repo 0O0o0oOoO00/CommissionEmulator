@@ -28,6 +28,8 @@ static INT ExtraCommissionIdListCount = sizeof(ExtraCommissionIdList) / sizeof(I
 static INT NightCommissionIdListCount = sizeof(NightCommissionIdList) / sizeof(INT);
 static INT UrgentCommissionIdListCount = sizeof(UrgentCommissionIdList) / sizeof(INT);
 
+COMMISSION_RECORD CommissionRecord = {0};
+
 ULONGLONG RandomSeedOffset = 0;
 
 INT Random(_In_ INT Min, _In_ INT Max){
@@ -83,6 +85,11 @@ VOID PutCommissionIntoWaitingList(_In_ INT Length, _In_ PCOMMISSION List[], _In_
     if (BlankIndex != NONE_DATA) {
         List[BlankIndex] = pCommission;
         TimeList[BlankIndex] = pCommission->TimeLimit;
+        if (pCommission->Type == DAILY_COMMISSION || pCommission->Type == EXTRA_COMMISSION) {
+            CommissionRecord.WaitingDailyCommissionCount++;
+        } else {
+            CommissionRecord.WaitingUrgentCommissionCount++;
+        }
     }
 }
 
@@ -102,6 +109,8 @@ VOID SelectCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[],
     PCOMMISSION pCommission = (PCOMMISSION)NONE_DATA;
 
     for (int i = 0; i < FilterTagCount; ++i) {
+        INT UrgentCount = 0;
+        INT DailyCount = 0;
         if (FilterTag[i] == SHORTEST_FILTER) {
             INT ShortestTime = MINUTES_A_DAY;
             INT IndexOfShortest = NONE_DATA;
@@ -111,6 +120,10 @@ VOID SelectCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[],
                 if (pCommission->Duration < ShortestTime) {
                     ShortestTime = pCommission->Duration;
                     IndexOfShortest = j;
+                }
+                DailyCount++;
+                if (DailyCount >= CommissionRecord.WaitingDailyCommissionCount) {
+                    break;
                 }
             }
             SelectType = DAILY_COMMISSION;
@@ -125,6 +138,10 @@ VOID SelectCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[],
                 TargetIndex = j;
                 goto Return;
             }
+            UrgentCount++;
+            if (UrgentCount >= CommissionRecord.WaitingUrgentCommissionCount) {
+                break;
+            }
         }
         for (int j = 0; j < DailyListLength; ++j) {
             pCommission = DailyList[j];
@@ -133,6 +150,10 @@ VOID SelectCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[],
                 SelectType = DAILY_COMMISSION;
                 TargetIndex = j;
                 goto Return;
+            }
+            DailyCount++;
+            if (DailyCount >= CommissionRecord.WaitingDailyCommissionCount) {
+                break;
             }
         }
     }
@@ -160,16 +181,19 @@ VOID MoveCommissionFromWaitingListToDoingList(_In_ PCOMMISSION WaitingList[], _I
     DoingTimeList[BlankIndex] = pCommissionInWaitingList->Duration;
     WaitingList[IndexOfWaitingCommission] = (PCOMMISSION)NONE_DATA;
     WaitingTimeList[IndexOfWaitingCommission] = NONE_DATA;
+    if (pCommissionInWaitingList->Type == DAILY_COMMISSION || pCommissionInWaitingList->Type == EXTRA_COMMISSION) {
+        CommissionRecord.WaitingDailyCommissionCount--;
+    } else {
+        CommissionRecord.WaitingUrgentCommissionCount--;
+    }
 }
 
 VOID SelectAndDoCommission(_In_ INT DoingListLength, _In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[],
                            _In_ INT DailyListLength, _In_ PCOMMISSION DailyList[], _In_ INT DailyTimeList[],
-                           _In_ INT UrgentListLength, _In_ PCOMMISSION UrgentList[], _In_ INT UrgentTimeList[],
-                           _Inout_ PCOMMISSION_RECORD pCommissionRecord){
+                           _In_ INT UrgentListLength, _In_ PCOMMISSION UrgentList[], _In_ INT UrgentTimeList[]){
     INT SelectType = NONE_DATA;
     INT TargetIndex = NONE_DATA;
-    INT BlankCount = GetBlankCountOfCommissionList(DoingListLength, DoingList);
-    for (int i = 0; i < BlankCount; ++i) {
+    for (int i = 0; i < MAXIMUM_DOING_COMMISSION_COUNT - CommissionRecord.CommissionIsDoingCount; ++i) {
         SelectCommission(DailyListLength, DailyList, UrgentListLength, UrgentList,
                          &SelectType, &TargetIndex);
         if (SelectType == NONE_DATA || TargetIndex == NONE_DATA) {
@@ -185,7 +209,7 @@ VOID SelectAndDoCommission(_In_ INT DoingListLength, _In_ PCOMMISSION DoingList[
             default:
                 break;
         }
-        pCommissionRecord->CommissionIsDoingCount++;
+        CommissionRecord.CommissionIsDoingCount++;
     }
 }
 
@@ -201,15 +225,20 @@ BOOL IsCommissionFinished(_In_ INT CommissionTime){
     return CommissionTime == 0 ? TRUE : FALSE;
 }
 
-VOID FinishCommission(_In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[], _In_ INT IndexOfFinishedCommission, _Inout_ PCOMMISSION_RECORD pCommissionRecord){
+VOID FinishCommission(_In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[], _In_ INT IndexOfFinishedCommission){
     PCOMMISSION pCommission = DoingList[IndexOfFinishedCommission];
     DoingList[IndexOfFinishedCommission] = (PCOMMISSION)NONE_DATA;
     DoingTimeList[IndexOfFinishedCommission] = NONE_DATA;
     if (pCommission->Type == DAILY_COMMISSION) {
-        pCommissionRecord->DailyCommissionFinishedCount++;
-        pCommissionRecord->FinishDailyCommissionCount++;
+        CommissionRecord.DailyCommissionFinishedCount++;
+        CommissionRecord.FinishDailyCommissionCount++;
     }
-    pCommissionRecord->CommissionIsDoingCount--;
+    if (pCommission->Type == DAILY_COMMISSION || pCommission->Type == EXTRA_COMMISSION) {
+        CommissionRecord.WaitingDailyCommissionCount--;
+    } else {
+        CommissionRecord.WaitingUrgentCommissionCount--;
+    }
+    CommissionRecord.CommissionIsDoingCount--;
 }
 
 VOID CalculateIncome(_In_ PCOMMISSION pCommission, _Inout_ PINCOME pIncome){
@@ -231,9 +260,9 @@ VOID CalculateIncome(_In_ PCOMMISSION pCommission, _Inout_ PINCOME pIncome){
 }
 
 VOID FinishCommissionAndCalculateIncome(_In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[], _In_ INT IndexOfFinishedCommission,
-                                        _Inout_ PINCOME pIncome, _Inout_ PCOMMISSION_RECORD pCommissionRecord){
+                                        _Inout_ PINCOME pIncome){
     PCOMMISSION pCommission = DoingList[IndexOfFinishedCommission];
-    FinishCommission(DoingList, DoingTimeList, IndexOfFinishedCommission, pCommissionRecord);
+    FinishCommission(DoingList, DoingTimeList, IndexOfFinishedCommission);
     CalculateIncome(pCommission, pIncome);
 }
 
@@ -269,26 +298,26 @@ VOID GenerateUrgentCommission(_In_ INT Length, _In_ PCOMMISSION List[], _In_ INT
         if (IsCommissionRepeated(Length, List, pCommission) == TRUE) {goto Start;}
         PutCommissionIntoWaitingList(Length, List, TimeList, pCommission);
     }
+    CommissionRecord.ProcessRateOfUrgentCommissionGeneration -= 1.0;
 }
 
 VOID GenerateNewCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[], _In_ INT DailyTimeList[],
                            _In_ INT UrgentListLength, _In_ PCOMMISSION UrgentList[], _In_ INT UrgentTimeList[],
-                           _In_ ULONGLONG Minute, _In_ PCOMMISSION_RECORD pCommissionRecord){
-    if (pCommissionRecord->DailyCommissionFinishedCount <= MAXIMUM_DAILY_COMMISSION) {
-        GenerateDailyCommission(DailyListLength, DailyList, DailyTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT - pCommissionRecord->FinishDailyCommissionCount);
-        pCommissionRecord->FinishDailyCommissionCount = 0;
+                           _In_ ULONGLONG Minute){
+    if (CommissionRecord.DailyCommissionFinishedCount <= MAXIMUM_DAILY_COMMISSION) {
+        GenerateDailyCommission(DailyListLength, DailyList, DailyTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT - CommissionRecord.FinishDailyCommissionCount);
+        CommissionRecord.FinishDailyCommissionCount = 0;
     } else {
-        GenerateExtraCommission(DailyListLength, DailyList, DailyTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT - pCommissionRecord->FinishDailyCommissionCount);
+        GenerateExtraCommission(DailyListLength, DailyList, DailyTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT - CommissionRecord.FinishDailyCommissionCount);
     }
 
     if (IsTimeToGenerateNightCommission(Minute) == TRUE) {
         GenerateNightCommission(UrgentListLength, UrgentList, UrgentTimeList);
     }
 
-    pCommissionRecord->ProcessRateOfUrgentCommissionGeneration += URGENT_COMMISSION_GET_PER_MINUTE;
-    if (IsGenerateUrgentCommission(pCommissionRecord->ProcessRateOfUrgentCommissionGeneration) == TRUE) {
+    CommissionRecord.ProcessRateOfUrgentCommissionGeneration += URGENT_COMMISSION_GET_PER_MINUTE;
+    if (IsGenerateUrgentCommission(CommissionRecord.ProcessRateOfUrgentCommissionGeneration) == TRUE) {
         GenerateUrgentCommission(UrgentListLength, UrgentList, UrgentTimeList);
-        pCommissionRecord->ProcessRateOfUrgentCommissionGeneration -= 1.0;
     }
 }
 
@@ -300,11 +329,14 @@ VOID ClearCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[], _In
                      _In_ INT UrgentListLength, _In_ PCOMMISSION UrgentList[], _In_ INT UrgentTimeList[]){
     RtlFillMemory(DailyList, DailyListLength * sizeof(PCOMMISSION), NONE_DATA);
     RtlFillMemory(DailyTimeList, DailyListLength * sizeof(INT), NONE_DATA);
+    CommissionRecord.WaitingDailyCommissionCount = 0;
+
     for (int i = 0; i < UrgentListLength; ++i) {
         if (UrgentList[i] == (PCOMMISSION)NONE_DATA) {continue;}
         if (UrgentList[i]->Type != NIGHT_COMMISSION) {
             UrgentList[i] = (PCOMMISSION)NONE_DATA;
             UrgentTimeList[i] = NONE_DATA;
+            CommissionRecord.WaitingUrgentCommissionCount--;
         }
     }
 }
@@ -313,9 +345,10 @@ BOOL IsCommissionReachedTimeLimit(_In_ INT Time){
     return Time == 0 ? TRUE : FALSE;
 }
 
-VOID ClearOutdatedCommission(_In_ PCOMMISSION List[], _In_ INT TimeList[], _In_ INT IndexOfOutdated){
+VOID ClearOutdatedUrgentCommission(_In_ PCOMMISSION List[], _In_ INT TimeList[], _In_ INT IndexOfOutdated){
     List[IndexOfOutdated] = (PCOMMISSION)NONE_DATA;
     TimeList[IndexOfOutdated] = NONE_DATA;
+    CommissionRecord.WaitingUrgentCommissionCount--;
 }
 
 VOID EmulatorMain(){
@@ -336,16 +369,15 @@ VOID EmulatorMain(){
     RtlFillMemory(UrgentCommissionWaitingList, sizeof(UrgentCommissionWaitingList), NONE_DATA);
 
     INCOME TotalIncome = {0};
-    COMMISSION_RECORD CommissionRecord = {0};
 
     GenerateDailyCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT);
+    CommissionRecord.WaitingDailyCommissionCount = MAXIMUM_DAILY_COMMISSION_LIST_COUNT;
 
     for (ULONGLONG Minute = 0; Minute < EMULATE_DAYS * MINUTES_A_DAY; ++Minute) {
         
         SelectAndDoCommission(MAXIMUM_DOING_COMMISSION_COUNT, DoingCommissionList, DoingCommissionTimeList,
                               MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList,
-                              MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList,
-                              &CommissionRecord);
+                              MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList);
         
         MinusCommissionTime(MAXIMUM_DOING_COMMISSION_COUNT, DoingCommissionTimeList);
         MinusCommissionTime(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingTimeList);
@@ -354,7 +386,7 @@ VOID EmulatorMain(){
         for (int i = 0; i < MAXIMUM_URGENT_COMMISSION_LIST_COUNT; ++i) {
             if (UrgentCommissionWaitingTimeList[i] == NONE_DATA) {continue;}
             if (IsCommissionReachedTimeLimit(UrgentCommissionWaitingTimeList[i])) {
-                ClearOutdatedCommission(UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList, i);
+                ClearOutdatedUrgentCommission(UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList, i);
             }
         }
 
@@ -362,17 +394,19 @@ VOID EmulatorMain(){
             if (DoingCommissionTimeList[i] == NONE_DATA) {continue;}
             if (IsCommissionFinished(DoingCommissionTimeList[i]) == TRUE) {
                 FinishCommissionAndCalculateIncome(DoingCommissionList, DoingCommissionTimeList, i,
-                                                   &TotalIncome, &CommissionRecord);
+                                                   &TotalIncome);
             }
         }
 
         GenerateNewCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList,
                               MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList,
-                              Minute, &CommissionRecord);
+                              Minute);
 
         if (IsDayFinished(Minute)) {
             ClearCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList,
                             MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList);
+            GenerateDailyCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT);
+                                    CommissionRecord.WaitingDailyCommissionCount = MAXIMUM_DAILY_COMMISSION_LIST_COUNT;
         }
     }
 

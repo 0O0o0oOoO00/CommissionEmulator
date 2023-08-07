@@ -6,6 +6,5 @@
 
 int main(){
     EmulatorMain();
-//    system("pause");
     return 0;
 }
