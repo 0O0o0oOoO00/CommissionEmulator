@@ -249,7 +249,7 @@ VOID FinishCommission(_In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[], _I
     PCOMMISSION pCommission = DoingList[IndexOfFinishedCommission];
     DoingList[IndexOfFinishedCommission] = (PCOMMISSION)NONE_DATA;
     DoingTimeList[IndexOfFinishedCommission] = NONE_DATA;
-    if (pCommission->Type == DAILY_COMMISSION) {
+    if (pCommission->Type == DAILY_COMMISSION || pCommission->Type == EXTRA_COMMISSION) {
         CommissionRecord.DailyCommissionFinishedCount++;
         CommissionRecord.FinishDailyCommissionCount++;
     }
