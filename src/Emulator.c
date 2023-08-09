@@ -213,7 +213,6 @@ VOID SelectAndDoCommission(_In_ INT DoingListLength, _In_ PCOMMISSION DoingList[
             default:
                 break;
         }
-        CommissionRecord.CommissionIsDoingCount++;
     }
 }
 
