@@ -126,71 +126,71 @@
 #define URGENTSHIP_3_0_ID                        118
 #define URGENTSHIP_6_0_ID                        119
 #define URGENTSHIP_12_0_ID                       120
-#define EXTRAPART_1_FILTER                       0
-#define URGENTSHIP_3_FILTER                      1
-#define DAILYCHIP_2_FILTER                       2
-#define EXTRACUBE_8_FILTER                       3
-#define URGENTPART_2_FILTER                      4
-#define EXTRACUBE_5_FILTER                       5
-#define DAILYRESOURCE_2_FILTER                   6
-#define URGENTCUBE_2_15_FILTER                   7
-#define EXTRABOOK_5_FILTER                       8
-#define EXTRACUBE_0_30_FILTER                    9
-#define EXTRAOIL_8_FILTER                        10
-#define URGENTDRILL_1_FILTER                     11
-#define URGENTDRILL_4_FILTER                     12
-#define URGENTPART_1_40_FILTER                   13
-#define URGENTSHIP_6_FILTER                      14
-#define EXTRADRILL_1_FILTER                      15
-#define DAILYCHIP_1_FILTER                       16
-#define NIGHTDRILL_2_40_FILTER                   17
-#define NIGHTDRILL_5_20_FILTER                   18
-#define EXTRAOIL_4_FILTER                        19
-#define URGENTDRILL_2_40_FILTER                  20
-#define NIGHTBOOK_6_FILTER                       21
-#define NIGHTBOOK_5_FILTER                       22
-#define URGENTBOOK_2_30_FILTER                   23
-#define MAJOR_10_FILTER                          24
+#define URGENTGEM_4_FILTER                       0
+#define EXTRADRILL_2_40_FILTER                   1
+#define EXTRACUBE_3_FILTER                       2
+#define MAJOR_10_FILTER                          3
+#define URGENTSHIP_3_FILTER                      4
+#define EXTRACUBE_8_FILTER                       5
+#define URGENTPART_0_30_FILTER                   6
+#define EXTRAPART_1_FILTER                       7
+#define EXTRAPART_1_30_FILTER                    8
+#define NIGHTDRILL_3_20_FILTER                   9
+#define NIGHTDRILL_5_20_FILTER                   10
+#define URGENTBOOK_1_FILTER                      11
+#define URGENTDRILL_2_40_FILTER                  12
+#define URGENTSHIP_12_FILTER                     13
+#define EXTRACUBE_1_30_FILTER                    14
+#define EXTRAOIL_8_FILTER                        15
+#define URGENTCUBE_4_FILTER                      16
+#define URGENTBOX_6_FILTER                       17
+#define EXTRABOOK_6_FILTER                       18
+#define URGENTDRILL_1_10_FILTER                  19
+#define URGENTDRILL_1_FILTER                     20
+#define NIGHTBOOK_8_FILTER                       21
+#define NIGHTDRILL_2_40_FILTER                   22
+#define NIGHTBOOK_6_FILTER                       23
+#define URGENTPART_1_FILTER                      24
 #define DAILYRESOURCE_1_FILTER                   25
-#define EXTRABOOK_6_FILTER                       26
-#define URGENTCUBE_4_FILTER                      27
-#define URGENTCUBE_6_FILTER                      28
-#define NIGHTBOOK_8_FILTER                       29
-#define URGENTCUBE_1_45_FILTER                   30
-#define URGENTGEM_4_FILTER                       31
-#define EXTRACUBE_3_FILTER                       32
-#define URGENTBOOK_1_FILTER                      33
-#define URGENTGEM_8_FILTER                       34
+#define URGENTCUBE_3_FILTER                      26
+#define EXTRABOOK_8_FILTER                       27
+#define EXTRADRILL_0_20_FILTER                   28
+#define URGENTBOX_3_FILTER                       29
+#define URGENTBOX_1_FILTER                       30
+#define EXTRAOIL_4_FILTER                        31
+#define URGENTBOOK_1_40_FILTER                   32
+#define URGENTGEM_2_FILTER                       33
+#define URGENTCUBE_1_45_FILTER                   34
 #define EXTRAOIL_1_FILTER                        35
-#define EXTRADRILL_2_FILTER                      36
-#define URGENTPART_2_30_FILTER                   37
-#define URGENTBOOK_2_FILTER                      38
-#define URGENTDRILL_2_FILTER                     39
-#define URGENTGEM_2_FILTER                       40
-#define URGENTSHIP_12_FILTER                     41
-#define EXTRADRILL_3_20_FILTER                   42
-#define URGENTBOOK_1_20_FILTER                   43
-#define URGENTBOX_6_FILTER                       44
-#define URGENTBOOK_0_30_FILTER                   45
-#define URGENTDRILL_1_30_FILTER                  46
-#define EXTRACUBE_1_30_FILTER                    47
-#define EXTRADRILL_5_20_FILTER                   48
-#define EXTRAPART_0_30_FILTER                    49
-#define EXTRACUBE_4_FILTER                       50
-#define EXTRADRILL_0_20_FILTER                   51
-#define URGENTPART_1_20_FILTER                   52
-#define URGENTPART_1_FILTER                      53
-#define EXTRAPART_1_30_FILTER                    54
-#define URGENTCUBE_3_FILTER                      55
-#define URGENTDRILL_1_10_FILTER                  56
-#define EXTRADRILL_2_40_FILTER                   57
-#define URGENTPART_0_30_FILTER                   58
-#define URGENTCUBE_1_30_FILTER                   59
-#define NIGHTDRILL_3_20_FILTER                   60
-#define EXTRABOOK_8_FILTER                       61
-#define URGENTBOX_3_FILTER                       62
-#define URGENTBOX_1_FILTER                       63
-#define URGENTBOOK_1_40_FILTER                   64
+#define URGENTBOOK_1_20_FILTER                   36
+#define URGENTSHIP_6_FILTER                      37
+#define NIGHTBOOK_5_FILTER                       38
+#define URGENTDRILL_4_FILTER                     39
+#define EXTRACUBE_0_30_FILTER                    40
+#define URGENTBOOK_2_30_FILTER                   41
+#define URGENTPART_1_40_FILTER                   42
+#define EXTRABOOK_5_FILTER                       43
+#define DAILYCHIP_1_FILTER                       44
+#define URGENTCUBE_2_15_FILTER                   45
+#define EXTRACUBE_5_FILTER                       46
+#define DAILYRESOURCE_2_FILTER                   47
+#define EXTRADRILL_3_20_FILTER                   48
+#define EXTRACUBE_4_FILTER                       49
+#define DAILYCHIP_2_FILTER                       50
+#define EXTRAPART_0_30_FILTER                    51
+#define EXTRADRILL_2_FILTER                      52
+#define URGENTCUBE_6_FILTER                      53
+#define EXTRADRILL_1_FILTER                      54
+#define URGENTCUBE_1_30_FILTER                   55
+#define URGENTDRILL_2_FILTER                     56
+#define URGENTDRILL_1_30_FILTER                  57
+#define URGENTPART_2_30_FILTER                   58
+#define URGENTPART_1_20_FILTER                   59
+#define URGENTBOOK_0_30_FILTER                   60
+#define EXTRADRILL_5_20_FILTER                   61
+#define URGENTGEM_8_FILTER                       62
+#define URGENTPART_2_FILTER                      63
+#define URGENTBOOK_2_FILTER                      64
 #define SHORTEST_FILTER                          65
 #define AWAKENING_TACTICAL_RESEARCH_I            0
 #define AWAKENING_TACTICAL_RESEARCH_II           1
@@ -4408,88 +4408,94 @@ static INT UrgentCommissionIdList[] = {
        URGENTSHIP_12_0_ID
 };
 static PCHAR CommissionNameList[] = {
-       "高阶战术研发I",
-       "高阶战术研发II",
-       "日常资源开发I",
-       "日常资源开发III",
-       "日常资源开发V",
-       "日常资源开发II",
-       "日常资源开发IV",
-       "日常资源开发VI",
-       "小型商船护卫",
-       "中型商船护卫",
-       "大型商船护卫",
-       "舰队护卫演习",
-       "舰队运输演习",
-       "舰队实战演习",
-       "舰队初阶演习",
-       "舰队中阶演习",
-       "舰队高阶演习",
-       "短距离航行训练",
-       "中距离航行训练",
-       "远距离航行训练",
-       "近海防卫巡逻",
-       "海域浮标检查作业",
-       "前沿基地防卫巡逻",
-       "小型油田开发I",
-       "小型油田开发II",
-       "小型油田开发III",
-       "中型油田开发I",
-       "中型油田开发II",
-       "中型油田开发III",
-       "大型油田开发I",
-       "大型油田开发II",
-       "大型油田开发III",
-       "初级林木护卫委托",
-       "初级矿脉护卫委托",
-       "中级林木护卫委托",
-       "中级矿脉护卫委托",
-       "高级林木护卫委托",
-       "高级矿脉护卫委托",
-       "高阶货物运输",
-       "高阶对抗演习",
-       "高阶科研任务",
-       "高阶自主训练",
-       "高阶战术课程",
-       "高阶工具整备",
-       "支援土豪尔岛",
-       "支援姆波罗岛",
-       "支援马拉基岛",
-       "支援卡波罗岛",
-       "支援玛丽岛",
-       "支援特林岛",
-       "BIW装备运输",
-       "NYB装备运输",
-       "BIW物资交接",
-       "NYB物资交接",
-       "BIW装备研发",
-       "NYB装备研发",
-       "解救商船I",
-       "敌袭I",
-       "解救商船II",
-       "敌袭II",
-       "解救商船III",
-       "敌袭III",
-       "保卫运输部队I",
-       "歼灭敌侦查部队",
-       "保卫运输部队II",
-       "歼灭敌主力部队",
-       "保卫运输部队III",
-       "歼灭敌精锐部队",
-       "BIW要员护卫",
-       "NYB要员护卫",
-       "BIW度假护卫",
-       "NYB度假护卫",
-       "BIW巡视护卫",
-       "NYB巡视护卫",
-       "支援维拉维拉岛",
-       "支援伊岛",
-       "支援多伦瓦岛",
-       "支援恐班纳",
-       "支援马内岛",
-       "支援萌岛",
-       "小型观舰仪式",
-       "联合观舰仪式",
-       "同盟观舰仪式"
+       "Daily-高阶战术研发I",
+       "Daily-高阶战术研发II",
+       "Daily-日常资源开发I",
+       "Daily-日常资源开发III",
+       "Daily-日常资源开发V",
+       "Daily-日常资源开发II",
+       "Daily-日常资源开发IV",
+       "Daily-日常资源开发VI",
+       "Extra-小型商船护卫",
+       "Extra-中型商船护卫",
+       "Extra-大型商船护卫",
+       "Extra-舰队护卫演习",
+       "Extra-舰队运输演习",
+       "Extra-舰队实战演习",
+       "Extra-舰队初阶演习",
+       "Extra-舰队中阶演习",
+       "Extra-舰队高阶演习",
+       "Extra-短距离航行训练",
+       "Extra-中距离航行训练",
+       "Extra-远距离航行训练",
+       "Extra-近海防卫巡逻",
+       "Extra-海域浮标检查作业",
+       "Extra-前沿基地防卫巡逻",
+       "Extra-小型油田开发I",
+       "Extra-小型油田开发II",
+       "Extra-小型油田开发III",
+       "Extra-中型油田开发I",
+       "Extra-中型油田开发II",
+       "Extra-中型油田开发III",
+       "Extra-大型油田开发I",
+       "Extra-大型油田开发II",
+       "Extra-大型油田开发III",
+       "Extra-初级林木护卫委托",
+       "Extra-初级矿脉护卫委托",
+       "Extra-中级林木护卫委托",
+       "Extra-中级矿脉护卫委托",
+       "Extra-高级林木护卫委托",
+       "Extra-高级矿脉护卫委托",
+       "Major-高阶货物运输",
+       "Major-高阶对抗演习",
+       "Major-高阶科研任务",
+       "Major-高阶自主训练",
+       "Major-高阶战术课程",
+       "Major-高阶工具整备",
+       "Night-小型商船护卫",
+       "Night-中型商船护卫",
+       "Night-大型商船护卫",
+       "Night-近海防卫巡逻",
+       "Night-海域浮标检查作业",
+       "Night-前沿基地防卫巡逻",
+       "Urgent-支援土豪尔岛",
+       "Urgent-支援姆波罗岛",
+       "Urgent-支援马拉基岛",
+       "Urgent-支援卡波罗岛",
+       "Urgent-支援玛丽岛",
+       "Urgent-支援特林岛",
+       "Urgent-BIW装备运输",
+       "Urgent-NYB装备运输",
+       "Urgent-BIW物资交接",
+       "Urgent-NYB物资交接",
+       "Urgent-BIW装备研发",
+       "Urgent-NYB装备研发",
+       "Urgent-解救商船I",
+       "Urgent-敌袭I",
+       "Urgent-解救商船II",
+       "Urgent-敌袭II",
+       "Urgent-解救商船III",
+       "Urgent-敌袭III",
+       "Urgent-保卫运输部队I",
+       "Urgent-歼灭敌侦查部队",
+       "Urgent-保卫运输部队II",
+       "Urgent-歼灭敌主力部队",
+       "Urgent-保卫运输部队III",
+       "Urgent-歼灭敌精锐部队",
+       "Urgent-BIW要员护卫",
+       "Urgent-NYB要员护卫",
+       "Urgent-BIW度假护卫",
+       "Urgent-NYB度假护卫",
+       "Urgent-BIW巡视护卫",
+       "Urgent-NYB巡视护卫",
+       "Urgent-支援维拉维拉岛",
+       "Urgent-支援伊岛",
+       "Urgent-支援多伦瓦岛",
+       "Urgent-支援恐班纳",
+       "Urgent-支援马内岛",
+       "Urgent-支援萌岛",
+       "Urgent-小型观舰仪式",
+       "Urgent-联合观舰仪式",
+       "Urgent-同盟观舰仪式"
 };
 #endif //COMMISSION_EMULATOR_COMMISSION_DATA_H

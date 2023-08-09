@@ -152,7 +152,7 @@ def GenerateNameIdDefine(File: TextIO, DataList: List[Commission]):
 def GenerateCommissionNameList(File: TextIO, DataList: List[Commission]):
     NameList = []
     for i in DataList:
-        Name = i.ChineseName.replace(" ", "_")\
+        Name = i.Category + "-" + i.ChineseName.replace(" ", "_")\
             .replace(".", "_")\
             .replace("'", "_")\
             .replace("-", "_")\

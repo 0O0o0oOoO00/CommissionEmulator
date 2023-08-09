@@ -29,7 +29,7 @@ static INT NightCommissionIdListCount = sizeof(NightCommissionIdList) / sizeof(I
 static INT UrgentCommissionIdListCount = sizeof(UrgentCommissionIdList) / sizeof(INT);
 static const INT CommissionNameListCount = sizeof(CommissionNameList) / sizeof(PCHAR);
 
-INT FinishedCommissionCount[83] = {0};
+INT FinishedCommissionCount[89] = {0};
 
 COMMISSION_RECORD CommissionRecord = {0};
 
@@ -510,7 +510,7 @@ VOID EmulatorMain(){
            CommissionRecord.UrgentCount);
     for (int i = 0; i < CommissionNameListCount; ++i) {
         if (FinishedCommissionCount[i] != 0) {
-            printf("%-20s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
+            printf("%-25s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
         }
     }
 }
