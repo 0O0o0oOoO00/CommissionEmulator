@@ -216,10 +216,27 @@ VOID SelectAndDoCommission(_In_ INT DoingListLength, _In_ PCOMMISSION DoingList[
     }
 }
 
-VOID MinusCommissionTime(_In_ INT WaitingListLength, _In_ INT WaitingTimeList[]){
+VOID MinusCommissionTime(_In_ INT WaitingListLength, _In_ INT WaitingTimeList[], _In_ COMMISSION_TYPE Type){
+    INT Count = 0;
+    INT Max = 0;
+    switch (Type) {
+        case DOING_COMMISSION:
+            Max = MAXIMUM_DOING_COMMISSION_COUNT;
+            break;
+        case DAILY_COMMISSION:
+            Max = MAXIMUM_DAILY_COMMISSION_LIST_COUNT;
+            break;
+        case URGENT_COMMISSION:
+            Max = MAXIMUM_URGENT_COMMISSION_LIST_COUNT;
+            break;
+    }
     for (int i = 0; i < WaitingListLength; ++i) {
         if (WaitingTimeList[i] != NONE_DATA && WaitingTimeList[i] != 0) {
             WaitingTimeList[i]--;
+            Count++;
+            if (Count >= Max) {
+                break;
+            }
         }
     }
 }
