@@ -1,5 +1,6 @@
 from typing import TextIO, List
 from pathlib import Path
+import math
 import os
 
 FILE_PATH = Path(os.path.abspath(os.path.dirname(__file__)))
@@ -24,6 +25,7 @@ class Commission:
         self.EnglishName = str()
 
         self.Duration = int()
+        self.DropRate = float()
         self.TimeLimit = int()
         self.BigSuccessRate = str()
 
@@ -117,6 +119,7 @@ class Commission:
         self.Duration = int(DataList[23])
         self.TimeLimit = int(DataList[24])
         self.BigSuccessRate = DataList[25]
+        self.DropRate = float(DataList[26])
 
         self.CommissionType = self.Category.upper() + "_COMMISSION"
 
@@ -250,18 +253,34 @@ def GenerateCommissionList(File: TextIO, DataList: List[Commission]):
         File.write("\n")
     File.write("};\n")
 
+def GcdMany(s: List[int]):
+    g = 0
+    for i in range(len(s)):
+        if i == 0:
+            g = s[i]
+        else:
+            g = math.gcd(g, s[i])
+    return g
 
 def GenerateTargetCommissionList(File: TextIO, DataList: List[Commission], ListName: str, Type: str):
     TargetList: List[str] = []
+    DropRateList: List[int] = []
     for i in DataList:
         if i.CommissionType == Type:
             TargetList.append(i.Id)
+            DropRateList.append(int(i.DropRate * 10000))
+    Gcd = GcdMany(DropRateList)
+    for i in range(len(DropRateList)):
+        DropRateList[i] = int(DropRateList[i] / Gcd)
     File.write(f"static INT {ListName}[] = {{\n")
     for i in range(len(TargetList)):
-        File.write(f"       {TargetList[i]}")
-        if i != len(TargetList) - 1:
-            File.write(",")
-        File.write("\n")
+        for j in range(DropRateList[i]):
+            File.write(f"       {TargetList[i]}")
+            if i == len(TargetList) - 1 and j == DropRateList[i] - 1:
+                ...
+            else:
+                File.write(",")
+            File.write("\n")
     File.write("};\n")
 
 

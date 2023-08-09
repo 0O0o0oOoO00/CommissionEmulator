@@ -29,7 +29,7 @@ static INT NightCommissionIdListCount = sizeof(NightCommissionIdList) / sizeof(I
 static INT UrgentCommissionIdListCount = sizeof(UrgentCommissionIdList) / sizeof(INT);
 static const INT CommissionNameListCount = sizeof(CommissionNameList) / sizeof(PCHAR);
 
-INT FinishedCommissionCount[89] = {0};
+INT FinishedCommissionCount[94] = {0};
 
 COMMISSION_RECORD CommissionRecord = {0};
 
