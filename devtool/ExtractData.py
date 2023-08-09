@@ -1,295 +1,303 @@
-import openpyxl
+from typing import TextIO, List
+from pathlib import Path
+import os
+
+FILE_PATH = Path(os.path.abspath(os.path.dirname(__file__)))
+
+
+class Range:
+    Max = 0
+    Min = 0
 
 
 class Commission:
-    Category = ""
-    Genre = ""
-    FilterTag = ""
-    NameForC = ""
-    TimeLimit = 0
-    CommissionLevel = 0
-    Duration = 0
-    MinCoin = 0
-    MaxCoin = 0
-    MinMind = 0
-    MaxMind = 0
-    MinOil = 0
-    MaxOil = 0
-    MinHomeCoin = 0
-    MaxHomeCoin = 0
-    EXP = 0
-    Book = 0
-    Box = 0
-    MaxCube = 0
-    MinCube = 0
-    Part = 0
-    Retrofit = 0
-    Drill = 0
-    MaxGem = 0
-    MinGem = 0
-    Ship = 0
-    ShipLevel = 0
-    BigSuccess = False
 
-    def __init__(self, Cell):
-        self.Category = Cell[2].value
-        self.Genre = Cell[3].value
-        self.FilterTag = Cell[4].value
-        self.CommissionLevel = int(Cell[8].value)
-        Time = Cell[7].value
-        self.Duration = Time.hour * 60 + Time.minute
-        self.ShipLevel = Cell[9].value
-        self.NameForC = Cell[4].value.replace("-", "_").replace(":", "_").upper()
-        Limit = Cell[12].value
-        if Limit is not None:
-            self.TimeLimit = Time.hour * 60 + Time.minute
-        self.EXP = int(Cell[13].value)
-        if Cell[14].value is not None:
-            MindRange = Cell[14].value.split("~")
-            self.MinMind = int(MindRange[0])
-            self.MaxMind = int(MindRange[1])
-        if Cell[15].value is not None:
-            CoinRange = Cell[15].value.split("~")
-            self.MinCoin = int(CoinRange[0])
-            self.MaxCoin = int(CoinRange[1])
-        if Cell[16].value is not None:
-            OilRange = Cell[16].value.split("~")
-            self.MinOil = int(OilRange[0])
-            self.MaxOil = int(OilRange[1])
-        if Cell[17].value is not None:
-            HomeCoinRange = Cell[17].value.split("~")
-            self.MinHomeCoin = int(HomeCoinRange[0])
-            self.MaxHomeCoin = int(HomeCoinRange[1])
-        if Cell[18].value is not None:
-            if "~" in str(Cell[18].value):
-                CubeRange = Cell[18].value.split("~")
-                self.MinCube = int(CubeRange[0])
-                self.MaxCube = int(CubeRange[1])
-            else:
-                self.MinCube = Cell[18].value
-                self.MaxCube = Cell[18].value
-            self.BigSuccess = True
-        if Cell[19].value is not None:
-            self.Book = Cell[19].value
-            self.BigSuccess = True
-        if Cell[20].value is not None:
-            GemRange = Cell[20].value.split("~")
-            self.MinGem = int(GemRange[0])
-            self.MaxGem = int(GemRange[1])
-            self.BigSuccess = True
-        if Cell[21].value is not None:
-            self.Retrofit = Cell[21].value
-            self.BigSuccess = True
-        if Cell[22].value is not None:
-            self.Part = Cell[22].value
-            self.BigSuccess = True
-        if Cell[23].value is not None:
-            self.Drill = Cell[23].value
-            self.BigSuccess = True
-        if Cell[24].value is not None:
-            self.Ship = Cell[24].value
-            self.BigSuccess = True
-        if Cell[25].value is not None:
-            self.Box = Cell[25].value
-            self.BigSuccess = True
-        if self.Category != "Urgent":
-            if self.Genre == "Cube":
-                self.MaxCube = 1
-                self.MinCube = 1
-            elif self.Genre == "Retrofit":
-                self.Retrofit = 1
-            elif self.Genre == "Book":
-                self.Book = 1
-            elif self.Genre == "Drill":
-                self.Drill = 1
-            elif self.Genre == "Box":
-                self.Box = 1
-            elif self.Genre == "Part":
-                self.Part = 1
-            self.BigSuccess = True
+    def __init__(self, DataList: list[str]):
+        self.Id = str()
+        self.Name = str()
+        self.NameId = str()
+        self.FilterTag = str()
+        self.BigSuccessDrop = str()
+        self.Category = str()
+        self.Genre = str()
+        self.ChineseName = str()
+        self.EnglishName = str()
 
+        self.Duration = int()
+        self.TimeLimit = int()
+        self.BigSuccessRate = str()
 
-def GenerateCommissionData(File, DataList):
-    for i in DataList:
-        File.write(f"static COMMISSION {i.NameForC} = {{\n"
-                   f"       .Duration = {i.Duration},\n"
-                   f"       .TimeLimit = {i.TimeLimit},\n"
-                   f"       .Type = {i.Category.upper()}_COMMISSION,\n"
-                   f"       .Id = {i.NameForC}_ID,\n"
-                   f"       .FilterTag = {i.FilterTag.replace('-', '_').replace(':', '_').upper()}_FILTER,\n"
-                   f"       .NormalIncome.Coin.Max = {i.MaxCoin},\n"
-                   f"       .NormalIncome.Coin.Min = {i.MinCoin},\n"
-                   f"       .NormalIncome.Mind.Max = {i.MaxMind},\n"
-                   f"       .NormalIncome.Mind.Min = {i.MinMind},\n"
-                   f"       .NormalIncome.Oil.Max = {i.MaxOil},\n"
-                   f"       .NormalIncome.Oil.Min = {i.MinOil},\n"
-                   f"       .NormalIncome.HomeCoin.Max = {i.MaxHomeCoin},\n"
-                   f"       .NormalIncome.HomeCoin.Min = {i.MinHomeCoin},\n"
-                   f"       .NormalIncome.EXP = {i.EXP},\n"
-                   f"       .NormalIncome.Book = 0,\n"
-                   f"       .NormalIncome.Box = 0,\n"
-                   f"       .NormalIncome.Cube.Max = 0,\n"
-                   f"       .NormalIncome.Cube.Min = 0,\n"
-                   f"       .NormalIncome.Drill = 0,\n"
-                   f"       .NormalIncome.Gem.Max = 0,\n"
-                   f"       .NormalIncome.Gem.Min = 0,\n"
-                   f"       .NormalIncome.Part = 0,\n"
-                   f"       .NormalIncome.Retrofit = 0,\n"
-                   f"       .NormalIncome.Ship = 0,\n"
-                   f"       .BigSuccess.Flag = {str(i.BigSuccess).upper()},\n"
-                   f"       .BigSuccess.Income.Coin.Max = 0,\n"
-                   f"       .BigSuccess.Income.Coin.Min = 0,\n"
-                   f"       .BigSuccess.Income.Mind.Max = 0,\n"
-                   f"       .BigSuccess.Income.Mind.Min = 0,\n"
-                   f"       .BigSuccess.Income.Oil.Max = 0,\n"
-                   f"       .BigSuccess.Income.Oil.Min = 0,\n"
-                   f"       .BigSuccess.Income.HomeCoin.Max = 0,\n"
-                   f"       .BigSuccess.Income.HomeCoin.Min = 0,\n"
-                   f"       .BigSuccess.Income.EXP = 0,\n"
-                   f"       .BigSuccess.Income.Book = {i.Book},\n"
-                   f"       .BigSuccess.Income.Box = {i.Box},\n"
-                   f"       .BigSuccess.Income.Cube.Min = {i.MinCube},\n"
-                   f"       .BigSuccess.Income.Cube.Max = {i.MaxCube},\n"
-                   f"       .BigSuccess.Income.Drill = {i.Drill},\n"
-                   f"       .BigSuccess.Income.Gem.Max = {i.MaxGem},\n"
-                   f"       .BigSuccess.Income.Gem.Min = {i.MinGem},\n"
-                   f"       .BigSuccess.Income.Part = {i.Part},\n"
-                   f"       .BigSuccess.Income.Retrofit = {i.Retrofit},\n"
-                   f"       .BigSuccess.Income.Ship = {i.Ship}\n"
-                   f"}};\n")
+        self.Oil = Range()
+        self.Coin = Range()
+        self.DecorCoin = Range()
+
+        self.Cube = Range()
+        self.Part = Range()
+        self.Drill = Range()
+        self.CognitiveChip = Range()
+        self.Retrofit = Range()
+        self.Gem = Range()
+        self.Box = Range()
+        self.Book = Range()
+        self.Ship = Range()
+
+        self.CommissionType = str()
+
+        self.Id = DataList[0]
+        self.FilterTag = DataList[1]
+        self.Name = DataList[2]
+        self.NameId = DataList[3]
+        self.BigSuccessDrop = DataList[4]
+        self.Category = DataList[7]
+        self.Genre = DataList[8]
+        self.ChineseName = DataList[9]
+        self.EnglishName = DataList[10]
+
+        OilData = DataList[11]
+        if OilData:
+            OilRange = OilData.split("~")
+            self.Oil.Min = OilRange[0]
+            self.Oil.Max = OilRange[1]
+        CoinsData = DataList[12]
+        if CoinsData:
+            CoinsRange = CoinsData.split("~")
+            self.Coin.Min = CoinsRange[0]
+            self.Coin.Max = CoinsRange[1]
+        DecorCoinsData = DataList[13]
+        if DecorCoinsData:
+            DecorCoinsRange = DecorCoinsData.split("~")
+            self.DecorCoin.Min = DecorCoinsRange[0]
+            self.DecorCoin.Max = DecorCoinsRange[1]
+        CubeData = DataList[14]
+        if CubeData:
+            CubeRange = CubeData.split("~")
+            self.Cube.Min = CubeRange[0]
+            self.Cube.Max = CubeRange[1]
+        PartData = DataList[15]
+        if PartData:
+            PartRange = PartData.split("~")
+            self.Part.Min = PartRange[0]
+            self.Part.Max = PartRange[1]
+        DrillData = DataList[16]
+        if DrillData:
+            DrillRange = DrillData.split("~")
+            self.Drill.Min = DrillRange[0]
+            self.Drill.Max = DrillRange[1]
+        CognitiveChipsData = DataList[17]
+        if CognitiveChipsData:
+            CognitiveChipsRange = CognitiveChipsData.split("~")
+            self.CognitiveChip.Min = CognitiveChipsRange[0]
+            self.CognitiveChip.Max = CognitiveChipsRange[1]
+        RetrofitData = DataList[18]
+        if RetrofitData:
+            RetrofitRange = RetrofitData.split("~")
+            self.Retrofit.Min = RetrofitRange[0]
+            self.Retrofit.Max = RetrofitRange[1]
+        GemData = DataList[19]
+        if GemData:
+            GemRange = GemData.split("~")
+            self.Gem.Min = GemRange[0]
+            self.Gem.Max = GemRange[1]
+        BoxData = DataList[20]
+        if BoxData:
+            BoxRange = BoxData.split("~")
+            self.Box.Min = BoxRange[0]
+            self.Box.Max = BoxRange[1]
+        BookData = DataList[21]
+        if BookData:
+            BookRange = BookData.split("~")
+            self.Book.Min = BookRange[0]
+            self.Book.Max = BookRange[1]
+        ShipData = DataList[22]
+        if ShipData:
+            ShipRange = ShipData.split("~")
+            self.Ship.Min = ShipRange[0]
+            self.Ship.Max = ShipRange[1]
+
+        self.Duration = int(DataList[23])
+        self.TimeLimit = int(DataList[24])
+        self.BigSuccessRate = DataList[25]
+
+        self.CommissionType = self.Category.upper() + "_COMMISSION"
 
 
-def GenerateCommissionDataList(File, DataList):
-    File.write("static PCOMMISSION CommissionList[] = {\n")
+def GenerateCommissionIdDefine(File: TextIO, DataList: List[Commission]):
     for i in range(len(DataList)):
-        File.write(f"       &{DataList[i].NameForC}")
-        if i != len(DataList) - 1:
-            File.write(",\n")
-        else:
-            File.write("\n")
-    File.write("};\n")
+        File.write("#define {:40} {}\n".format(DataList[i].Id, i))
 
 
-def GenerateDailyCommissionIdList(File, DataList):
-    File.write("static INT DailyCommissionIdList[] = {\n")
-    for i in range(len(DataList)):
-        if DataList[i].Category != "Daily":
-            continue
-        File.write(f"       {DataList[i].NameForC}_ID")
-        if i != len(DataList) - 1:
-            File.write(",\n")
-        else:
-            File.write("\n")
-    File.write("};\n")
-
-
-def GenerateExtraCommissionIdList(File, DataList):
-    File.write("static INT ExtraCommissionIdList[] = {\n")
-    for i in range(len(DataList)):
-        if DataList[i].Category != "Extra":
-            continue
-        File.write(f"       {DataList[i].NameForC}_ID")
-        if i != len(DataList) - 1:
-            File.write(",\n")
-        else:
-            File.write("\n")
-    File.write("};\n")
-
-
-def GenerateNightCommissionIdList(File, DataList):
-    File.write("static INT NightCommissionIdList[] = {\n")
-    for i in range(len(DataList)):
-        if DataList[i].Category != "Night":
-            continue
-        File.write(f"       {DataList[i].NameForC}_ID")
-        if i != len(DataList) - 1:
-            File.write(",\n")
-        else:
-            File.write("\n")
-    File.write("};\n")
-
-
-def GenerateUrgentCommissionIdList(File, DataList):
-    File.write("static INT UrgentCommissionIdList[] = {\n")
-    for i in range(len(DataList)):
-        if DataList[i].Category != "Urgent":
-            continue
-        File.write(f"       {DataList[i].NameForC}_ID")
-        if i != len(DataList) - 1:
-            File.write(",\n")
-        else:
-            File.write("\n")
-    File.write("};\n")
-
-
-def GengrateCommissionFilterTagList(File, DataList):
-    File.write("static PCHAR CommissionFilterTagList[] = {\n")
-    for i in range(len(DataList)):
-        File.write(f"       \"{DataList[i].FilterTag}-{DataList[i].CommissionLevel}\"")
-        if i != len(DataList) - 1:
-            File.write(",\n")
-        else:
-            File.write("\n")
-    File.write("};\n")
-
-
-def GenerateCommissionIdDefine(File, DataList):
-    for i in range(len(DataList)):
-        File.write("#define {:25}   {}\n".format(
-            f"{DataList[i].NameForC}_ID", i))
-
-
-def GenerateCommissionFilterTagIdDefine(File, DataList):
+def GenerateFilterTagDefine(File: TextIO, DataList: List[Commission]):
     FilterTagList = []
     for i in DataList:
-        FilterTagList.append(i.FilterTag.upper() + "_FILTER")
+        FilterTagList.append(i.FilterTag)
     FilterTagList = list(set(FilterTagList))
-    FilterTagList.append("SHORTEST_FILTER")
-    for i in range(len(FilterTagList)):
-        File.write("#define {:25}   {}\n".format(
-            FilterTagList[i].replace("-", "_").replace(":", "_"), i))
+    Length = len(FilterTagList)
+    for i in range(Length):
+        File.write("#define {:40} {}\n".format(FilterTagList[i], i))
+    File.write("#define {:40} {}\n".format("SHORTEST_FILTER", Length + 0))
 
 
-def HandleRepeatCommissionData(DataList):
-    IdDataDict = {}
+def GenerateNameIdDefine(File: TextIO, DataList: List[Commission]):
+    NameIdList = []
     for i in DataList:
-        CommissionIdName = i.NameForC
-        if CommissionIdName in IdDataDict:
-            i.NameForC += f"_{IdDataDict[CommissionIdName]}"
-            IdDataDict[CommissionIdName] += 1
-        else:
-            IdDataDict[CommissionIdName] = 1
+        if i.NameId in NameIdList:
+            continue
+        NameIdList.append(i.NameId)
+
+    Length = len(NameIdList)
+    for i in range(Length):
+        File.write("#define {:40} {}\n".format(NameIdList[i], i))
 
 
-xlsx = openpyxl.load_workbook(filename="../data/CommissionData.xlsx")
-sheet = xlsx["Data"]
-commissionDataList = []
-for i in range(3, 122):
-    cell = sheet[f"A{i}:AA{i}"]
-    if cell[0][0].value is None:
-        continue
-    commissionDataList.append(Commission(cell[0]))
+def GenerateCommissionNameList(File: TextIO, DataList: List[Commission]):
+    NameList = []
+    for i in DataList:
+        Name = i.ChineseName.replace(" ", "_")\
+            .replace(".", "_")\
+            .replace("'", "_")\
+            .replace("-", "_")\
+            .replace("Ⅰ", "I")\
+            .replace("Ⅱ", "II")\
+            .replace("Ⅲ", "III")\
+            .replace("Ⅳ", "IV")\
+            .replace("Ⅴ", "V")\
+            .replace("Ⅵ", "VI")
+        if Name in NameList:
+            continue
+        NameList.append(Name)
 
-HandleRepeatCommissionData(commissionDataList)
+    Length = len(NameList)
+    File.write("static PCHAR CommissionNameList[] = {\n")
+    for i in range(Length):
+        File.write(f"       \"{NameList[i]}\"")
+        if i != Length - 1:
+            File.write(",")
+        File.write("\n")
+    File.write("};\n")
 
-File = open(file="../src/CommissionData.h", mode="w", encoding="utf-8")
-for _ in range(3):
-    File.write("// This file is generated by python script, don\'t edit manually ! ! !\n")
-File.write("#include <windef.h>\n")
-File.write("#include \"Commission.h\"\n")
-File.write("#ifndef COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
-File.write("#define COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
 
-GenerateCommissionIdDefine(File, commissionDataList)
-GenerateCommissionFilterTagIdDefine(File, commissionDataList)
-GenerateCommissionData(File, commissionDataList)
-GengrateCommissionFilterTagList(File, commissionDataList)
+def GenerateCommissionDate(File: TextIO, DataList: List[Commission]):
+    for i in DataList:
+        DropTagList = []
+        if i.Oil.Max:
+            DropTagList.append("DROP_OIL")
+        if i.Coin.Max:
+            DropTagList.append("DROP_COIN")
+        if i.DecorCoin.Max:
+            DropTagList.append("DROP_DECOR_COIN")
+        if i.CognitiveChip.Max:
+            DropTagList.append("DROP_COGNITIVE_CHIP")
+        if i.Book.Max:
+            DropTagList.append("DROP_BOOK")
+        if i.Box.Max:
+            DropTagList.append("DROP_BOX")
+        if i.Cube.Max:
+            DropTagList.append("DROP_CUBE")
+        if i.Drill.Max:
+            DropTagList.append("DROP_DRILL")
+        if i.Gem.Max:
+            DropTagList.append("DROP_GEM")
+        if i.Part.Max:
+            DropTagList.append("DROP_PART")
+        if i.Retrofit.Max:
+            DropTagList.append("DROP_RETROFIT")
+        if i.Ship.Max:
+            DropTagList.append("DROP_SHIP")
+        File.write(f"static COMMISSION {i.Name} = {{\n"
+                   f"       .Type = {i.CommissionType},\n"
+                   f"       .NameId = {i.NameId},\n"
+                   f"       .FilterTag = {i.FilterTag},\n"
+                   f"       .Duration = {i.Duration},\n"
+                   f"       .TimeLimit = {i.TimeLimit},\n"
+                   f"       .DropType = {' | '.join(DropTagList)},\n"
+                   f"       .Normal.Oil.Min = {i.Oil.Min},\n"
+                   f"       .Normal.Oil.Max = {i.Oil.Max},\n"
+                   f"       .Normal.Coin.Min = {i.Coin.Min},\n"
+                   f"       .Normal.Coin.Max = {i.Coin.Max},\n"
+                   f"       .Normal.DecorCoin.Min = {i.DecorCoin.Min},\n"
+                   f"       .Normal.DecorCoin.Max = {i.DecorCoin.Max},\n"
+                   f"       .BigSuccess.CognitiveChip.Min = {i.CognitiveChip.Min},\n"
+                   f"       .BigSuccess.CognitiveChip.Max = {i.CognitiveChip.Max},\n"
+                   f"       .BigSuccess.Book.Min = {i.Book.Min},\n"
+                   f"       .BigSuccess.Book.Max = {i.Book.Max},\n"
+                   f"       .BigSuccess.Box.Min = {i.Box.Min},\n"
+                   f"       .BigSuccess.Box.Max = {i.Box.Max},\n"
+                   f"       .BigSuccess.Cube.Min = {i.Cube.Min},\n"
+                   f"       .BigSuccess.Cube.Max = {i.Cube.Max},\n"
+                   f"       .BigSuccess.Drill.Min = {i.Drill.Min},\n"
+                   f"       .BigSuccess.Drill.Max = {i.Drill.Max},\n"
+                   f"       .BigSuccess.Gem.Min = {i.Gem.Min},\n"
+                   f"       .BigSuccess.Gem.Max = {i.Gem.Max},\n"
+                   f"       .BigSuccess.Part.Min = {i.Part.Min},\n"
+                   f"       .BigSuccess.Part.Max = {i.Part.Max},\n"
+                   f"       .BigSuccess.Retrofit.Min = {i.Retrofit.Min},\n"
+                   f"       .BigSuccess.Retrofit.Max = {i.Retrofit.Max},\n"
+                   f"       .BigSuccess.Ship.Min = {i.Ship.Min},\n"
+                   f"       .BigSuccess.Ship.Max = {i.Ship.Max},\n"
+                   f"}};\n"
+                   )
 
-GenerateCommissionDataList(File, commissionDataList)
-GenerateDailyCommissionIdList(File, commissionDataList)
-GenerateExtraCommissionIdList(File, commissionDataList)
-GenerateNightCommissionIdList(File, commissionDataList)
-GenerateUrgentCommissionIdList(File, commissionDataList)
 
-File.write("#endif //COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
-File.close()
+def GenerateCommissionList(File: TextIO, DataList: List[Commission]):
+    NameList: List[str] = []
+    for i in DataList:
+        NameList.append(i.Name)
+    File.write("static PCOMMISSION CommissionList[] = {\n")
+    for i in range(len(NameList)):
+        File.write(f"       &{NameList[i]}")
+        if i != len(NameList) - 1:
+            File.write(",")
+        File.write("\n")
+    File.write("};\n")
+
+
+def GenerateTargetCommissionList(File: TextIO, DataList: List[Commission], ListName: str, Type: str):
+    TargetList: List[str] = []
+    for i in DataList:
+        if i.CommissionType == Type:
+            TargetList.append(i.Id)
+    File.write(f"static INT {ListName}[] = {{\n")
+    for i in range(len(TargetList)):
+        File.write(f"       {TargetList[i]}")
+        if i != len(TargetList) - 1:
+            File.write(",")
+        File.write("\n")
+    File.write("};\n")
+
+
+def main():
+    CommissionDataList: List[Commission] = []
+
+    with open(file=FILE_PATH / ".." / "data" / "DetailedData.csv", mode="r", encoding="utf-8-sig") as f:
+        DetailedDataStr = f.read()
+        DetailedDataList = DetailedDataStr.split("\n")
+        for i in DetailedDataList[1:]:
+            if i:
+                CommissionDataList.append(Commission(i.split(",")))
+
+    File = open(file=FILE_PATH / ".." / "src" / "CommissionData.h", mode="w", encoding="gbk")
+    for _ in range(3):
+        File.write("// This file is generated by python script, don\'t edit manually ! ! !\n")
+    File.write("#include <windef.h>\n")
+    File.write("#include \"Commission.h\"\n")
+    File.write("#ifndef COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
+    File.write("#define COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
+
+    GenerateCommissionIdDefine(File, CommissionDataList)
+    GenerateFilterTagDefine(File, CommissionDataList)
+    GenerateNameIdDefine(File, CommissionDataList)
+
+    GenerateCommissionDate(File, CommissionDataList)
+    GenerateCommissionList(File, CommissionDataList)
+    GenerateTargetCommissionList(File, CommissionDataList, "DailyCommissionIdList", "DAILY_COMMISSION")
+    GenerateTargetCommissionList(File, CommissionDataList, "MajorCommissionIdList", "MAJOR_COMMISSION")
+    GenerateTargetCommissionList(File, CommissionDataList, "ExtraCommissionIdList", "EXTRA_COMMISSION")
+    GenerateTargetCommissionList(File, CommissionDataList, "NightCommissionIdList", "NIGHT_COMMISSION")
+    GenerateTargetCommissionList(File, CommissionDataList, "UrgentCommissionIdList", "URGENT_COMMISSION")
+    GenerateCommissionNameList(File, CommissionDataList)
+    File.write("#endif //COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
+    File.close()
+
+
+if __name__ == "__main__":
+    main()

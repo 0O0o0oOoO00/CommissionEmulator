@@ -1,0 +1,404 @@
+﻿委托别称,委托类别,中文名,英文名,消耗时间,过期时间,物品名称,样本数,大成功概率,掉落范围,单次掉落,时均掉落
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,Coins,55032,,50~80,66.121,66.121
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,DecorCoin,55032,,2~4,3.097,3.097
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,BookT2,55032,30.54%,0~1,0.061,0.061
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,BookBlueT2,55032,30.54%,0~1,0.02,0.02
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,BookRedT2,55032,30.54%,0~1,0.02,0.02
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,BookYellowT2,55032,30.54%,0~1,0.021,0.021
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,CognitiveChips,55032,,10~18,14.435,14.435
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,Oil,55032,,50~80,65.483,65.483
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,BoxT3,55032,30.54%,0~1,0.061,0.061
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,Cubes,55032,30.54%,0~1,0.06,0.06
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,Drills,55032,30.54%,0~1,0.06,0.06
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,RetrofitT1,55032,30.54%,0~1,0.063,0.063
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,RetrofitBattleshipT1,55032,30.54%,0~1,0.015,0.015
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,RetrofitCarrierT1,55032,30.54%,0~1,0.016,0.016
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,RetrofitCruiserT1,55032,30.54%,0~1,0.016,0.016
+DailyChip-1,daily_chip,高阶战术研发Ⅰ,Awakening Tactical Research Ⅰ,3600,0,RetrofitDestroyerT1,55032,30.54%,0~1,0.016,0.016
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,Coins,58199,,100~170,136.138,68.069
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,DecorCoin,58199,,4~7,5.704,2.852
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,BookT2,58199,30.62%,0~1,0.062,0.031
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,BookBlueT2,58199,30.62%,0~1,0.02,0.01
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,BookRedT2,58199,30.62%,0~1,0.021,0.011
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,BookYellowT2,58199,30.62%,0~1,0.02,0.01
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,CognitiveChips,58199,,24~32,29,14.5
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,Oil,58199,,100~170,137.603,68.801
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,BoxT3,58199,30.62%,0~1,0.061,0.031
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,Cubes,58199,30.62%,0~1,0.06,0.03
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,Drills,58199,30.62%,0~1,0.062,0.031
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,RetrofitT1,58199,30.62%,0~1,0.061,0.03
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,RetrofitBattleshipT1,58199,30.62%,0~1,0.016,0.008
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,RetrofitCarrierT1,58199,30.62%,0~1,0.015,0.008
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,RetrofitCruiserT1,58199,30.62%,0~1,0.015,0.007
+DailyChip-2,daily_chip,高阶战术研发Ⅱ,Awakening Tactical Research Ⅱ,7200,0,RetrofitDestroyerT1,58199,30.62%,0~1,0.015,0.008
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,Coins,25135,,50~80,66.008,66.008
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,DecorCoin,25135,,2~4,3.059,3.059
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,BookT2,25135,33.65%,0~1,0.069,0.069
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,BookBlueT2,25135,33.65%,0~1,0.023,0.023
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,BookRedT2,25135,33.65%,0~1,0.023,0.023
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,BookYellowT2,25135,33.65%,0~1,0.023,0.023
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,Oil,25135,,50~80,66.009,66.009
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,BoxT3,25135,33.65%,0~1,0.068,0.068
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,Cubes,25135,33.65%,0~1,0.067,0.067
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,Drills,25135,33.65%,0~1,0.066,0.066
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,RetrofitT1,25135,33.65%,0~1,0.066,0.066
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,RetrofitBattleshipT1,25135,33.65%,0~1,0.018,0.018
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,RetrofitCarrierT1,25135,33.65%,0~1,0.017,0.017
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,RetrofitCruiserT1,25135,33.65%,0~1,0.016,0.016
+DailyResource-1,daily_resource,日常资源开发Ⅰ,Daily Resource Extraction Ⅰ,3600,0,RetrofitDestroyerT1,25135,33.65%,0~1,0.016,0.016
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,Coins,41418,,60~90,76.73,76.73
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,DecorCoin,41418,,2~4,3.078,3.078
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,BookT2,41418,31.89%,0~1,0.064,0.064
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,BookBlueT2,41418,31.89%,0~1,0.02,0.02
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,BookRedT2,41418,31.89%,0~1,0.022,0.022
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,BookYellowT2,41418,31.89%,0~1,0.021,0.021
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,Oil,41418,,60~90,76.852,76.852
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,BoxT3,41418,31.89%,0~1,0.064,0.064
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,Cubes,41418,31.89%,0~1,0.061,0.061
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,Drills,41418,31.89%,0~1,0.064,0.064
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,RetrofitT1,41418,31.89%,0~1,0.066,0.066
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,RetrofitBattleshipT1,41418,31.89%,0~1,0.015,0.015
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,RetrofitCarrierT1,41418,31.89%,0~1,0.017,0.017
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,RetrofitCruiserT1,41418,31.89%,0~1,0.016,0.016
+DailyResource-1,daily_resource,日常资源开发Ⅲ,Daily Resource Extraction Ⅲ,3600,0,RetrofitDestroyerT1,41418,31.89%,0~1,0.017,0.017
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,Coins,65107,,70~100,88.485,88.485
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,DecorCoin,65107,,2~4,3.127,3.127
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,BookT2,65107,31.09%,0~1,0.062,0.062
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,BookBlueT2,65107,31.09%,0~1,0.02,0.02
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,BookRedT2,65107,31.09%,0~1,0.02,0.02
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,BookYellowT2,65107,31.09%,0~1,0.022,0.022
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,Oil,65107,,60~100,88.46,88.46
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,BoxT3,65107,31.09%,0~1,0.062,0.062
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,Cubes,65107,31.09%,0~1,0.06,0.06
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,Drills,65107,31.09%,0~1,0.064,0.064
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,RetrofitT1,65107,31.09%,0~1,0.063,0.063
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,RetrofitBattleshipT1,65107,31.09%,0~1,0.016,0.016
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,RetrofitCarrierT1,65107,31.09%,0~1,0.015,0.015
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,RetrofitCruiserT1,65107,31.09%,0~1,0.017,0.017
+DailyResource-1,daily_resource,日常资源开发Ⅴ,Daily Resource Extraction Ⅴ,3600,0,RetrofitDestroyerT1,65107,31.09%,0~1,0.015,0.015
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,Coins,27288,,100~170,137.492,68.746
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,DecorCoin,27288,,4~7,5.614,2.807
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,BookT2,27288,32.71%,0~1,0.065,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,BookBlueT2,27288,32.71%,0~1,0.022,0.011
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,BookRedT2,27288,32.71%,0~1,0.021,0.011
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,BookYellowT2,27288,32.71%,0~1,0.021,0.011
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,Oil,27288,,100~170,137.343,68.671
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,BoxT3,27288,32.71%,0~1,0.065,0.033
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,Cubes,27288,32.71%,0~1,0.065,0.033
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,Drills,27288,32.71%,0~1,0.067,0.033
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,RetrofitT1,27288,32.71%,0~1,0.065,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,RetrofitBattleshipT1,27288,32.71%,0~1,0.017,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,RetrofitCarrierT1,27288,32.71%,0~1,0.017,0.009
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,RetrofitCruiserT1,27288,32.71%,0~1,0.015,0.007
+DailyResource-2,daily_resource,日常资源开发Ⅱ,Daily Resource Extraction Ⅱ,7200,0,RetrofitDestroyerT1,27288,32.71%,0~1,0.016,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,Coins,39374,,120~200,164.631,82.315
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,DecorCoin,39374,,4~7,5.647,2.824
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,BookT2,39374,32.10%,0~1,0.064,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,BookBlueT2,39374,32.10%,0~1,0.021,0.01
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,BookRedT2,39374,32.10%,0~1,0.021,0.01
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,BookYellowT2,39374,32.10%,0~1,0.022,0.011
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,Oil,39374,,120~200,164.417,82.209
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,BoxT3,39374,32.10%,0~1,0.067,0.033
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,Cubes,39374,32.10%,0~1,0.065,0.033
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,Drills,39374,32.10%,0~1,0.062,0.031
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,RetrofitT1,39374,32.10%,0~1,0.064,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,RetrofitBattleshipT1,39374,32.10%,0~1,0.015,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,RetrofitCarrierT1,39374,32.10%,0~1,0.016,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,RetrofitCruiserT1,39374,32.10%,0~1,0.017,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅳ,Daily Resource Extraction Ⅳ,7200,0,RetrofitDestroyerT1,39374,32.10%,0~1,0.016,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,Coins,61537,,140~220,188.436,94.218
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,DecorCoin,61537,,4~7,5.753,2.876
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,BookT2,61537,31.26%,0~1,0.064,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,BookBlueT2,61537,31.26%,0~1,0.021,0.01
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,BookRedT2,61537,31.26%,0~1,0.021,0.011
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,BookYellowT2,61537,31.26%,0~1,0.021,0.011
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,Oil,61537,,140~220,188.481,94.241
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,BoxT3,61537,31.26%,0~1,0.061,0.031
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,Cubes,61537,31.26%,0~1,0.063,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,Drills,61537,31.26%,0~1,0.063,0.032
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,RetrofitT1,61537,31.26%,0~1,0.061,0.031
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,RetrofitBattleshipT1,61537,31.26%,0~1,0.016,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,RetrofitCarrierT1,61537,31.26%,0~1,0.015,0.007
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,RetrofitCruiserT1,61537,31.26%,0~1,0.015,0.008
+DailyResource-2,daily_resource,日常资源开发Ⅵ,Daily Resource Extraction Ⅵ,7200,0,RetrofitDestroyerT1,61537,31.26%,0~1,0.016,0.008
+ExtraBook-5,extra_book,小型商船护卫,Small Merchant Escort,18000,0,Coins,5825,,210~449,269.337,53.867
+ExtraBook-5,extra_book,小型商船护卫,Small Merchant Escort,18000,0,DecorCoin,5825,,6~10,7.533,1.507
+ExtraBook-5,extra_book,小型商船护卫,Small Merchant Escort,18000,0,BookT2,5825,31.55%,1~1,0.316,0.063
+ExtraBook-5,extra_book,小型商船护卫,Small Merchant Escort,18000,0,BookBlueT2,5825,31.55%,0~1,0.101,0.02
+ExtraBook-5,extra_book,小型商船护卫,Small Merchant Escort,18000,0,BookRedT2,5825,31.55%,0~1,0.105,0.021
+ExtraBook-5,extra_book,小型商船护卫,Small Merchant Escort,18000,0,BookYellowT2,5825,31.55%,0~1,0.109,0.022
+ExtraBook-6,extra_book,中型商船护卫,Medium Merchant Escort,21600,0,Coins,7590,,260~550,340.699,56.783
+ExtraBook-6,extra_book,中型商船护卫,Medium Merchant Escort,21600,0,DecorCoin,7590,,7~13,8.584,1.431
+ExtraBook-6,extra_book,中型商船护卫,Medium Merchant Escort,21600,0,BookT2,7590,30.58%,1~1,0.306,0.051
+ExtraBook-6,extra_book,中型商船护卫,Medium Merchant Escort,21600,0,BookBlueT2,7590,30.58%,0~1,0.102,0.017
+ExtraBook-6,extra_book,中型商船护卫,Medium Merchant Escort,21600,0,BookRedT2,7590,30.58%,0~1,0.101,0.017
+ExtraBook-6,extra_book,中型商船护卫,Medium Merchant Escort,21600,0,BookYellowT2,7590,30.58%,0~1,0.103,0.017
+ExtraBook-8,extra_book,大型商船护卫,Large Merchant Escort,28800,0,Coins,9347,,350~660,489.341,61.168
+ExtraBook-8,extra_book,大型商船护卫,Large Merchant Escort,28800,0,DecorCoin,9347,,12~16,14.027,1.753
+ExtraBook-8,extra_book,大型商船护卫,Large Merchant Escort,28800,0,BookT3,9347,30.43%,1~1,0.304,0.038
+ExtraBook-8,extra_book,大型商船护卫,Large Merchant Escort,28800,0,BookBlueT3,9347,30.43%,0~1,0.099,0.012
+ExtraBook-8,extra_book,大型商船护卫,Large Merchant Escort,28800,0,BookRedT3,9347,30.43%,0~1,0.105,0.013
+ExtraBook-8,extra_book,大型商船护卫,Large Merchant Escort,28800,0,BookYellowT3,9347,30.43%,0~1,0.1,0.013
+ExtraCube-0:30,extra_cube,舰队护卫演习,Fleet Escort Exercise,1800,0,Cubes,8376,39.45%,1~1,0.394,0.789
+ExtraCube-1:30,extra_cube,舰队运输演习,Fleet Cargo Transport,5400,0,Cubes,11732,31.03%,1~1,0.31,0.207
+ExtraCube-3,extra_cube,舰队实战演习,Fleet Combat Exercise,10800,0,Cubes,17248,30.39%,2~2,0.608,0.203
+ExtraCube-4,extra_cube,舰队初阶演习,Fleet Exercise Ⅰ,14400,0,Cubes,10214,33.87%,1~1,0.339,0.085
+ExtraCube-5,extra_cube,舰队中阶演习,Fleet Exercise Ⅱ,18000,0,Cubes,14552,30.61%,1~1,0.306,0.061
+ExtraCube-8,extra_cube,舰队高阶演习,Fleet Exercise Ⅲ,28800,0,Cubes,17264,30.02%,2~2,0.602,0.075
+ExtraDrill-0:20,extra_drill,短距离航行训练,Short-range Sailing Training,1200,0,Coins,8654,,12~28,19.962,59.887
+ExtraDrill-0:20,extra_drill,短距离航行训练,Short-range Sailing Training,1200,0,CognitiveChips,8654,,0~2,0.998,2.993
+ExtraDrill-0:20,extra_drill,短距离航行训练,Short-range Sailing Training,1200,0,Drills,8654,39.47%,1~1,0.395,1.184
+ExtraDrill-1,extra_drill,中距离航行训练,Mid-range Sailing Training,3600,0,Coins,12280,,45~75,60.031,60.031
+ExtraDrill-1,extra_drill,中距离航行训练,Mid-range Sailing Training,3600,0,CognitiveChips,12280,,2~9,2.996,2.996
+ExtraDrill-1,extra_drill,中距离航行训练,Mid-range Sailing Training,3600,0,Drills,12280,31.67%,1~1,0.317,0.317
+ExtraDrill-2,extra_drill,远距离航行训练,Long-range Sailing Training,7200,0,Coins,19272,,90~150,119.978,59.989
+ExtraDrill-2,extra_drill,远距离航行训练,Long-range Sailing Training,7200,0,CognitiveChips,19272,,1~10,6.997,3.498
+ExtraDrill-2,extra_drill,远距离航行训练,Long-range Sailing Training,7200,0,Drills,19272,30.56%,2~2,0.611,0.306
+ExtraDrill-2:40,extra_drill,近海防卫巡逻,Coastal Defense Patrol,9600,0,CognitiveChips,7404,,1~9,5.972,2.24
+ExtraDrill-2:40,extra_drill,近海防卫巡逻,Coastal Defense Patrol,9600,0,Oil,7404,,12~28,20.057,7.521
+ExtraDrill-2:40,extra_drill,近海防卫巡逻,Coastal Defense Patrol,9600,0,Drills,7404,33.68%,1~1,0.337,0.126
+ExtraDrill-3:20,extra_drill,海域浮标检查作业,Buoy Inspection,12000,0,CognitiveChips,11285,,8~14,11.016,3.305
+ExtraDrill-3:20,extra_drill,海域浮标检查作业,Buoy Inspection,12000,0,Oil,11285,,15~35,25.046,7.514
+ExtraDrill-3:20,extra_drill,海域浮标检查作业,Buoy Inspection,12000,0,Drills,11285,31.65%,1~1,0.317,0.095
+ExtraDrill-5:20,extra_drill,前沿基地防卫巡逻,Frontier Defense Patrol,19200,0,CognitiveChips,16743,,8~27,17.983,3.372
+ExtraDrill-5:20,extra_drill,前沿基地防卫巡逻,Frontier Defense Patrol,19200,0,Oil,16743,,25~55,39.986,7.497
+ExtraDrill-5:20,extra_drill,前沿基地防卫巡逻,Frontier Defense Patrol,19200,0,Drills,16743,29.74%,2~2,0.595,0.112
+ExtraOil-1,extra_oil,小型油田开发Ⅰ,Small-scale Oil Extraction Ⅰ,3600,0,DecorCoin,7826,,0~1,0.5,0.5
+ExtraOil-1,extra_oil,小型油田开发Ⅰ,Small-scale Oil Extraction Ⅰ,3600,0,Oil,7826,,15~30,21.86,21.86
+ExtraOil-1,extra_oil,小型油田开发Ⅱ,Small-scale Oil Extraction Ⅱ,3600,0,DecorCoin,11493,,0~2,0.998,0.998
+ExtraOil-1,extra_oil,小型油田开发Ⅱ,Small-scale Oil Extraction Ⅱ,3600,0,Oil,11493,,20~40,28.979,28.979
+ExtraOil-1,extra_oil,小型油田开发Ⅲ,Small-scale Oil Extraction Ⅲ,3600,0,DecorCoin,18558,,1~2,1.499,1.499
+ExtraOil-1,extra_oil,小型油田开发Ⅲ,Small-scale Oil Extraction Ⅲ,3600,0,Oil,18558,,25~50,35.937,35.937
+ExtraOil-4,extra_oil,中型油田开发Ⅰ,Mid-scale Oil Extraction Ⅰ,14400,0,DecorCoin,6818,,3~5,3.989,0.997
+ExtraOil-4,extra_oil,中型油田开发Ⅰ,Mid-scale Oil Extraction Ⅰ,14400,0,Oil,6818,,80~140,106.916,26.729
+ExtraOil-4,extra_oil,中型油田开发Ⅱ,Mid-scale Oil Extraction Ⅱ,14400,0,DecorCoin,10016,,4~9,5.515,1.379
+ExtraOil-4,extra_oil,中型油田开发Ⅱ,Mid-scale Oil Extraction Ⅱ,14400,0,Oil,10016,,100~180,135.619,33.905
+ExtraOil-4,extra_oil,中型油田开发Ⅲ,Mid-scale Oil Extraction Ⅲ,14400,0,DecorCoin,15757,,5~9,7.015,1.754
+ExtraOil-4,extra_oil,中型油田开发Ⅲ,Mid-scale Oil Extraction Ⅲ,14400,0,Oil,15757,,120~220,164.285,41.071
+ExtraOil-8,extra_oil,大型油田开发Ⅰ,Large-scale Oil Extraction Ⅰ,28800,0,DecorCoin,9999,,8~10,9.084,1.135
+ExtraOil-8,extra_oil,大型油田开发Ⅰ,Large-scale Oil Extraction Ⅰ,28800,0,Oil,9999,,150~300,218.888,27.361
+ExtraOil-8,extra_oil,大型油田开发Ⅱ,Large-scale Oil Extraction Ⅱ,28800,0,DecorCoin,14861,,10~14,11.683,1.46
+ExtraOil-8,extra_oil,大型油田开发Ⅱ,Large-scale Oil Extraction Ⅱ,28800,0,Oil,14861,,200~400,294.021,36.753
+ExtraOil-8,extra_oil,大型油田开发Ⅲ,Large-scale Oil Extraction Ⅲ,28800,0,DecorCoin,21999,,12~16,14.438,1.805
+ExtraOil-8,extra_oil,大型油田开发Ⅲ,Large-scale Oil Extraction Ⅲ,28800,0,Oil,21999,,250~500,372.711,46.589
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,Coins,7843,,20~40,28.865,57.731
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,DecorCoin,7843,,0~1,0.5,1
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,PlateT1,7843,33.74%,3~3,1.012,2.024
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,PlateAntiAirT1,7843,33.74%,0~3,0.203,0.406
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,PlateGeneralT1,7843,33.74%,0~3,0.198,0.395
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,PlatePlaneT1,7843,33.74%,0~3,0.206,0.413
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,PlateTorpedoT1,7843,33.74%,0~3,0.208,0.416
+ExtraPart-0:30,extra_part,初级林木护卫委托,Forest Protection Commission Ⅰ,1800,0,PlateGunT1,7843,33.74%,0~3,0.197,0.394
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,Coins,7956,,20~40,28.983,57.966
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,DecorCoin,7956,,0~1,0.5,1
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,PlateT1,7956,33.70%,3~3,1.011,2.022
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,PlateAntiAirT1,7956,33.70%,0~3,0.217,0.435
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,PlateGeneralT1,7956,33.70%,0~3,0.197,0.395
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,PlatePlaneT1,7956,33.70%,0~3,0.187,0.374
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,PlateTorpedoT1,7956,33.70%,0~3,0.207,0.414
+ExtraPart-0:30,extra_part,初级矿脉护卫委托,Vein Protection Commission Ⅰ,1800,0,PlateGunT1,7956,33.70%,0~3,0.202,0.404
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,Coins,11154,,40~85,60.098,60.098
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,DecorCoin,11154,,1~2,1.501,1.501
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,PlateT2,11154,30.84%,3~3,0.925,0.925
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,PlateAntiAirT2,11154,30.84%,0~3,0.18,0.18
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,PlatePlaneT2,11154,30.84%,0~3,0.196,0.196
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,PlateGeneralT2,11154,30.84%,0~3,0.188,0.188
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,PlateGunT2,11154,30.84%,0~3,0.184,0.184
+ExtraPart-1,extra_part,中级林木护卫委托,Forest Protection Commission Ⅱ,3600,0,PlateTorpedoT2,11154,30.84%,0~3,0.177,0.177
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,Coins,11487,,40~85,60.49,60.49
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,DecorCoin,11487,,1~2,1.5,1.5
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,PlateT2,11487,31.91%,3~3,0.957,0.957
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,PlateAntiAirT2,11487,31.91%,0~3,0.194,0.194
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,PlatePlaneT2,11487,31.91%,0~3,0.191,0.191
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,PlateGeneralT2,11487,31.91%,0~3,0.187,0.187
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,PlateGunT2,11487,31.91%,0~3,0.194,0.194
+ExtraPart-1,extra_part,中级矿脉护卫委托,Vein Protection Commission Ⅱ,3600,0,PlateTorpedoT2,11487,31.91%,0~3,0.191,0.191
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,Coins,17371,,70~190,123.285,82.19
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,DecorCoin,17371,,2~3,2.501,1.667
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,PlateT3,17371,30.78%,3~3,0.923,0.616
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,PlateAntiAirT3,17371,30.78%,0~3,0.188,0.125
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,PlateGeneralT3,17371,30.78%,0~3,0.185,0.123
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,PlateGunT3,17371,30.78%,0~3,0.181,0.121
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,PlatePlaneT3,17371,30.78%,0~3,0.185,0.123
+ExtraPart-1:30,extra_part,高级林木护卫委托,Forest Protection Commission Ⅲ,5400,0,PlateTorpedoT3,17371,30.78%,0~3,0.184,0.123
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,Coins,17487,,70~190,123.374,82.249
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,DecorCoin,17487,,2~3,2.506,1.67
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,PlateT3,17487,31.58%,3~3,0.948,0.632
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,PlateAntiAirT3,17487,31.58%,0~3,0.187,0.125
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,PlateGeneralT3,17487,31.58%,0~3,0.196,0.131
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,PlateGunT3,17487,31.58%,0~3,0.188,0.126
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,PlatePlaneT3,17487,31.58%,0~3,0.193,0.129
+ExtraPart-1:30,extra_part,高级矿脉护卫委托,Vein Protection Commission Ⅲ,5400,0,PlateTorpedoT3,17487,31.58%,0~3,0.183,0.122
+Major-10,major_comm,高阶货物运输,Cargo Transport Ⅲ,36000,0,Coins,272,,4502~5990,5143.982,514.398
+Major-10,major_comm,高阶货物运输,Cargo Transport Ⅲ,36000,0,BoxT4,272,,1~1,1,0.1
+Major-10,major_comm,高阶对抗演习,Defense Exercise Ⅲ,36000,0,Coins,829,,4501~5999,5139.35,513.935
+Major-10,major_comm,高阶对抗演习,Defense Exercise Ⅲ,36000,0,Cubes,829,,5~8,5.466,0.547
+Major-10,major_comm,高阶科研任务,Research Mission Ⅲ,36000,0,Coins,1363,,4500~5999,5120.228,512.023
+Major-10,major_comm,高阶科研任务,Research Mission Ⅲ,36000,0,RetrofitT2,1363,,2~2,2,0.2
+Major-10,major_comm,高阶科研任务,Research Mission Ⅲ,36000,0,RetrofitBattleshipT2,1363,,0~2,0.495,0.05
+Major-10,major_comm,高阶科研任务,Research Mission Ⅲ,36000,0,RetrofitCarrierT2,1363,,0~2,0.498,0.05
+Major-10,major_comm,高阶科研任务,Research Mission Ⅲ,36000,0,RetrofitCruiserT2,1363,,0~2,0.503,0.05
+Major-10,major_comm,高阶科研任务,Research Mission Ⅲ,36000,0,RetrofitDestroyerT2,1363,,0~2,0.504,0.05
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,Coins,1923,,4500~5998,5112.854,511.285
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,PlateT3,1923,,1~16,5.994,0.599
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,PlateAntiAirT3,1923,,0~15,1.197,0.12
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,PlateGeneralT3,1923,,0~15,1.209,0.121
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,PlateGunT3,1923,,0~16,1.193,0.119
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,PlatePlaneT3,1923,,0~13,1.198,0.12
+Major-10,major_comm,高阶自主训练,Self Training Ⅲ,36000,0,PlateTorpedoT3,1923,,0~15,1.197,0.12
+Major-10,major_comm,高阶战术课程,Tactical Class Ⅲ,36000,0,Coins,1180,,4500~5997,5106.314,510.631
+Major-10,major_comm,高阶战术课程,Tactical Class Ⅲ,36000,0,BookT3,1180,,1~2,1.515,0.152
+Major-10,major_comm,高阶战术课程,Tactical Class Ⅲ,36000,0,BookBlueT3,1180,,0~2,0.486,0.049
+Major-10,major_comm,高阶战术课程,Tactical Class Ⅲ,36000,0,BookRedT3,1180,,0~2,0.509,0.051
+Major-10,major_comm,高阶战术课程,Tactical Class Ⅲ,36000,0,BookYellowT3,1180,,0~2,0.521,0.052
+Major-10,major_comm,高阶工具整备,Tool Prep Ⅲ,36000,0,Coins,274,,4503~5999,5145.326,514.533
+Major-10,major_comm,高阶工具整备,Tool Prep Ⅲ,36000,0,Drills,274,,3~5,3.527,0.353
+NightBook-5,night_book,小型商船护卫,Small Merchant Escort N,18000,0,Coins,811,,260~445,307.737,61.547
+NightBook-5,night_book,小型商船护卫,Small Merchant Escort N,18000,0,DecorCoin,811,,6~10,7.65,1.53
+NightBook-5,night_book,小型商船护卫,Small Merchant Escort N,18000,0,BookT2,811,31.69%,1~1,0.318,0.064
+NightBook-5,night_book,小型商船护卫,Small Merchant Escort N,18000,0,BookBlueT2,811,31.69%,0~1,0.106,0.021
+NightBook-5,night_book,小型商船护卫,Small Merchant Escort N,18000,0,BookRedT2,811,31.69%,0~1,0.096,0.019
+NightBook-5,night_book,小型商船护卫,Small Merchant Escort N,18000,0,BookYellowT2,811,31.69%,0~1,0.116,0.023
+NightBook-6,night_book,中型商船护卫,Medium Merchant Escort N,21600,0,Coins,1580,,300~550,378.006,63.001
+NightBook-6,night_book,中型商船护卫,Medium Merchant Escort N,21600,0,DecorCoin,1580,,7~13,9.006,1.501
+NightBook-6,night_book,中型商船护卫,Medium Merchant Escort N,21600,0,BookT2,1580,27.78%,1~1,0.278,0.046
+NightBook-6,night_book,中型商船护卫,Medium Merchant Escort N,21600,0,BookBlueT2,1580,27.78%,0~1,0.09,0.015
+NightBook-6,night_book,中型商船护卫,Medium Merchant Escort N,21600,0,BookRedT2,1580,27.78%,0~1,0.088,0.015
+NightBook-6,night_book,中型商船护卫,Medium Merchant Escort N,21600,0,BookYellowT2,1580,27.78%,0~1,0.1,0.017
+NightBook-8,night_book,大型商船护卫,Large Merchant Escort N,28800,0,Coins,4656,,350~660,492.327,61.541
+NightBook-8,night_book,大型商船护卫,Large Merchant Escort N,28800,0,DecorCoin,4656,,12~16,14.235,1.779
+NightBook-8,night_book,大型商船护卫,Large Merchant Escort N,28800,0,BookT3,4656,29.88%,1~1,0.3,0.037
+NightBook-8,night_book,大型商船护卫,Large Merchant Escort N,28800,0,BookBlueT3,4656,29.88%,0~1,0.102,0.013
+NightBook-8,night_book,大型商船护卫,Large Merchant Escort N,28800,0,BookRedT3,4656,29.88%,0~1,0.097,0.012
+NightBook-8,night_book,大型商船护卫,Large Merchant Escort N,28800,0,BookYellowT3,4656,29.88%,0~1,0.101,0.013
+NightDrill-2:40,night_drill,近海防卫巡逻,Coastal Defense Patrol N,9600,0,CognitiveChips,5228,,8~24,20.998,7.874
+NightDrill-2:40,night_drill,近海防卫巡逻,Coastal Defense Patrol N,9600,0,Oil,5228,,65~105,85.08,31.905
+NightDrill-2:40,night_drill,近海防卫巡逻,Coastal Defense Patrol N,9600,0,Drills,5228,34.05%,1~1,0.34,0.128
+NightDrill-3:20,night_drill,海域浮标检查作业,Buoy Inspection N,12000,0,CognitiveChips,7528,,8~28,23.995,7.199
+NightDrill-3:20,night_drill,海域浮标检查作业,Buoy Inspection N,12000,0,Oil,7528,,100~160,129.752,38.926
+NightDrill-3:20,night_drill,海域浮标检查作业,Buoy Inspection N,12000,0,Drills,7528,30.87%,1~1,0.309,0.093
+NightDrill-5:20,night_drill,前沿基地防卫巡逻,Frontier Defense Patrol N,19200,0,CognitiveChips,15638,,20~32,26.982,5.059
+NightDrill-5:20,night_drill,前沿基地防卫巡逻,Frontier Defense Patrol N,19200,0,Oil,15638,,150~230,189.896,35.606
+NightDrill-5:20,night_drill,前沿基地防卫巡逻,Frontier Defense Patrol N,19200,0,Drills,15638,29.93%,2~2,0.599,0.112
+UrgentBook-0:30,urgent_book,支援土豪尔岛,Aiding Tyrant's Island,1800,7200,Coins,2593,,50~80,63.869,127.738
+UrgentBook-0:30,urgent_book,支援土豪尔岛,Aiding Tyrant's Island,1800,7200,DecorCoin,2593,,1~2,1.509,3.018
+UrgentBook-0:30,urgent_book,支援土豪尔岛,Aiding Tyrant's Island,1800,7200,BookT2,2593,31.35%,2~2,0.627,1.254
+UrgentBook-0:30,urgent_book,支援土豪尔岛,Aiding Tyrant's Island,1800,7200,BookBlueT2,2593,31.35%,0~2,0.228,0.455
+UrgentBook-0:30,urgent_book,支援土豪尔岛,Aiding Tyrant's Island,1800,7200,BookRedT2,2593,31.35%,0~2,0.19,0.381
+UrgentBook-0:30,urgent_book,支援土豪尔岛,Aiding Tyrant's Island,1800,7200,BookYellowT2,2593,31.35%,0~2,0.209,0.418
+UrgentBook-1,urgent_book,支援姆波罗岛,Aiding Poro,3600,7200,Coins,1374,,100~170,133.566,133.566
+UrgentBook-1,urgent_book,支援姆波罗岛,Aiding Poro,3600,7200,DecorCoin,1374,,2~4,2.996,2.996
+UrgentBook-1,urgent_book,支援姆波罗岛,Aiding Poro,3600,7200,BookT2,1374,28.97%,2~2,0.579,0.579
+UrgentBook-1,urgent_book,支援姆波罗岛,Aiding Poro,3600,7200,BookBlueT2,1374,28.97%,0~2,0.199,0.199
+UrgentBook-1,urgent_book,支援姆波罗岛,Aiding Poro,3600,7200,BookRedT2,1374,28.97%,0~2,0.195,0.195
+UrgentBook-1,urgent_book,支援姆波罗岛,Aiding Poro,3600,7200,BookYellowT2,1374,28.97%,0~2,0.186,0.186
+UrgentBook-1:20,urgent_book,支援马拉基岛,Aiding Makira,4800,18000,Coins,6076,,130~240,180.208,135.156
+UrgentBook-1:20,urgent_book,支援马拉基岛,Aiding Makira,4800,18000,DecorCoin,6076,,3~5,3.992,2.994
+UrgentBook-1:20,urgent_book,支援马拉基岛,Aiding Makira,4800,18000,BookT2,6076,31.60%,2~2,0.632,0.474
+UrgentBook-1:20,urgent_book,支援马拉基岛,Aiding Makira,4800,18000,BookBlueT2,6076,31.60%,0~2,0.206,0.155
+UrgentBook-1:20,urgent_book,支援马拉基岛,Aiding Makira,4800,18000,BookRedT2,6076,31.60%,0~2,0.219,0.164
+UrgentBook-1:20,urgent_book,支援马拉基岛,Aiding Makira,4800,18000,BookYellowT2,6076,31.60%,0~2,0.207,0.155
+UrgentBook-1:40,urgent_book,支援卡波罗岛,Aiding Kapolo,6000,18000,Coins,3038,,160~300,223.831,134.298
+UrgentBook-1:40,urgent_book,支援卡波罗岛,Aiding Kapolo,6000,18000,DecorCoin,3038,,4~7,5.514,3.308
+UrgentBook-1:40,urgent_book,支援卡波罗岛,Aiding Kapolo,6000,18000,BookT2,3038,32.13%,2~2,0.643,0.386
+UrgentBook-1:40,urgent_book,支援卡波罗岛,Aiding Kapolo,6000,18000,BookBlueT2,3038,32.13%,0~2,0.219,0.131
+UrgentBook-1:40,urgent_book,支援卡波罗岛,Aiding Kapolo,6000,18000,BookRedT2,3038,32.13%,0~2,0.207,0.124
+UrgentBook-1:40,urgent_book,支援卡波罗岛,Aiding Kapolo,6000,18000,BookYellowT2,3038,32.13%,0~2,0.216,0.13
+UrgentBook-2,urgent_book,支援玛丽岛,Aiding St. Mary's Island,7200,36000,Coins,4414,,190~300,241.508,120.754
+UrgentBook-2,urgent_book,支援玛丽岛,Aiding St. Mary's Island,7200,36000,DecorCoin,4414,,5~8,6.506,3.253
+UrgentBook-2,urgent_book,支援玛丽岛,Aiding St. Mary's Island,7200,36000,BookT3,4414,30.52%,2~2,0.61,0.305
+UrgentBook-2,urgent_book,支援玛丽岛,Aiding St. Mary's Island,7200,36000,BookBlueT3,4414,30.52%,0~2,0.204,0.102
+UrgentBook-2,urgent_book,支援玛丽岛,Aiding St. Mary's Island,7200,36000,BookRedT3,4414,30.52%,0~2,0.212,0.106
+UrgentBook-2,urgent_book,支援玛丽岛,Aiding St. Mary's Island,7200,36000,BookYellowT3,4414,30.52%,0~2,0.194,0.097
+UrgentBook-2:30,urgent_book,支援特林岛,Aiding Kotlin Island,9000,36000,Coins,2120,,240~450,336.928,134.771
+UrgentBook-2:30,urgent_book,支援特林岛,Aiding Kotlin Island,9000,36000,DecorCoin,2120,,6~9,7.509,3.004
+UrgentBook-2:30,urgent_book,支援特林岛,Aiding Kotlin Island,9000,36000,BookT3,2120,30.28%,2~2,0.606,0.242
+UrgentBook-2:30,urgent_book,支援特林岛,Aiding Kotlin Island,9000,36000,BookBlueT3,2120,30.28%,0~2,0.222,0.089
+UrgentBook-2:30,urgent_book,支援特林岛,Aiding Kotlin Island,9000,36000,BookRedT3,2120,30.28%,0~2,0.188,0.075
+UrgentBook-2:30,urgent_book,支援特林岛,Aiding Kotlin Island,9000,36000,BookYellowT3,2120,30.28%,0~2,0.195,0.078
+UrgentBox-1,urgent_box,BIW装备运输,BIW Gear Transport,3600,19200,DecorCoin,18706,,2~4,2.999,2.999
+UrgentBox-1,urgent_box,BIW装备运输,BIW Gear Transport,3600,19200,Oil,18706,,50~80,63.809,63.809
+UrgentBox-1,urgent_box,BIW装备运输,BIW Gear Transport,3600,19200,BoxT2,18706,32.03%,1~1,0.32,0.32
+UrgentBox-1,urgent_box,NYB装备运输,NYB Gear Transport,3600,19200,DecorCoin,18454,,2~4,2.998,2.998
+UrgentBox-1,urgent_box,NYB装备运输,NYB Gear Transport,3600,19200,Oil,18454,,50~80,63.818,63.818
+UrgentBox-1,urgent_box,NYB装备运输,NYB Gear Transport,3600,19200,BoxT2,18454,31.52%,1~1,0.315,0.315
+UrgentBox-3,urgent_box,BIW物资交接,BIW Handover,10800,40800,DecorCoin,10629,,7~10,8.504,2.835
+UrgentBox-3,urgent_box,BIW物资交接,BIW Handover,10800,40800,Oil,10629,,160~260,206.055,68.685
+UrgentBox-3,urgent_box,BIW物资交接,BIW Handover,10800,40800,BoxT3,10629,31.15%,1~1,0.312,0.104
+UrgentBox-3,urgent_box,NYB物资交接,NYB Handover,10800,40800,DecorCoin,10360,,7~10,8.499,2.833
+UrgentBox-3,urgent_box,NYB物资交接,NYB Handover,10800,40800,Oil,10360,,160~260,206.12,68.707
+UrgentBox-3,urgent_box,NYB物资交接,NYB Handover,10800,40800,BoxT3,10360,31.71%,1~1,0.317,0.106
+UrgentBox-6,urgent_box,BIW装备研发,BIW Gear Research,21600,24000,DecorCoin,5270,,15~20,17.505,2.917
+UrgentBox-6,urgent_box,BIW装备研发,BIW Gear Research,21600,24000,Oil,5270,,360~540,444.379,74.063
+UrgentBox-6,urgent_box,BIW装备研发,BIW Gear Research,21600,24000,BoxT4,5270,30.32%,1~1,0.303,0.051
+UrgentBox-6,urgent_box,NYB装备研发,NYB Gear Research,21600,24000,DecorCoin,5216,,15~20,17.45,2.908
+UrgentBox-6,urgent_box,NYB装备研发,NYB Gear Research,21600,24000,Oil,5216,,360~540,444.328,74.055
+UrgentBox-6,urgent_box,NYB装备研发,NYB Gear Research,21600,24000,BoxT4,5216,30.27%,1~1,0.303,0.05
+UrgentCube-1:30,urgent_cube,解救商船Ⅰ,Merchant Rescue Ⅰ,5400,10800,Cubes,18643,31.68%,2~2,0.634,0.422
+UrgentCube-1:45,urgent_cube,敌袭Ⅰ,Enemy Attack Ⅰ,6300,8400,Cubes,9325,31.45%,2~2,0.629,0.359
+UrgentCube-2:15,urgent_cube,解救商船Ⅱ,Merchant Rescue Ⅱ,8100,12000,Cubes,782,30.82%,2~3,0.618,0.275
+UrgentCube-3,urgent_cube,敌袭Ⅱ,Enemy Attack Ⅱ,10800,40800,Cubes,5995,30.39%,3~4,0.912,0.304
+UrgentCube-4,urgent_cube,解救商船Ⅲ,Merchant Rescue Ⅲ,14400,62400,Cubes,12068,30.78%,2~3,0.696,0.174
+UrgentCube-6,urgent_cube,敌袭Ⅲ,Enemy Attack Ⅲ,21600,62400,Cubes,1537,30.84%,4~4,1.234,0.206
+UrgentDrill-1,urgent_drill,保卫运输部队Ⅰ,Cargo Defense Ⅰ,3600,10800,Coins,2342,,50~80,64.832,64.832
+UrgentDrill-1,urgent_drill,保卫运输部队Ⅰ,Cargo Defense Ⅰ,3600,10800,Oil,2342,,20~50,34.583,34.583
+UrgentDrill-1,urgent_drill,保卫运输部队Ⅰ,Cargo Defense Ⅰ,3600,10800,Drills,2342,31.13%,2~2,0.623,0.623
+UrgentDrill-1:10,urgent_drill,歼灭敌侦查部队,Destroy Enemy Scouts,4200,8400,Coins,1066,,60~90,74.977,64.266
+UrgentDrill-1:10,urgent_drill,歼灭敌侦查部队,Destroy Enemy Scouts,4200,8400,Oil,1066,,25~55,39.789,34.105
+UrgentDrill-1:10,urgent_drill,歼灭敌侦查部队,Destroy Enemy Scouts,4200,8400,Drills,1066,31.33%,2~2,0.627,0.537
+UrgentDrill-1:30,urgent_drill,保卫运输部队Ⅱ,Cargo Defense Ⅱ,5400,12000,Coins,1325,,85~125,105.028,70.019
+UrgentDrill-1:30,urgent_drill,保卫运输部队Ⅱ,Cargo Defense Ⅱ,5400,12000,Oil,1325,,40~70,54.919,36.613
+UrgentDrill-1:30,urgent_drill,保卫运输部队Ⅱ,Cargo Defense Ⅱ,5400,12000,Drills,1325,31.70%,2~2,0.634,0.423
+UrgentDrill-2,urgent_drill,歼灭敌主力部队,Destroy Enemy Force,7200,40800,Coins,1380,,105~175,140.41,70.205
+UrgentDrill-2,urgent_drill,歼灭敌主力部队,Destroy Enemy Force,7200,40800,Oil,1380,,60~90,75.038,37.519
+UrgentDrill-2,urgent_drill,歼灭敌主力部队,Destroy Enemy Force,7200,40800,Drills,1380,30.22%,3~3,0.907,0.453
+UrgentDrill-2:40,urgent_drill,保卫运输部队Ⅲ,Cargo Defense Ⅲ,9600,62400,Coins,1675,,145~225,185.417,69.531
+UrgentDrill-2:40,urgent_drill,保卫运输部队Ⅲ,Cargo Defense Ⅲ,9600,62400,Oil,1675,,80~120,99.743,37.404
+UrgentDrill-2:40,urgent_drill,保卫运输部队Ⅲ,Cargo Defense Ⅲ,9600,62400,Drills,1675,31.34%,3~3,0.94,0.353
+UrgentDrill-4,urgent_drill,歼灭敌精锐部队,Destroy Enemy Elites,14400,62400,Coins,896,,200~360,279.652,69.913
+UrgentDrill-4,urgent_drill,歼灭敌精锐部队,Destroy Enemy Elites,14400,62400,Oil,896,,115~185,148.268,37.067
+UrgentDrill-4,urgent_drill,歼灭敌精锐部队,Destroy Enemy Elites,14400,62400,Drills,896,31.14%,4~4,1.246,0.311
+UrgentGem-2,urgent_gem,BIW要员护卫,BIW VIP Escort,7200,19200,DecorCoin,11144,,4~7,5.496,2.748
+UrgentGem-2,urgent_gem,BIW要员护卫,BIW VIP Escort,7200,19200,Oil,11144,,100~170,134.438,67.219
+UrgentGem-2,urgent_gem,BIW要员护卫,BIW VIP Escort,7200,19200,Gems,11144,31.60%,10~20,4.7,2.35
+UrgentGem-2,urgent_gem,NYB要员护卫,NYB VIP Escort,7200,19200,DecorCoin,11007,,4~7,5.488,2.744
+UrgentGem-2,urgent_gem,NYB要员护卫,NYB VIP Escort,7200,19200,Oil,11007,,100~170,133.998,66.999
+UrgentGem-2,urgent_gem,NYB要员护卫,NYB VIP Escort,7200,19200,Gems,11007,32.32%,10~20,4.812,2.406
+UrgentGem-4,urgent_gem,BIW度假护卫,BIW Holiday Escort,14400,32400,DecorCoin,5284,,10~14,12.009,3.002
+UrgentGem-4,urgent_gem,BIW度假护卫,BIW Holiday Escort,14400,32400,Oil,5284,,240~360,299.775,74.944
+UrgentGem-4,urgent_gem,BIW度假护卫,BIW Holiday Escort,14400,32400,Gems,5284,31.34%,25~40,10.142,2.536
+UrgentGem-4,urgent_gem,NYB度假护卫,NYB Holiday Escort,14400,32400,DecorCoin,5319,,10~14,12.012,3.003
+UrgentGem-4,urgent_gem,NYB度假护卫,NYB Holiday Escort,14400,32400,Oil,5319,,240~360,299.657,74.914
+UrgentGem-4,urgent_gem,NYB度假护卫,NYB Holiday Escort,14400,32400,Gems,5319,30.06%,25~40,9.692,2.423
+UrgentGem-8,urgent_gem,BIW巡视护卫,BIW Patrol Escort,28800,64800,DecorCoin,2174,,20~25,22.543,2.818
+UrgentGem-8,urgent_gem,BIW巡视护卫,BIW Patrol Escort,28800,64800,Oil,2174,,480~720,597.784,74.723
+UrgentGem-8,urgent_gem,BIW巡视护卫,BIW Patrol Escort,28800,64800,Gems,2174,29.71%,50~80,19.041,2.38
+UrgentGem-8,urgent_gem,NYB巡视护卫,NYB Patrol Escort,28800,64800,DecorCoin,2088,,20~25,22.476,2.809
+UrgentGem-8,urgent_gem,NYB巡视护卫,NYB Patrol Escort,28800,64800,Oil,2088,,480~720,594.36,74.295
+UrgentGem-8,urgent_gem,NYB巡视护卫,NYB Patrol Escort,28800,64800,Gems,2088,31.61%,50~80,20.444,2.555
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,Coins,823,,50~80,61.735,123.471
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,DecorCoin,823,,1~2,1.48,2.961
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,PlateT1,823,32.81%,5~5,1.64,3.281
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,PlateAntiAirT1,823,32.81%,0~5,0.399,0.798
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,PlateGeneralT1,823,32.81%,0~5,0.406,0.813
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,PlatePlaneT1,823,32.81%,0~5,0.458,0.916
+UrgentPart-0:30,urgent_part,支援维拉维拉岛,Aiding Vella Lavella,1800,7200,PlateTorpedoT1,823,32.81%,0~5,0.377,0.754
+UrgentPart-1,urgent_part,支援伊岛,Aiding Maui,3600,7200,Coins,490,,100~170,129.534,129.534
+UrgentPart-1,urgent_part,支援伊岛,Aiding Maui,3600,7200,DecorCoin,490,,2~4,3.008,3.008
+UrgentPart-1:20,urgent_part,支援多伦瓦岛,Aiding Rendova Island,4800,18000,Coins,695,,130~240,179.161,134.371
+UrgentPart-1:20,urgent_part,支援多伦瓦岛,Aiding Rendova Island,4800,18000,DecorCoin,695,,3~10,4.029,3.022
+UrgentPart-1:20,urgent_part,支援多伦瓦岛,Aiding Rendova Island,4800,18000,PlateT2,695,33.53%,5~5,1.676,1.257
+UrgentPart-1:20,urgent_part,支援多伦瓦岛,Aiding Rendova Island,4800,18000,PlateAntiAirT2,695,33.53%,0~5,0.814,0.611
+UrgentPart-1:20,urgent_part,支援多伦瓦岛,Aiding Rendova Island,4800,18000,PlatePlaneT2,695,33.53%,0~5,0.862,0.647
+UrgentPart-1:40,urgent_part,支援恐班纳,Aiding Kongbanna,6000,18000,Coins,351,,160~300,222.285,133.371
+UrgentPart-1:40,urgent_part,支援恐班纳,Aiding Kongbanna,6000,18000,DecorCoin,351,,4~7,5.481,3.289
+UrgentPart-2,urgent_part,支援马内岛,Aiding Manne Island,7200,36000,Coins,549,,190~300,238.743,119.371
+UrgentPart-2,urgent_part,支援马内岛,Aiding Manne Island,7200,36000,DecorCoin,549,,5~8,6.522,3.261
+UrgentPart-2:30,urgent_part,支援萌岛,Aiding Isle of Man,9000,36000,Coins,228,,241~449,331.471,132.588
+UrgentPart-2:30,urgent_part,支援萌岛,Aiding Isle of Man,9000,36000,DecorCoin,228,,6~9,7.391,2.956
+UrgentShip-3,urgent_ship,小型观舰仪式,Small Launch Ceremony,10800,21600,Coins,503,,420~540,473.602,157.867
+UrgentShip-3,urgent_ship,小型观舰仪式,Small Launch Ceremony,10800,21600,DecorCoin,503,,7~10,8.486,2.829
+UrgentShip-6,urgent_ship,联合观舰仪式,Fleet Launch Ceremony,21600,43200,Coins,335,,880~1040,949.934,158.322
+UrgentShip-6,urgent_ship,联合观舰仪式,Fleet Launch Ceremony,21600,43200,DecorCoin,335,,15~20,17.495,2.916
+UrgentShip-12,urgent_ship,同盟观舰仪式,Alliance Launch Ceremony,43200,86400,Coins,270,,1762~1998,1870.259,155.855
+UrgentShip-12,urgent_ship,同盟观舰仪式,Alliance Launch Ceremony,43200,86400,DecorCoin,270,,30~40,34.978,2.915

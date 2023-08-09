@@ -13,6 +13,11 @@ typedef struct _COMMISSION_RECORD{
     INT DailyCommissionFinishedCount;
     INT FinishDailyCommissionCount;
     DOUBLE ProcessRateOfUrgentCommissionGeneration;
+
+    INT DailyCount;
+    INT ExtraCount;
+    INT NightCount;
+    INT UrgentCount;
 }COMMISSION_RECORD, * PCOMMISSION_RECORD;
 
 VOID EmulatorMain();

@@ -10,9 +10,9 @@
 #define EMULATE_DAYS 1000000
 
 static INT FilterTag[] = {
-        GEM_8_FILTER,
-        GEM_4_FILTER,
-        GEM_2_FILTER,
+        URGENTGEM_8_FILTER,
+        URGENTGEM_4_FILTER,
+        URGENTGEM_2_FILTER,
         DAILYCHIP_1_FILTER,
         DAILYCHIP_2_FILTER,
         EXTRACUBE_0_30_FILTER,

@@ -27,6 +27,9 @@ static INT DailyCommissionIdListCount = sizeof(DailyCommissionIdList) / sizeof(I
 static INT ExtraCommissionIdListCount = sizeof(ExtraCommissionIdList) / sizeof(INT);
 static INT NightCommissionIdListCount = sizeof(NightCommissionIdList) / sizeof(INT);
 static INT UrgentCommissionIdListCount = sizeof(UrgentCommissionIdList) / sizeof(INT);
+static const INT CommissionNameListCount = sizeof(CommissionNameList) / sizeof(PCHAR);
+
+INT FinishedCommissionCount[83] = {0};
 
 COMMISSION_RECORD CommissionRecord = {0};
 
@@ -54,7 +57,7 @@ BOOL IsCommissionRepeated(_In_ INT Length, _In_ PCOMMISSION List[], _In_ PCOMMIS
     for (int i = 0; i < Length; ++i) {
         pCommissionInList = List[i];
         if (pCommissionInList == (PCOMMISSION)NONE_DATA) { continue;}
-        if (pCommissionInList == pCommission) {
+        if (pCommissionInList->NameId == pCommission->NameId) {
             return TRUE;
         }
     }
@@ -233,29 +236,67 @@ VOID FinishCommission(_In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[], _I
         CommissionRecord.DailyCommissionFinishedCount++;
         CommissionRecord.FinishDailyCommissionCount++;
     }
-    if (pCommission->Type == DAILY_COMMISSION || pCommission->Type == EXTRA_COMMISSION) {
-        CommissionRecord.WaitingDailyCommissionCount--;
-    } else {
-        CommissionRecord.WaitingUrgentCommissionCount--;
+
+    switch (pCommission->Type) {
+        case DAILY_COMMISSION:
+            CommissionRecord.DailyCount++;
+            break;
+        case EXTRA_COMMISSION:
+            CommissionRecord.ExtraCount++;
+            break;
+        case NIGHT_COMMISSION:
+            CommissionRecord.NightCount++;
+            break;
+        case URGENT_COMMISSION:
+            CommissionRecord.UrgentCount++;
+            break;
     }
     CommissionRecord.CommissionIsDoingCount--;
+    FinishedCommissionCount[pCommission->NameId]++;
 }
 
 VOID CalculateIncome(_In_ PCOMMISSION pCommission, _Inout_ PINCOME pIncome){
-    pIncome->Coin += Random(pCommission->NormalIncome.Coin.Min, pCommission->NormalIncome.Coin.Max + 1);
-    pIncome->Mind += Random(pCommission->NormalIncome.Mind.Min, pCommission->NormalIncome.Mind.Max + 1);
-    pIncome->Oil += Random(pCommission->NormalIncome.Oil.Min, pCommission->NormalIncome.Oil.Max + 1);
-    pIncome->HomeCoin += Random(pCommission->NormalIncome.HomeCoin.Min, pCommission->NormalIncome.HomeCoin.Max + 1);
-    pIncome->EXP += pCommission->NormalIncome.EXP;
-    if (pCommission->BigSuccess.Flag == TRUE && IsCommissionBigSuccess() == TRUE) {
-        pIncome->Gem += Random(pCommission->BigSuccess.Income.Gem.Min, pCommission->BigSuccess.Income.Gem.Max + 1);
-        pIncome->Book += pCommission->BigSuccess.Income.Book;
-        pIncome->Box += pCommission->BigSuccess.Income.Box;
-        pIncome->Cube += Random(pCommission->BigSuccess.Income.Cube.Min, pCommission->BigSuccess.Income.Cube.Max + 1);
-        pIncome->Drill += pCommission->BigSuccess.Income.Drill;
-        pIncome->Part += pCommission->BigSuccess.Income.Part;
-        pIncome->Retrofit += pCommission->BigSuccess.Income.Retrofit;
-        pIncome->Ship += pCommission->BigSuccess.Income.Ship;
+    DROP_TYPE DropType = pCommission->DropType;
+    if ((DropType & DROP_COIN) == DROP_COIN) {
+        pIncome->Coin += Random(pCommission->Normal.Coin.Min, pCommission->Normal.Coin.Max + 1);
+    }
+    if ((DropType & DROP_OIL) == DROP_OIL) {
+        pIncome->Oil += Random(pCommission->Normal.Oil.Min, pCommission->Normal.Oil.Max + 1);
+    }
+    if ((DropType & DROP_DECOR_COIN) == DROP_DECOR_COIN) {
+        pIncome->DecorCoin += Random(pCommission->Normal.DecorCoin.Min, pCommission->Normal.DecorCoin.Max + 1);
+    }
+    if ((DropType & DROP_COGNITIVE_CHIP) == DROP_COGNITIVE_CHIP) {
+        pIncome->CognitiveChip += Random(pCommission->BigSuccess.CognitiveChip.Min, pCommission->BigSuccess.CognitiveChip.Max + 1);
+    }
+
+    if ((DropType & ~(DROP_COIN | DROP_OIL | DROP_DECOR_COIN)) != 0) {
+        if (IsCommissionBigSuccess() == TRUE) {
+            if ((DropType & DROP_BOOK) == DROP_BOOK) {
+                pIncome->Book += Random(pCommission->BigSuccess.Book.Min, pCommission->BigSuccess.Book.Max + 1);
+            }
+            if ((DropType & DROP_BOX) == DROP_BOX) {
+                pIncome->Box += Random(pCommission->BigSuccess.Box.Min, pCommission->BigSuccess.Box.Max + 1);
+            }
+            if ((DropType & DROP_CUBE) == DROP_CUBE) {
+                pIncome->Cube += Random(pCommission->BigSuccess.Cube.Min, pCommission->BigSuccess.Cube.Max + 1);
+            }
+            if ((DropType & DROP_DRILL) == DROP_DRILL) {
+                pIncome->Drill += Random(pCommission->BigSuccess.Drill.Min, pCommission->BigSuccess.Drill.Max + 1);
+            }
+            if ((DropType & DROP_GEM) == DROP_GEM) {
+                pIncome->Gem += Random(pCommission->BigSuccess.Gem.Min, pCommission->BigSuccess.Gem.Max + 1);
+            }
+            if ((DropType & DROP_PART) == DROP_PART) {
+                pIncome->Part += Random(pCommission->BigSuccess.Part.Min, pCommission->BigSuccess.Part.Max + 1);
+            }
+            if ((DropType & DROP_RETROFIT) == DROP_RETROFIT) {
+                pIncome->Retrofit += Random(pCommission->BigSuccess.Retrofit.Min, pCommission->BigSuccess.Retrofit.Max + 1);
+            }
+            if ((DropType & DROP_SHIP) == DROP_SHIP) {
+                pIncome->Ship += Random(pCommission->BigSuccess.Ship.Min, pCommission->BigSuccess.Ship.Max + 1);
+            }
+        }
     }
 }
 
@@ -379,9 +420,9 @@ VOID EmulatorMain(){
                               MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList,
                               MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList);
         
-        MinusCommissionTime(MAXIMUM_DOING_COMMISSION_COUNT, DoingCommissionTimeList);
-        MinusCommissionTime(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingTimeList);
-        MinusCommissionTime(MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingTimeList);
+        MinusCommissionTime(MAXIMUM_DOING_COMMISSION_COUNT, DoingCommissionTimeList, DOING_COMMISSION);
+        MinusCommissionTime(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingTimeList, DAILY_COMMISSION);
+        MinusCommissionTime(MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingTimeList, URGENT_COMMISSION);
 
         for (int i = 0; i < MAXIMUM_URGENT_COMMISSION_LIST_COUNT; ++i) {
             if (UrgentCommissionWaitingTimeList[i] == NONE_DATA) {continue;}
@@ -406,31 +447,29 @@ VOID EmulatorMain(){
             ClearCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList,
                             MAXIMUM_URGENT_COMMISSION_LIST_COUNT, UrgentCommissionWaitingList, UrgentCommissionWaitingTimeList);
             GenerateDailyCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList, DailyCommissionWaitingTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT);
-                                    CommissionRecord.WaitingDailyCommissionCount = MAXIMUM_DAILY_COMMISSION_LIST_COUNT;
+            CommissionRecord.WaitingDailyCommissionCount = MAXIMUM_DAILY_COMMISSION_LIST_COUNT;
         }
     }
 
-    printf("Emulate days    : %d\n"
+    printf("Emulate days            : %d\n"
            "Total :\n"
-           "    Coin        : %llu\n"
-           "    Mind        : %llu\n"
-           "    Oil         : %llu\n"
-           "    HomeCoin    : %llu\n"
-           "    EXP         : %llu\n"
-           "    Book        : %llu\n"
-           "    Box         : %llu\n"
-           "    Cube        : %llu\n"
-           "    Drill       : %llu\n"
-           "    Gem         : %llu\n"
-           "    Part        : %llu\n"
-           "    Retrofit    : %llu\n"
-           "    Ship        : %llu\n",
+           "    Coin                : %llu\n"
+           "    CognitiveChip       : %llu\n"
+           "    Oil                 : %llu\n"
+           "    DecorCoin           : %llu\n"
+           "    Book                : %llu\n"
+           "    Box                 : %llu\n"
+           "    Cube                : %llu\n"
+           "    Drill               : %llu\n"
+           "    Gem                 : %llu\n"
+           "    Part                : %llu\n"
+           "    Retrofit            : %llu\n"
+           "    Ship                : %llu\n",
            EMULATE_DAYS,
            TotalIncome.Coin,
-           TotalIncome.Mind,
+           TotalIncome.CognitiveChip,
            TotalIncome.Oil,
-           TotalIncome.HomeCoin,
-           TotalIncome.EXP,
+           TotalIncome.DecorCoin,
            TotalIncome.Book,
            TotalIncome.Box,
            TotalIncome.Cube,
@@ -440,4 +479,18 @@ VOID EmulatorMain(){
            TotalIncome.Retrofit,
            TotalIncome.Ship
            );
+
+    printf("Daily count     : %d\n"
+           "Extra count     : %d\n"
+           "Night count     : %d\n"
+           "Urgent count    : %d\n",
+           CommissionRecord.DailyCount,
+           CommissionRecord.ExtraCount,
+           CommissionRecord.NightCount,
+           CommissionRecord.UrgentCount);
+    for (int i = 0; i < CommissionNameListCount; ++i) {
+        if (FinishedCommissionCount[i] != 0) {
+            printf("%-20s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
+        }
+    }
 }
