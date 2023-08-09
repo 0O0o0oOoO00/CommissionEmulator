@@ -201,7 +201,7 @@ VOID SelectAndDoCommission(_In_ INT DoingListLength, _In_ PCOMMISSION DoingList[
         SelectCommission(DailyListLength, DailyList, UrgentListLength, UrgentList,
                          &SelectType, &TargetIndex);
         if (SelectType == NONE_DATA || TargetIndex == NONE_DATA) {
-            continue;
+            break;
         }
         switch (SelectType) {
             case DAILY_COMMISSION:
