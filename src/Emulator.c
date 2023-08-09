@@ -189,6 +189,7 @@ VOID MoveCommissionFromWaitingListToDoingList(_In_ PCOMMISSION WaitingList[], _I
     } else {
         CommissionRecord.WaitingUrgentCommissionCount--;
     }
+    CommissionRecord.CommissionIsDoingCount++;
 }
 
 VOID SelectAndDoCommission(_In_ INT DoingListLength, _In_ PCOMMISSION DoingList[], _In_ INT DoingTimeList[],
@@ -346,10 +347,13 @@ VOID GenerateNewCommission(_In_ INT DailyListLength, _In_ PCOMMISSION DailyList[
                            _In_ INT UrgentListLength, _In_ PCOMMISSION UrgentList[], _In_ INT UrgentTimeList[],
                            _In_ ULONGLONG Minute){
     if (CommissionRecord.DailyCommissionFinishedCount <= MAXIMUM_DAILY_COMMISSION) {
-        GenerateDailyCommission(DailyListLength, DailyList, DailyTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT - CommissionRecord.FinishDailyCommissionCount);
+        GenerateDailyCommission(DailyListLength, DailyList, DailyTimeList, CommissionRecord.FinishDailyCommissionCount);
+        CommissionRecord.WaitingDailyCommissionCount += CommissionRecord.FinishDailyCommissionCount;
         CommissionRecord.FinishDailyCommissionCount = 0;
     } else {
-        GenerateExtraCommission(DailyListLength, DailyList, DailyTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT - CommissionRecord.FinishDailyCommissionCount);
+        GenerateExtraCommission(DailyListLength, DailyList, DailyTimeList, CommissionRecord.FinishDailyCommissionCount);
+        CommissionRecord.WaitingDailyCommissionCount += CommissionRecord.FinishDailyCommissionCount;
+        CommissionRecord.FinishDailyCommissionCount = 0;
     }
 
     if (IsTimeToGenerateNightCommission(Minute) == TRUE) {
