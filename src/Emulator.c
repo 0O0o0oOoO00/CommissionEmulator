@@ -40,8 +40,8 @@ INT Random(_In_ INT Min, _In_ INT Max){
     if (Min == 0 && Max == 0) {
         return 0;
     }
-    if (Min == Max) {
-        return Max;
+    if (Min == Max - 1) {
+        return Min;
     }
     RandomSeedOffset += clock();
     srand((unsigned)time(NULL) + RandomSeedOffset + rand());
