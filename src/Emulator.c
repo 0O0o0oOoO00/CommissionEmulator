@@ -44,7 +44,7 @@ INT Random(_In_ INT Min, _In_ INT Max){
         return Max;
     }
     RandomSeedOffset += clock();
-    srand((unsigned)time(NULL) + RandomSeedOffset + clock());
+    srand((unsigned)time(NULL) + RandomSeedOffset + rand());
     return rand() % (Max - Min) + Min;
 }
 
