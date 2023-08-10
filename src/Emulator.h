@@ -10,9 +10,8 @@ typedef struct _COMMISSION_RECORD{
     INT CommissionIsDoingCount;
     INT WaitingDailyCommissionCount;
     INT WaitingUrgentCommissionCount;
-    INT DailyCommissionFinishedCount;
-    INT FinishDailyCommissionCount;
     DOUBLE ProcessRateOfUrgentCommissionGeneration;
+    INT GeneratedDailyCommission;
 
     INT DailyCount;
     INT ExtraCount;
