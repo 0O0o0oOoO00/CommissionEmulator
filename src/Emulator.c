@@ -367,15 +367,6 @@ VOID ClearCommission(){
     RtlFillMemory(DailyCommissionWaitingList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT * sizeof(PCOMMISSION), NONE_DATA);
     RtlFillMemory(DailyCommissionWaitingTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT * sizeof(INT), NONE_DATA);
     CommissionRecord.WaitingDailyCommissionCount = 0;
-
-    for (int i = 0; i < MAXIMUM_URGENT_COMMISSION_LIST_COUNT; ++i) {
-        if (UrgentCommissionWaitingList[i] == (PCOMMISSION)NONE_DATA) {continue;}
-        if (UrgentCommissionWaitingList[i]->Type != NIGHT_COMMISSION) {
-            UrgentCommissionWaitingList[i] = (PCOMMISSION)NONE_DATA;
-            UrgentCommissionWaitingTimeList[i] = NONE_DATA;
-            CommissionRecord.WaitingUrgentCommissionCount--;
-        }
-    }
 }
 
 BOOL IsCommissionReachedTimeLimit(_In_ INT Time){
@@ -386,6 +377,7 @@ VOID ClearOutdatedUrgentCommission(_In_ INT IndexOfOutdated){
     UrgentCommissionWaitingList[IndexOfOutdated] = (PCOMMISSION)NONE_DATA;
     UrgentCommissionWaitingTimeList[IndexOfOutdated] = NONE_DATA;
     CommissionRecord.UrgentCommissionCount--;
+    CommissionRecord.WaitingUrgentCommissionCount--;
 }
 
 VOID FinishCommission(_In_ INT IndexOfFinishedCommission){
@@ -418,7 +410,6 @@ VOID FinishCommission(_In_ INT IndexOfFinishedCommission){
 }
 
 VOID ClearCounterWhenCrossDay(){
-    CommissionRecord.UrgentCommissionCount = 0;
     CommissionRecord.GeneratedDailyCommission = 0;
     CommissionRecord.WaitingDailyCommissionCount = 0;
 }
