@@ -404,6 +404,7 @@ VOID FinishCommission(_In_ INT IndexOfFinishedCommission){
             CommissionRecord.UrgentCount++;
             break;
     }
+    CommissionRecord.CommissionIsDoingCount--;
     FinishedCommissionCount[pCommission->NameId]++;
 }
 
