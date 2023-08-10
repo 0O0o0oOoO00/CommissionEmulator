@@ -18,6 +18,7 @@ class Commission:
         self.Name = str()
         self.NameId = str()
         self.FilterTag = str()
+        self.AlasFilterTag = str()
         self.BigSuccessDrop = str()
         self.Category = str()
         self.Genre = str()
@@ -50,6 +51,7 @@ class Commission:
         self.Name = DataList[2]
         self.NameId = DataList[3]
         self.BigSuccessDrop = DataList[4]
+        self.AlasFilterTag = DataList[6]
         self.Category = DataList[7]
         self.Genre = DataList[8]
         self.ChineseName = DataList[9]
@@ -316,6 +318,21 @@ def GenerateCommissionCounterDefine(File: TextIO, DataList: List[Commission]):
     File.write("#define {:40} {}\n".format("ALL_URGENT_COMMISSION_COUNT", UrgentCount))
 
 
+def GenerateFilterTagList(File: TextIO, DataList: List[Commission]):
+    TagList: List[str] = []
+    for i in DataList:
+        if i.AlasFilterTag not in TagList:
+            TagList.append(i.AlasFilterTag)
+    TagList.append("shortest")
+    File.write("static PCHAR FilterTagName[] = {\n")
+    for i in range(len(TagList)):
+        File.write(f"       \"{TagList[i]}\"")
+        if i != len(TagList) - 1:
+            File.write(",")
+        File.write("\n")
+    File.write("};\n")
+
+
 def main():
     CommissionDataList: List[Commission] = []
 
@@ -347,6 +364,7 @@ def main():
     GenerateTargetCommissionList(File, CommissionDataList, "NightCommissionIdList", "NIGHT_COMMISSION")
     GenerateTargetCommissionList(File, CommissionDataList, "UrgentCommissionIdList", "URGENT_COMMISSION")
     GenerateCommissionNameList(File, CommissionDataList)
+    GenerateFilterTagList(File, CommissionDataList)
     File.write("#endif //COMMISSION_EMULATOR_COMMISSION_DATA_H\n")
     File.close()
 
