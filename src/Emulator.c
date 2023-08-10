@@ -15,7 +15,7 @@
 #define NIGHT_COMMISSION_COUNT 4
 #define MAXIMUM_DAILY_COMMISSION_COUNT 10
 #define MAXIMUM_DAILY_COMMISSION_LIST_COUNT 4
-#define MAXIMUM_URGENT_COMMISSION_LIST_COUNT 40
+#define MAXIMUM_URGENT_COMMISSION_LIST_COUNT 45
 
 #define BIG_SUCCESS_PERCENTAGE 33
 
@@ -428,7 +428,9 @@ VOID EmulatorMain(){
 
     for (ULONGLONG Minute = 0; Minute < EMULATE_DAYS * MINUTES_A_DAY; ++Minute) {
 
-        SelectAndDoCommission();
+        if (CommissionRecord.CommissionIsDoingCount < MAXIMUM_DOING_COMMISSION_COUNT) {
+            SelectAndDoCommission();
+        }
         
         MinusCommissionTime();
 
