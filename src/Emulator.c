@@ -340,11 +340,18 @@ BOOL IsGenerateUrgentCommission(_In_ DOUBLE Rate){
 
 VOID GenerateUrgentCommission(){
     PCOMMISSION pCommission = (PCOMMISSION)NONE_DATA;
-    Start:
-    pCommission = RandomGenerateCommissionFromIdList(UrgentCommissionIdListCount, UrgentCommissionIdList);
-    if (IsCommissionRepeated(pCommission) == TRUE) {goto Start;}
-    PutCommissionIntoWaitingList(pCommission);
     CommissionRecord.ProcessRateOfUrgentCommissionGeneration -= 1.0;
+    INT Count = 0;
+    Start:
+    if (Count > ALL_URGENT_COMMISSION_COUNT) {
+        return;
+    }
+    pCommission = RandomGenerateCommissionFromIdList(UrgentCommissionIdListCount, UrgentCommissionIdList);
+    if (IsCommissionRepeated(pCommission) == TRUE) {
+        Count++;
+        goto Start;
+    }
+    PutCommissionIntoWaitingList(pCommission);
     CommissionRecord.UrgentCommissionCount++;
 }
 
