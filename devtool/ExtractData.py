@@ -132,8 +132,8 @@ def GenerateCommissionIdDefine(File: TextIO, DataList: List[Commission]):
 def GenerateFilterTagDefine(File: TextIO, DataList: List[Commission]):
     FilterTagList = []
     for i in DataList:
-        FilterTagList.append(i.FilterTag)
-    FilterTagList = list(set(FilterTagList))
+        if i.FilterTag not in FilterTagList:
+            FilterTagList.append(i.FilterTag)
     Length = len(FilterTagList)
     for i in range(Length):
         File.write("#define {:40} {}\n".format(FilterTagList[i], i))
