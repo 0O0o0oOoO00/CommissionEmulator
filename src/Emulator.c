@@ -336,6 +336,7 @@ VOID GenerateUrgentCommission(){
     if (IsCommissionRepeated(pCommission) == TRUE) {goto Start;}
     PutCommissionIntoWaitingList(pCommission);
     CommissionRecord.ProcessRateOfUrgentCommissionGeneration -= 1.0;
+    CommissionRecord.UrgentCommissionCount++;
 }
 
 VOID GenerateNewCommission(_In_ ULONGLONG Minute){
@@ -343,9 +344,8 @@ VOID GenerateNewCommission(_In_ ULONGLONG Minute){
     if (IsTimeToGenerateNightCommission(Minute) == TRUE) {
         GenerateNightCommission();
     }
-
     CommissionRecord.ProcessRateOfUrgentCommissionGeneration += URGENT_COMMISSION_GET_PER_MINUTE;
-    if (IsGenerateUrgentCommission(CommissionRecord.ProcessRateOfUrgentCommissionGeneration) == TRUE) {
+    if (IsGenerateUrgentCommission(CommissionRecord.ProcessRateOfUrgentCommissionGeneration) == TRUE && CommissionRecord.UrgentCommissionCount < ALL_URGENT_COMMISSION_COUNT) {
         GenerateUrgentCommission();
     }
 }
@@ -376,6 +376,7 @@ BOOL IsCommissionReachedTimeLimit(_In_ INT Time){
 VOID ClearOutdatedUrgentCommission(_In_ INT IndexOfOutdated){
     UrgentCommissionWaitingList[IndexOfOutdated] = (PCOMMISSION)NONE_DATA;
     UrgentCommissionWaitingTimeList[IndexOfOutdated] = NONE_DATA;
+    CommissionRecord.UrgentCommissionCount--;
 }
 
 VOID FinishCommission(_In_ INT IndexOfFinishedCommission){
@@ -399,6 +400,7 @@ VOID FinishCommission(_In_ INT IndexOfFinishedCommission){
             CommissionRecord.NightCount++;
             break;
         case URGENT_COMMISSION:
+            CommissionRecord.UrgentCommissionCount--;
             CommissionRecord.UrgentCount++;
             break;
     }
@@ -406,6 +408,7 @@ VOID FinishCommission(_In_ INT IndexOfFinishedCommission){
 }
 
 VOID ClearCounterWhenCrossDay(){
+    CommissionRecord.UrgentCommissionCount = 0;
     CommissionRecord.GeneratedDailyCommission = 0;
     CommissionRecord.WaitingDailyCommissionCount = 0;
 }

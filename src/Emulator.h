@@ -12,6 +12,7 @@ typedef struct _COMMISSION_RECORD{
     INT WaitingUrgentCommissionCount;
     DOUBLE ProcessRateOfUrgentCommissionGeneration;
     INT GeneratedDailyCommission;
+    INT UrgentCommissionCount;
 
     INT DailyCount;
     INT ExtraCount;
