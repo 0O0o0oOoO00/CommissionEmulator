@@ -427,7 +427,7 @@ VOID EmulatorMain(){
     GenerateDailyCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT);
 
     for (ULONGLONG Minute = 0; Minute < EMULATE_DAYS * MINUTES_A_DAY; ++Minute) {
-
+        GenerateNewCommission(Minute);
         if (CommissionRecord.CommissionIsDoingCount < MAXIMUM_DOING_COMMISSION_COUNT) {
             SelectAndDoCommission();
         }
@@ -449,7 +449,7 @@ VOID EmulatorMain(){
             }
         }
 
-        GenerateNewCommission(Minute);
+
 
         if (IsDayFinished(Minute)) {
             ClearCommission();
