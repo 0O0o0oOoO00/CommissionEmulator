@@ -155,15 +155,15 @@ def GenerateNameIdDefine(File: TextIO, DataList: List[Commission]):
 def GenerateCommissionNameList(File: TextIO, DataList: List[Commission]):
     NameList = []
     for i in DataList:
-        Name = i.Category + "-" + i.ChineseName.replace(" ", "_")\
-            .replace(".", "_")\
-            .replace("'", "_")\
-            .replace("-", "_")\
-            .replace("Ⅰ", "I")\
-            .replace("Ⅱ", "II")\
-            .replace("Ⅲ", "III")\
-            .replace("Ⅳ", "IV")\
-            .replace("Ⅴ", "V")\
+        Name = i.Category + "-" + i.ChineseName.replace(" ", "_") \
+            .replace(".", "_") \
+            .replace("'", "_") \
+            .replace("-", "_") \
+            .replace("Ⅰ", "I") \
+            .replace("Ⅱ", "II") \
+            .replace("Ⅲ", "III") \
+            .replace("Ⅳ", "IV") \
+            .replace("Ⅴ", "V") \
             .replace("Ⅵ", "VI")
         if Name in NameList:
             continue
@@ -253,6 +253,7 @@ def GenerateCommissionList(File: TextIO, DataList: List[Commission]):
         File.write("\n")
     File.write("};\n")
 
+
 def GcdMany(s: List[int]):
     g = 0
     for i in range(len(s)):
@@ -261,6 +262,7 @@ def GcdMany(s: List[int]):
         else:
             g = math.gcd(g, s[i])
     return g
+
 
 def GenerateTargetCommissionList(File: TextIO, DataList: List[Commission], ListName: str, Type: str):
     TargetList: List[str] = []
@@ -284,6 +286,35 @@ def GenerateTargetCommissionList(File: TextIO, DataList: List[Commission], ListN
     File.write("};\n")
 
 
+def GenerateCommissionCounterDefine(File: TextIO, DataList: List[Commission]):
+    DailyCount = 0
+    ExtraCount = 0
+    NightCount = 0
+    MajorCount = 0
+    UrgentCount = 0
+    NameIdList = []
+    for i in DataList:
+        if i.NameId in NameIdList:
+            continue
+        NameIdList.append(i.EnglishName)
+        Type = i.CommissionType
+        if Type == "DAILY_COMMISSION":
+            DailyCount += 1
+        elif Type == "MAJOR_COMMISSION":
+            MajorCount += 1
+        elif Type == "EXTRA_COMMISSION":
+            ExtraCount += 1
+        elif Type == "NIGHT_COMMISSION":
+            NightCount += 1
+        elif Type == "URGENT_COMMISSION":
+            UrgentCount += 1
+    File.write("#define {:40} {}\n".format("ALL_DAILY_COMMISSION_COUNT", DailyCount))
+    File.write("#define {:40} {}\n".format("ALL_MAJOR_COMMISSION_COUNT", MajorCount))
+    File.write("#define {:40} {}\n".format("ALL_EXTRA_COMMISSION_COUNT", ExtraCount))
+    File.write("#define {:40} {}\n".format("ALL_NIGHT_COMMISSION_COUNT", NightCount))
+    File.write("#define {:40} {}\n".format("ALL_URGENT_COMMISSION_COUNT", UrgentCount))
+
+
 def main():
     CommissionDataList: List[Commission] = []
 
@@ -305,6 +336,7 @@ def main():
     GenerateCommissionIdDefine(File, CommissionDataList)
     GenerateFilterTagDefine(File, CommissionDataList)
     GenerateNameIdDefine(File, CommissionDataList)
+    GenerateCommissionCounterDefine(File, CommissionDataList)
 
     GenerateCommissionDate(File, CommissionDataList)
     GenerateCommissionList(File, CommissionDataList)

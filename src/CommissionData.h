@@ -296,6 +296,11 @@
 #define ALLIANCE_LAUNCH_CEREMONY                 91
 #define SMALL_LAUNCH_CEREMONY                    92
 #define FLEET_LAUNCH_CEREMONY                    93
+#define ALL_DAILY_COMMISSION_COUNT               40
+#define ALL_MAJOR_COMMISSION_COUNT               6
+#define ALL_EXTRA_COMMISSION_COUNT               30
+#define ALL_NIGHT_COMMISSION_COUNT               12
+#define ALL_URGENT_COMMISSION_COUNT              39
 static COMMISSION DAILYCHIP_1_0 = {
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_I,
