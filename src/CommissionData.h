@@ -302,6 +302,7 @@
 #define ALL_NIGHT_COMMISSION_COUNT               12
 #define ALL_URGENT_COMMISSION_COUNT              39
 static COMMISSION DAILYCHIP_1_0 = {
+       .Id = DAILYCHIP_1_0_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_I,
        .FilterTag = DAILYCHIP_1_FILTER,
@@ -334,6 +335,7 @@ static COMMISSION DAILYCHIP_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_1_1 = {
+       .Id = DAILYCHIP_1_1_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_I,
        .FilterTag = DAILYCHIP_1_FILTER,
@@ -366,6 +368,7 @@ static COMMISSION DAILYCHIP_1_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_1_2 = {
+       .Id = DAILYCHIP_1_2_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_I,
        .FilterTag = DAILYCHIP_1_FILTER,
@@ -398,6 +401,7 @@ static COMMISSION DAILYCHIP_1_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_1_3 = {
+       .Id = DAILYCHIP_1_3_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_I,
        .FilterTag = DAILYCHIP_1_FILTER,
@@ -430,6 +434,7 @@ static COMMISSION DAILYCHIP_1_3 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_1_4 = {
+       .Id = DAILYCHIP_1_4_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_I,
        .FilterTag = DAILYCHIP_1_FILTER,
@@ -462,6 +467,7 @@ static COMMISSION DAILYCHIP_1_4 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_2_0 = {
+       .Id = DAILYCHIP_2_0_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_II,
        .FilterTag = DAILYCHIP_2_FILTER,
@@ -494,6 +500,7 @@ static COMMISSION DAILYCHIP_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_2_1 = {
+       .Id = DAILYCHIP_2_1_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_II,
        .FilterTag = DAILYCHIP_2_FILTER,
@@ -526,6 +533,7 @@ static COMMISSION DAILYCHIP_2_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_2_2 = {
+       .Id = DAILYCHIP_2_2_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_II,
        .FilterTag = DAILYCHIP_2_FILTER,
@@ -558,6 +566,7 @@ static COMMISSION DAILYCHIP_2_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_2_3 = {
+       .Id = DAILYCHIP_2_3_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_II,
        .FilterTag = DAILYCHIP_2_FILTER,
@@ -590,6 +599,7 @@ static COMMISSION DAILYCHIP_2_3 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYCHIP_2_4 = {
+       .Id = DAILYCHIP_2_4_ID,
        .Type = DAILY_COMMISSION,
        .NameId = AWAKENING_TACTICAL_RESEARCH_II,
        .FilterTag = DAILYCHIP_2_FILTER,
@@ -622,6 +632,7 @@ static COMMISSION DAILYCHIP_2_4 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_0 = {
+       .Id = DAILYRESOURCE_1_0_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_I,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -654,6 +665,7 @@ static COMMISSION DAILYRESOURCE_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_1 = {
+       .Id = DAILYRESOURCE_1_1_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_I,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -686,6 +698,7 @@ static COMMISSION DAILYRESOURCE_1_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_2 = {
+       .Id = DAILYRESOURCE_1_2_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_I,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -718,6 +731,7 @@ static COMMISSION DAILYRESOURCE_1_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_3 = {
+       .Id = DAILYRESOURCE_1_3_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_I,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -750,6 +764,7 @@ static COMMISSION DAILYRESOURCE_1_3 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_4 = {
+       .Id = DAILYRESOURCE_1_4_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_I,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -782,6 +797,7 @@ static COMMISSION DAILYRESOURCE_1_4 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_5 = {
+       .Id = DAILYRESOURCE_1_5_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_III,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -814,6 +830,7 @@ static COMMISSION DAILYRESOURCE_1_5 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_6 = {
+       .Id = DAILYRESOURCE_1_6_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_III,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -846,6 +863,7 @@ static COMMISSION DAILYRESOURCE_1_6 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_7 = {
+       .Id = DAILYRESOURCE_1_7_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_III,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -878,6 +896,7 @@ static COMMISSION DAILYRESOURCE_1_7 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_8 = {
+       .Id = DAILYRESOURCE_1_8_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_III,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -910,6 +929,7 @@ static COMMISSION DAILYRESOURCE_1_8 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_9 = {
+       .Id = DAILYRESOURCE_1_9_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_III,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -942,6 +962,7 @@ static COMMISSION DAILYRESOURCE_1_9 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_10 = {
+       .Id = DAILYRESOURCE_1_10_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_V,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -974,6 +995,7 @@ static COMMISSION DAILYRESOURCE_1_10 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_11 = {
+       .Id = DAILYRESOURCE_1_11_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_V,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -1006,6 +1028,7 @@ static COMMISSION DAILYRESOURCE_1_11 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_12 = {
+       .Id = DAILYRESOURCE_1_12_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_V,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -1038,6 +1061,7 @@ static COMMISSION DAILYRESOURCE_1_12 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_13 = {
+       .Id = DAILYRESOURCE_1_13_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_V,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -1070,6 +1094,7 @@ static COMMISSION DAILYRESOURCE_1_13 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_1_14 = {
+       .Id = DAILYRESOURCE_1_14_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_V,
        .FilterTag = DAILYRESOURCE_1_FILTER,
@@ -1102,6 +1127,7 @@ static COMMISSION DAILYRESOURCE_1_14 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_0 = {
+       .Id = DAILYRESOURCE_2_0_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_II,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1134,6 +1160,7 @@ static COMMISSION DAILYRESOURCE_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_1 = {
+       .Id = DAILYRESOURCE_2_1_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_II,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1166,6 +1193,7 @@ static COMMISSION DAILYRESOURCE_2_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_7 = {
+       .Id = DAILYRESOURCE_2_7_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_II,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1198,6 +1226,7 @@ static COMMISSION DAILYRESOURCE_2_7 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_8 = {
+       .Id = DAILYRESOURCE_2_8_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_II,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1230,6 +1259,7 @@ static COMMISSION DAILYRESOURCE_2_8 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_9 = {
+       .Id = DAILYRESOURCE_2_9_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_II,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1262,6 +1292,7 @@ static COMMISSION DAILYRESOURCE_2_9 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_10 = {
+       .Id = DAILYRESOURCE_2_10_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1294,6 +1325,7 @@ static COMMISSION DAILYRESOURCE_2_10 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_12 = {
+       .Id = DAILYRESOURCE_2_12_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1326,6 +1358,7 @@ static COMMISSION DAILYRESOURCE_2_12 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_14 = {
+       .Id = DAILYRESOURCE_2_14_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1358,6 +1391,7 @@ static COMMISSION DAILYRESOURCE_2_14 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_3 = {
+       .Id = DAILYRESOURCE_2_3_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1390,6 +1424,7 @@ static COMMISSION DAILYRESOURCE_2_3 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_5 = {
+       .Id = DAILYRESOURCE_2_5_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -1422,6 +1457,7 @@ static COMMISSION DAILYRESOURCE_2_5 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRABOOK_5_0 = {
+       .Id = EXTRABOOK_5_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = SMALL_MERCHANT_ESCORT,
        .FilterTag = EXTRABOOK_5_FILTER,
@@ -1454,6 +1490,7 @@ static COMMISSION EXTRABOOK_5_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRABOOK_6_0 = {
+       .Id = EXTRABOOK_6_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = MEDIUM_MERCHANT_ESCORT,
        .FilterTag = EXTRABOOK_6_FILTER,
@@ -1486,6 +1523,7 @@ static COMMISSION EXTRABOOK_6_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRABOOK_8_0 = {
+       .Id = EXTRABOOK_8_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = LARGE_MERCHANT_ESCORT,
        .FilterTag = EXTRABOOK_8_FILTER,
@@ -1518,6 +1556,7 @@ static COMMISSION EXTRABOOK_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRACUBE_0_30_0 = {
+       .Id = EXTRACUBE_0_30_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FLEET_ESCORT_EXERCISE,
        .FilterTag = EXTRACUBE_0_30_FILTER,
@@ -1550,6 +1589,7 @@ static COMMISSION EXTRACUBE_0_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRACUBE_1_30_0 = {
+       .Id = EXTRACUBE_1_30_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FLEET_CARGO_TRANSPORT,
        .FilterTag = EXTRACUBE_1_30_FILTER,
@@ -1582,6 +1622,7 @@ static COMMISSION EXTRACUBE_1_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRACUBE_3_0 = {
+       .Id = EXTRACUBE_3_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FLEET_COMBAT_EXERCISE,
        .FilterTag = EXTRACUBE_3_FILTER,
@@ -1614,6 +1655,7 @@ static COMMISSION EXTRACUBE_3_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRACUBE_4_0 = {
+       .Id = EXTRACUBE_4_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FLEET_EXERCISE_I,
        .FilterTag = EXTRACUBE_4_FILTER,
@@ -1646,6 +1688,7 @@ static COMMISSION EXTRACUBE_4_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRACUBE_5_0 = {
+       .Id = EXTRACUBE_5_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FLEET_EXERCISE_II,
        .FilterTag = EXTRACUBE_5_FILTER,
@@ -1678,6 +1721,7 @@ static COMMISSION EXTRACUBE_5_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRACUBE_8_0 = {
+       .Id = EXTRACUBE_8_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FLEET_EXERCISE_III,
        .FilterTag = EXTRACUBE_8_FILTER,
@@ -1710,6 +1754,7 @@ static COMMISSION EXTRACUBE_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRADRILL_0_20_0 = {
+       .Id = EXTRADRILL_0_20_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = SHORT_RANGE_SAILING_TRAINING,
        .FilterTag = EXTRADRILL_0_20_FILTER,
@@ -1742,6 +1787,7 @@ static COMMISSION EXTRADRILL_0_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRADRILL_1_0 = {
+       .Id = EXTRADRILL_1_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = MID_RANGE_SAILING_TRAINING,
        .FilterTag = EXTRADRILL_1_FILTER,
@@ -1774,6 +1820,7 @@ static COMMISSION EXTRADRILL_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRADRILL_2_0 = {
+       .Id = EXTRADRILL_2_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = LONG_RANGE_SAILING_TRAINING,
        .FilterTag = EXTRADRILL_2_FILTER,
@@ -1806,6 +1853,7 @@ static COMMISSION EXTRADRILL_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRADRILL_2_40_0 = {
+       .Id = EXTRADRILL_2_40_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = COASTAL_DEFENSE_PATROL,
        .FilterTag = EXTRADRILL_2_40_FILTER,
@@ -1838,6 +1886,7 @@ static COMMISSION EXTRADRILL_2_40_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRADRILL_3_20_0 = {
+       .Id = EXTRADRILL_3_20_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = BUOY_INSPECTION,
        .FilterTag = EXTRADRILL_3_20_FILTER,
@@ -1870,6 +1919,7 @@ static COMMISSION EXTRADRILL_3_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRADRILL_5_20_0 = {
+       .Id = EXTRADRILL_5_20_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FRONTIER_DEFENSE_PATROL,
        .FilterTag = EXTRADRILL_5_20_FILTER,
@@ -1902,6 +1952,7 @@ static COMMISSION EXTRADRILL_5_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_1_0 = {
+       .Id = EXTRAOIL_1_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = SMALL_SCALE_OIL_EXTRACTION_I,
        .FilterTag = EXTRAOIL_1_FILTER,
@@ -1934,6 +1985,7 @@ static COMMISSION EXTRAOIL_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_1_1 = {
+       .Id = EXTRAOIL_1_1_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = SMALL_SCALE_OIL_EXTRACTION_II,
        .FilterTag = EXTRAOIL_1_FILTER,
@@ -1966,6 +2018,7 @@ static COMMISSION EXTRAOIL_1_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_1_2 = {
+       .Id = EXTRAOIL_1_2_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = SMALL_SCALE_OIL_EXTRACTION_III,
        .FilterTag = EXTRAOIL_1_FILTER,
@@ -1998,6 +2051,7 @@ static COMMISSION EXTRAOIL_1_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_4_0 = {
+       .Id = EXTRAOIL_4_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = MID_SCALE_OIL_EXTRACTION_I,
        .FilterTag = EXTRAOIL_4_FILTER,
@@ -2030,6 +2084,7 @@ static COMMISSION EXTRAOIL_4_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_4_1 = {
+       .Id = EXTRAOIL_4_1_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = MID_SCALE_OIL_EXTRACTION_II,
        .FilterTag = EXTRAOIL_4_FILTER,
@@ -2062,6 +2117,7 @@ static COMMISSION EXTRAOIL_4_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_4_2 = {
+       .Id = EXTRAOIL_4_2_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = MID_SCALE_OIL_EXTRACTION_III,
        .FilterTag = EXTRAOIL_4_FILTER,
@@ -2094,6 +2150,7 @@ static COMMISSION EXTRAOIL_4_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_8_0 = {
+       .Id = EXTRAOIL_8_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = LARGE_SCALE_OIL_EXTRACTION_I,
        .FilterTag = EXTRAOIL_8_FILTER,
@@ -2126,6 +2183,7 @@ static COMMISSION EXTRAOIL_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_8_1 = {
+       .Id = EXTRAOIL_8_1_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = LARGE_SCALE_OIL_EXTRACTION_II,
        .FilterTag = EXTRAOIL_8_FILTER,
@@ -2158,6 +2216,7 @@ static COMMISSION EXTRAOIL_8_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAOIL_8_2 = {
+       .Id = EXTRAOIL_8_2_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = LARGE_SCALE_OIL_EXTRACTION_III,
        .FilterTag = EXTRAOIL_8_FILTER,
@@ -2190,6 +2249,7 @@ static COMMISSION EXTRAOIL_8_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAPART_0_30_0 = {
+       .Id = EXTRAPART_0_30_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FOREST_PROTECTION_COMMISSION_I,
        .FilterTag = EXTRAPART_0_30_FILTER,
@@ -2222,6 +2282,7 @@ static COMMISSION EXTRAPART_0_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAPART_0_30_1 = {
+       .Id = EXTRAPART_0_30_1_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = VEIN_PROTECTION_COMMISSION_I,
        .FilterTag = EXTRAPART_0_30_FILTER,
@@ -2254,6 +2315,7 @@ static COMMISSION EXTRAPART_0_30_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAPART_1_0 = {
+       .Id = EXTRAPART_1_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FOREST_PROTECTION_COMMISSION_II,
        .FilterTag = EXTRAPART_1_FILTER,
@@ -2286,6 +2348,7 @@ static COMMISSION EXTRAPART_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAPART_1_1 = {
+       .Id = EXTRAPART_1_1_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = VEIN_PROTECTION_COMMISSION_II,
        .FilterTag = EXTRAPART_1_FILTER,
@@ -2318,6 +2381,7 @@ static COMMISSION EXTRAPART_1_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAPART_1_30_0 = {
+       .Id = EXTRAPART_1_30_0_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = FOREST_PROTECTION_COMMISSION_III,
        .FilterTag = EXTRAPART_1_30_FILTER,
@@ -2350,6 +2414,7 @@ static COMMISSION EXTRAPART_1_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION EXTRAPART_1_30_1 = {
+       .Id = EXTRAPART_1_30_1_ID,
        .Type = EXTRA_COMMISSION,
        .NameId = VEIN_PROTECTION_COMMISSION_III,
        .FilterTag = EXTRAPART_1_30_FILTER,
@@ -2382,6 +2447,7 @@ static COMMISSION EXTRAPART_1_30_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION MAJOR_10_0 = {
+       .Id = MAJOR_10_0_ID,
        .Type = MAJOR_COMMISSION,
        .NameId = CARGO_TRANSPORT_III,
        .FilterTag = MAJOR_10_FILTER,
@@ -2414,6 +2480,7 @@ static COMMISSION MAJOR_10_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION MAJOR_10_1 = {
+       .Id = MAJOR_10_1_ID,
        .Type = MAJOR_COMMISSION,
        .NameId = DEFENSE_EXERCISE_III,
        .FilterTag = MAJOR_10_FILTER,
@@ -2446,6 +2513,7 @@ static COMMISSION MAJOR_10_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION MAJOR_10_2 = {
+       .Id = MAJOR_10_2_ID,
        .Type = MAJOR_COMMISSION,
        .NameId = RESEARCH_MISSION_III,
        .FilterTag = MAJOR_10_FILTER,
@@ -2478,6 +2546,7 @@ static COMMISSION MAJOR_10_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION MAJOR_10_3 = {
+       .Id = MAJOR_10_3_ID,
        .Type = MAJOR_COMMISSION,
        .NameId = SELF_TRAINING_III,
        .FilterTag = MAJOR_10_FILTER,
@@ -2510,6 +2579,7 @@ static COMMISSION MAJOR_10_3 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION MAJOR_10_4 = {
+       .Id = MAJOR_10_4_ID,
        .Type = MAJOR_COMMISSION,
        .NameId = TACTICAL_CLASS_III,
        .FilterTag = MAJOR_10_FILTER,
@@ -2542,6 +2612,7 @@ static COMMISSION MAJOR_10_4 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION MAJOR_10_5 = {
+       .Id = MAJOR_10_5_ID,
        .Type = MAJOR_COMMISSION,
        .NameId = TOOL_PREP_III,
        .FilterTag = MAJOR_10_FILTER,
@@ -2574,6 +2645,7 @@ static COMMISSION MAJOR_10_5 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTBOOK_6_0 = {
+       .Id = NIGHTBOOK_6_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = MEDIUM_MERCHANT_ESCORT_N,
        .FilterTag = NIGHTBOOK_6_FILTER,
@@ -2606,6 +2678,7 @@ static COMMISSION NIGHTBOOK_6_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTBOOK_8_0 = {
+       .Id = NIGHTBOOK_8_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = LARGE_MERCHANT_ESCORT_N,
        .FilterTag = NIGHTBOOK_8_FILTER,
@@ -2638,6 +2711,7 @@ static COMMISSION NIGHTBOOK_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOOK_0_30_0 = {
+       .Id = URGENTBOOK_0_30_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_TYRANT_S_ISLAND,
        .FilterTag = URGENTBOOK_0_30_FILTER,
@@ -2670,6 +2744,7 @@ static COMMISSION URGENTBOOK_0_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOOK_1_0 = {
+       .Id = URGENTBOOK_1_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_PORO,
        .FilterTag = URGENTBOOK_1_FILTER,
@@ -2702,6 +2777,7 @@ static COMMISSION URGENTBOOK_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOOK_1_20_0 = {
+       .Id = URGENTBOOK_1_20_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_MAKIRA,
        .FilterTag = URGENTBOOK_1_20_FILTER,
@@ -2734,6 +2810,7 @@ static COMMISSION URGENTBOOK_1_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOOK_1_40_0 = {
+       .Id = URGENTBOOK_1_40_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_KAPOLO,
        .FilterTag = URGENTBOOK_1_40_FILTER,
@@ -2766,6 +2843,7 @@ static COMMISSION URGENTBOOK_1_40_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOOK_2_0 = {
+       .Id = URGENTBOOK_2_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_ST__MARY_S_ISLAND,
        .FilterTag = URGENTBOOK_2_FILTER,
@@ -2798,6 +2876,7 @@ static COMMISSION URGENTBOOK_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOOK_2_30_0 = {
+       .Id = URGENTBOOK_2_30_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_KOTLIN_ISLAND,
        .FilterTag = URGENTBOOK_2_30_FILTER,
@@ -2830,6 +2909,7 @@ static COMMISSION URGENTBOOK_2_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOX_1_0 = {
+       .Id = URGENTBOX_1_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = BIW_GEAR_TRANSPORT,
        .FilterTag = URGENTBOX_1_FILTER,
@@ -2862,6 +2942,7 @@ static COMMISSION URGENTBOX_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOX_1_1 = {
+       .Id = URGENTBOX_1_1_ID,
        .Type = URGENT_COMMISSION,
        .NameId = NYB_GEAR_TRANSPORT,
        .FilterTag = URGENTBOX_1_FILTER,
@@ -2894,6 +2975,7 @@ static COMMISSION URGENTBOX_1_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOX_3_0 = {
+       .Id = URGENTBOX_3_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = BIW_HANDOVER,
        .FilterTag = URGENTBOX_3_FILTER,
@@ -2926,6 +3008,7 @@ static COMMISSION URGENTBOX_3_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOX_3_1 = {
+       .Id = URGENTBOX_3_1_ID,
        .Type = URGENT_COMMISSION,
        .NameId = NYB_HANDOVER,
        .FilterTag = URGENTBOX_3_FILTER,
@@ -2958,6 +3041,7 @@ static COMMISSION URGENTBOX_3_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOX_6_0 = {
+       .Id = URGENTBOX_6_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = BIW_GEAR_RESEARCH,
        .FilterTag = URGENTBOX_6_FILTER,
@@ -2990,6 +3074,7 @@ static COMMISSION URGENTBOX_6_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTBOX_6_1 = {
+       .Id = URGENTBOX_6_1_ID,
        .Type = URGENT_COMMISSION,
        .NameId = NYB_GEAR_RESEARCH,
        .FilterTag = URGENTBOX_6_FILTER,
@@ -3022,6 +3107,7 @@ static COMMISSION URGENTBOX_6_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTCUBE_1_30_0 = {
+       .Id = URGENTCUBE_1_30_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = MERCHANT_RESCUE_I,
        .FilterTag = URGENTCUBE_1_30_FILTER,
@@ -3054,6 +3140,7 @@ static COMMISSION URGENTCUBE_1_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTCUBE_1_45_0 = {
+       .Id = URGENTCUBE_1_45_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = ENEMY_ATTACK_I,
        .FilterTag = URGENTCUBE_1_45_FILTER,
@@ -3086,6 +3173,7 @@ static COMMISSION URGENTCUBE_1_45_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTCUBE_2_15_0 = {
+       .Id = URGENTCUBE_2_15_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = MERCHANT_RESCUE_II,
        .FilterTag = URGENTCUBE_2_15_FILTER,
@@ -3118,6 +3206,7 @@ static COMMISSION URGENTCUBE_2_15_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTCUBE_3_0 = {
+       .Id = URGENTCUBE_3_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = ENEMY_ATTACK_II,
        .FilterTag = URGENTCUBE_3_FILTER,
@@ -3150,6 +3239,7 @@ static COMMISSION URGENTCUBE_3_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTCUBE_6_0 = {
+       .Id = URGENTCUBE_6_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = ENEMY_ATTACK_III,
        .FilterTag = URGENTCUBE_6_FILTER,
@@ -3182,6 +3272,7 @@ static COMMISSION URGENTCUBE_6_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTDRILL_1_0 = {
+       .Id = URGENTDRILL_1_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = CARGO_DEFENSE_I,
        .FilterTag = URGENTDRILL_1_FILTER,
@@ -3214,6 +3305,7 @@ static COMMISSION URGENTDRILL_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTDRILL_1_10_0 = {
+       .Id = URGENTDRILL_1_10_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = DESTROY_ENEMY_SCOUTS,
        .FilterTag = URGENTDRILL_1_10_FILTER,
@@ -3246,6 +3338,7 @@ static COMMISSION URGENTDRILL_1_10_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTDRILL_1_30_0 = {
+       .Id = URGENTDRILL_1_30_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = CARGO_DEFENSE_II,
        .FilterTag = URGENTDRILL_1_30_FILTER,
@@ -3278,6 +3371,7 @@ static COMMISSION URGENTDRILL_1_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTDRILL_2_0 = {
+       .Id = URGENTDRILL_2_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = DESTROY_ENEMY_FORCE,
        .FilterTag = URGENTDRILL_2_FILTER,
@@ -3310,6 +3404,7 @@ static COMMISSION URGENTDRILL_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTDRILL_2_40_0 = {
+       .Id = URGENTDRILL_2_40_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = CARGO_DEFENSE_III,
        .FilterTag = URGENTDRILL_2_40_FILTER,
@@ -3342,6 +3437,7 @@ static COMMISSION URGENTDRILL_2_40_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTDRILL_4_0 = {
+       .Id = URGENTDRILL_4_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = DESTROY_ENEMY_ELITES,
        .FilterTag = URGENTDRILL_4_FILTER,
@@ -3374,6 +3470,7 @@ static COMMISSION URGENTDRILL_4_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTPART_0_30_0 = {
+       .Id = URGENTPART_0_30_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_VELLA_LAVELLA,
        .FilterTag = URGENTPART_0_30_FILTER,
@@ -3406,6 +3503,7 @@ static COMMISSION URGENTPART_0_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTPART_1_0 = {
+       .Id = URGENTPART_1_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_MAUI,
        .FilterTag = URGENTPART_1_FILTER,
@@ -3438,6 +3536,7 @@ static COMMISSION URGENTPART_1_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTPART_1_20_0 = {
+       .Id = URGENTPART_1_20_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_RENDOVA_ISLAND,
        .FilterTag = URGENTPART_1_20_FILTER,
@@ -3470,6 +3569,7 @@ static COMMISSION URGENTPART_1_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTPART_1_40_0 = {
+       .Id = URGENTPART_1_40_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_KONGBANNA,
        .FilterTag = URGENTPART_1_40_FILTER,
@@ -3502,6 +3602,7 @@ static COMMISSION URGENTPART_1_40_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTPART_2_0 = {
+       .Id = URGENTPART_2_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_MANNE_ISLAND,
        .FilterTag = URGENTPART_2_FILTER,
@@ -3534,6 +3635,7 @@ static COMMISSION URGENTPART_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTPART_2_30_0 = {
+       .Id = URGENTPART_2_30_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = AIDING_ISLE_OF_MAN,
        .FilterTag = URGENTPART_2_30_FILTER,
@@ -3566,6 +3668,7 @@ static COMMISSION URGENTPART_2_30_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTCUBE_6_0 = {
+       .Id = NIGHTCUBE_6_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = INITIAL_FLEET_EXERCISE,
        .FilterTag = NIGHTCUBE_6_FILTER,
@@ -3598,6 +3701,7 @@ static COMMISSION NIGHTCUBE_6_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTOIL_8_0 = {
+       .Id = NIGHTOIL_8_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = LARGE_OILFIELD_DEVELOPMENT_I,
        .FilterTag = NIGHTOIL_8_FILTER,
@@ -3630,6 +3734,7 @@ static COMMISSION NIGHTOIL_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTOIL_8_1 = {
+       .Id = NIGHTOIL_8_1_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = LARGE_OILFIELD_DEVELOPMENT_II,
        .FilterTag = NIGHTOIL_8_FILTER,
@@ -3662,6 +3767,7 @@ static COMMISSION NIGHTOIL_8_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTCUBE_8_0 = {
+       .Id = NIGHTCUBE_8_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = FLEET_ADVANCED_EXERCISE,
        .FilterTag = NIGHTCUBE_8_FILTER,
@@ -3694,6 +3800,7 @@ static COMMISSION NIGHTCUBE_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTOIL_8_2 = {
+       .Id = NIGHTOIL_8_2_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = LARGE_OILFIELD_DEVELOPMENT_III,
        .FilterTag = NIGHTOIL_8_FILTER,
@@ -3726,6 +3833,7 @@ static COMMISSION NIGHTOIL_8_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_11 = {
+       .Id = DAILYRESOURCE_2_11_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -3758,6 +3866,7 @@ static COMMISSION DAILYRESOURCE_2_11 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_13 = {
+       .Id = DAILYRESOURCE_2_13_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -3790,6 +3899,7 @@ static COMMISSION DAILYRESOURCE_2_13 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_2 = {
+       .Id = DAILYRESOURCE_2_2_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -3822,6 +3932,7 @@ static COMMISSION DAILYRESOURCE_2_2 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_4 = {
+       .Id = DAILYRESOURCE_2_4_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -3854,6 +3965,7 @@ static COMMISSION DAILYRESOURCE_2_4 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION DAILYRESOURCE_2_6 = {
+       .Id = DAILYRESOURCE_2_6_ID,
        .Type = DAILY_COMMISSION,
        .NameId = DAILY_RESOURCE_EXTRACTION_VI,
        .FilterTag = DAILYRESOURCE_2_FILTER,
@@ -3886,6 +3998,7 @@ static COMMISSION DAILYRESOURCE_2_6 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTBOOK_5_0 = {
+       .Id = NIGHTBOOK_5_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = SMALL_MERCHANT_ESCORT_N,
        .FilterTag = NIGHTBOOK_5_FILTER,
@@ -3918,6 +4031,7 @@ static COMMISSION NIGHTBOOK_5_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTCUBE_7_0 = {
+       .Id = NIGHTCUBE_7_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = FLEET_MID_LEVEL_EXERCISE,
        .FilterTag = NIGHTCUBE_7_FILTER,
@@ -3950,6 +4064,7 @@ static COMMISSION NIGHTCUBE_7_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTDRILL_2_40_0 = {
+       .Id = NIGHTDRILL_2_40_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = COASTAL_DEFENSE_PATROL_N,
        .FilterTag = NIGHTDRILL_2_40_FILTER,
@@ -3982,6 +4097,7 @@ static COMMISSION NIGHTDRILL_2_40_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTDRILL_3_20_0 = {
+       .Id = NIGHTDRILL_3_20_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = BUOY_INSPECTION_N,
        .FilterTag = NIGHTDRILL_3_20_FILTER,
@@ -4014,6 +4130,7 @@ static COMMISSION NIGHTDRILL_3_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION NIGHTDRILL_5_20_0 = {
+       .Id = NIGHTDRILL_5_20_0_ID,
        .Type = NIGHT_COMMISSION,
        .NameId = FRONTIER_DEFENSE_PATROL_N,
        .FilterTag = NIGHTDRILL_5_20_FILTER,
@@ -4046,6 +4163,7 @@ static COMMISSION NIGHTDRILL_5_20_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTCUBE_4_0 = {
+       .Id = URGENTCUBE_4_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = MERCHANT_RESCUE_III,
        .FilterTag = URGENTCUBE_4_FILTER,
@@ -4078,6 +4196,7 @@ static COMMISSION URGENTCUBE_4_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTGEM_2_0 = {
+       .Id = URGENTGEM_2_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = BIW_VIP_ESCORT,
        .FilterTag = URGENTGEM_2_FILTER,
@@ -4110,6 +4229,7 @@ static COMMISSION URGENTGEM_2_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTGEM_2_1 = {
+       .Id = URGENTGEM_2_1_ID,
        .Type = URGENT_COMMISSION,
        .NameId = NYB_VIP_ESCORT,
        .FilterTag = URGENTGEM_2_FILTER,
@@ -4142,6 +4262,7 @@ static COMMISSION URGENTGEM_2_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTGEM_4_0 = {
+       .Id = URGENTGEM_4_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = BIW_HOLIDAY_ESCORT,
        .FilterTag = URGENTGEM_4_FILTER,
@@ -4174,6 +4295,7 @@ static COMMISSION URGENTGEM_4_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTGEM_4_1 = {
+       .Id = URGENTGEM_4_1_ID,
        .Type = URGENT_COMMISSION,
        .NameId = NYB_HOLIDAY_ESCORT,
        .FilterTag = URGENTGEM_4_FILTER,
@@ -4206,6 +4328,7 @@ static COMMISSION URGENTGEM_4_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTGEM_8_0 = {
+       .Id = URGENTGEM_8_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = BIW_PATROL_ESCORT,
        .FilterTag = URGENTGEM_8_FILTER,
@@ -4238,6 +4361,7 @@ static COMMISSION URGENTGEM_8_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTGEM_8_1 = {
+       .Id = URGENTGEM_8_1_ID,
        .Type = URGENT_COMMISSION,
        .NameId = NYB_PATROL_ESCORT,
        .FilterTag = URGENTGEM_8_FILTER,
@@ -4270,6 +4394,7 @@ static COMMISSION URGENTGEM_8_1 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTSHIP_12_0 = {
+       .Id = URGENTSHIP_12_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = ALLIANCE_LAUNCH_CEREMONY,
        .FilterTag = URGENTSHIP_12_FILTER,
@@ -4302,6 +4427,7 @@ static COMMISSION URGENTSHIP_12_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTSHIP_3_0 = {
+       .Id = URGENTSHIP_3_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = SMALL_LAUNCH_CEREMONY,
        .FilterTag = URGENTSHIP_3_FILTER,
@@ -4334,6 +4460,7 @@ static COMMISSION URGENTSHIP_3_0 = {
        .BigSuccess.Ship.Max = 0,
 };
 static COMMISSION URGENTSHIP_6_0 = {
+       .Id = URGENTSHIP_6_0_ID,
        .Type = URGENT_COMMISSION,
        .NameId = FLEET_LAUNCH_CEREMONY,
        .FilterTag = URGENTSHIP_6_FILTER,

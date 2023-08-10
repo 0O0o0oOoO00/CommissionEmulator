@@ -207,6 +207,7 @@ def GenerateCommissionDate(File: TextIO, DataList: List[Commission]):
         if i.Ship.Max:
             DropTagList.append("DROP_SHIP")
         File.write(f"static COMMISSION {i.Name} = {{\n"
+                   f"       .Id = {i.Id},\n"
                    f"       .Type = {i.CommissionType},\n"
                    f"       .NameId = {i.NameId},\n"
                    f"       .FilterTag = {i.FilterTag},\n"
