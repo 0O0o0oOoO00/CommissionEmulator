@@ -354,8 +354,10 @@ VOID GenerateNewCommission(_In_ ULONGLONG Minute){
         GenerateNightCommission();
     }
     CommissionRecord.ProcessRateOfUrgentCommissionGeneration += URGENT_COMMISSION_GET_PER_MINUTE;
-    if (IsGenerateUrgentCommission(CommissionRecord.ProcessRateOfUrgentCommissionGeneration) == TRUE && CommissionRecord.UrgentCommissionCount < ALL_URGENT_COMMISSION_COUNT) {
-        GenerateUrgentCommission();
+    for (int i = 0; i < (INT)(CommissionRecord.ProcessRateOfUrgentCommissionGeneration); ++i) {
+        if (IsGenerateUrgentCommission(CommissionRecord.ProcessRateOfUrgentCommissionGeneration) == TRUE && CommissionRecord.UrgentCommissionCount < ALL_URGENT_COMMISSION_COUNT) {
+            GenerateUrgentCommission();
+        }
     }
 }
 
