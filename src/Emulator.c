@@ -1,7 +1,6 @@
 #include <windef.h>
 #include <stdio.h>
 #include <time.h>
-#include "Config.h"
 #include "Commission.h"
 #include "CommissionData.h"
 #include "Emulator.h"
@@ -18,9 +17,6 @@
 #define MAXIMUM_URGENT_COMMISSION_LIST_COUNT 45
 
 #define BIG_SUCCESS_PERCENTAGE 33
-
-
-static INT FilterTagCount = sizeof(FilterTag) / sizeof(INT);
 
 static INT CommissionListCount = sizeof(CommissionList) / sizeof(PCOMMISSION);
 static INT DailyCommissionIdListCount = sizeof(DailyCommissionIdList) / sizeof(INT);
@@ -158,7 +154,7 @@ VOID SelectCommission(_Out_ PINT pSelectType, _Out_ PINT pIndex){
     INT TargetIndex = NONE_DATA;
     PCOMMISSION pCommission = (PCOMMISSION)NONE_DATA;
 
-    for (int i = 0; i < FilterTagCount; ++i) {
+    for (int i = 0; i < AvailableFilterTagCount; ++i) {
         if (FilterTag[i] == SHORTEST_FILTER) {
             INT ShortestTime = MINUTES_A_DAY;
             INT IndexOfShortest = NONE_DATA;
@@ -360,7 +356,7 @@ VOID GenerateNewCommission(_In_ ULONGLONG Minute){
     if (IsTimeToGenerateNightCommission(Minute) == TRUE) {
         GenerateNightCommission();
     }
-    CommissionRecord.ProcessRateOfUrgentCommissionGeneration += URGENT_COMMISSION_GET_PER_MINUTE;
+    CommissionRecord.ProcessRateOfUrgentCommissionGeneration += UrgentCommissionDropPerMinute;
     for (int i = 0; i < (INT)(CommissionRecord.ProcessRateOfUrgentCommissionGeneration); ++i) {
         if (IsGenerateUrgentCommission(CommissionRecord.ProcessRateOfUrgentCommissionGeneration) == TRUE && CommissionRecord.UrgentCommissionCount < ALL_URGENT_COMMISSION_COUNT) {
             GenerateUrgentCommission();
@@ -435,7 +431,7 @@ VOID EmulatorMain(){
 
     GenerateDailyCommission(MAXIMUM_DAILY_COMMISSION_LIST_COUNT);
 
-    for (ULONGLONG Minute = 0; Minute < EMULATE_DAYS * MINUTES_A_DAY; ++Minute) {
+    for (ULONGLONG Minute = 0; Minute < EmulateDays * MINUTES_A_DAY; ++Minute) {
         GenerateNewCommission(Minute);
         if (CommissionRecord.CommissionIsDoingCount < MAXIMUM_DOING_COMMISSION_COUNT) {
             SelectAndDoCommission();
@@ -481,7 +477,7 @@ VOID EmulatorMain(){
            "    Part                : %llu\n"
            "    Retrofit            : %llu\n"
            "    Ship                : %llu\n",
-           EMULATE_DAYS,
+           EmulateDays,
            TotalIncome.Coin,
            TotalIncome.CognitiveChip,
            TotalIncome.Oil,

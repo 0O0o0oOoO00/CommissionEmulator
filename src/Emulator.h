@@ -6,6 +6,13 @@
 #define MINUTES_A_DAY (24 * 60)
 #define DOUBLE double
 
+static INT FilterTagCount = sizeof(FilterTagName) / sizeof(PCHAR);
+
+extern double UrgentCommissionDropPerMinute;
+extern INT EmulateDays;
+extern INT AvailableFilterTagCount;
+extern INT FilterTag[ALL_FILTER_TAG_COUNT];
+
 typedef struct _COMMISSION_RECORD{
     INT CommissionIsDoingCount;
     INT WaitingDailyCommissionCount;
