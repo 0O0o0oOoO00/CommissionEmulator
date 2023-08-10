@@ -301,6 +301,7 @@
 #define ALL_EXTRA_COMMISSION_COUNT               30
 #define ALL_NIGHT_COMMISSION_COUNT               12
 #define ALL_URGENT_COMMISSION_COUNT              39
+#define ALL_FILTER_TAG_COUNT                     70
 static COMMISSION DAILYCHIP_1_0 = {
        .Id = DAILYCHIP_1_0_ID,
        .Type = DAILY_COMMISSION,

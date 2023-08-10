@@ -333,6 +333,15 @@ def GenerateFilterTagList(File: TextIO, DataList: List[Commission]):
     File.write("};\n")
 
 
+def GenerateFilterTagCounterDefine(File: TextIO, DataList: List[Commission]):
+    TagList: List[str] = []
+    for i in DataList:
+        if i.AlasFilterTag not in TagList:
+            TagList.append(i.AlasFilterTag)
+    TagList.append("shortest")
+    File.write("#define {:40} {}\n".format("ALL_FILTER_TAG_COUNT", len(TagList)))
+
+
 def main():
     CommissionDataList: List[Commission] = []
 
@@ -355,6 +364,7 @@ def main():
     GenerateFilterTagDefine(File, CommissionDataList)
     GenerateNameIdDefine(File, CommissionDataList)
     GenerateCommissionCounterDefine(File, CommissionDataList)
+    GenerateFilterTagCounterDefine(File, CommissionDataList)
 
     GenerateCommissionDate(File, CommissionDataList)
     GenerateCommissionList(File, CommissionDataList)
