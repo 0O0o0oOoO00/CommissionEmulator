@@ -38,7 +38,7 @@ INT DailyCommissionWaitingTimeList[MAXIMUM_DAILY_COMMISSION_LIST_COUNT] = {0};
 PCOMMISSION UrgentCommissionWaitingList[MAXIMUM_URGENT_COMMISSION_LIST_COUNT] = {0};
 INT UrgentCommissionWaitingTimeList[MAXIMUM_URGENT_COMMISSION_LIST_COUNT] = {0};
 
-INT FinishedCommissionCount[94] = {0};
+INT FinishedCommissionCount[sizeof(CommissionNameList) / sizeof(PCHAR)] = {0};
 
 COMMISSION_RECORD CommissionRecord = {0};
 
