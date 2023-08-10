@@ -75,6 +75,15 @@ BOOL IsCommissionRepeated(_In_ PCOMMISSION pCommission){
             Length = MAXIMUM_DAILY_COMMISSION_LIST_COUNT;
             break;
     }
+    if (pCommission->Type == URGENT_COMMISSION) {
+        for (int i = 0; i < MAXIMUM_DOING_COMMISSION_COUNT; ++i) {
+            pCommissionInList = DoingCommissionList[i];
+            if (pCommissionInList == (PCOMMISSION) NONE_DATA) { continue; }
+            if (pCommissionInList->NameId == pCommission->NameId) {
+                return TRUE;
+            }
+        }
+    }
     for (int i = 0; i < Length; ++i) {
         switch (CommissionType) {
             case NIGHT_COMMISSION:
