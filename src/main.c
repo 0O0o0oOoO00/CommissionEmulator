@@ -9,6 +9,7 @@ double UrgentCommissionDropPerMinute = 0.0;
 INT EmulateDays = 0;
 INT AvailableFilterTagCount = 0;
 INT FilterTag[ALL_FILTER_TAG_COUNT] = {0};
+BOOL IsVerbose = FALSE;
 
 VOID ResolveFilterTag(_In_ PCHAR FilterTagString){
     PCHAR SymbolPositionList[ALL_FILTER_TAG_COUNT] = {0};
@@ -50,7 +51,7 @@ VOID ResolveFilterTag(_In_ PCHAR FilterTagString){
 VOID ResolveCommandLineArguments(int argc, char* argv[]){
     INT Option = 0;
     PCHAR FilterTagString = NULL;
-    while ((Option = getopt(argc, argv, "f:d:r:")) != -1) {
+    while ((Option = getopt(argc, argv, "f:d:r:v")) != -1) {
         switch (Option) {
             case 'f':
                 ResolveFilterTag(optarg);
@@ -60,6 +61,9 @@ VOID ResolveCommandLineArguments(int argc, char* argv[]){
                 break;
             case 'r':
                 UrgentCommissionDropPerMinute = atof(optarg);
+                break;
+            case 'v':
+                IsVerbose = TRUE;
                 break;
         }
     }

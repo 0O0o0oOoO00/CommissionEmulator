@@ -12,6 +12,7 @@ extern double UrgentCommissionDropPerMinute;
 extern INT EmulateDays;
 extern INT AvailableFilterTagCount;
 extern INT FilterTag[ALL_FILTER_TAG_COUNT];
+extern BOOL IsVerbose;
 
 typedef struct _COMMISSION_RECORD{
     INT CommissionIsDoingCount;

@@ -464,21 +464,22 @@ VOID ShowResult(_In_ PINCOME pIncome){
            (DOUBLE)TotalRetrofit / EmulateDays,         (DOUBLE)TotalRetrofit / EmulateDays * 30,         TotalRetrofit,
            (DOUBLE)TotalShip / EmulateDays,             (DOUBLE)TotalShip / EmulateDays * 30,             TotalShip
            );
+    if (IsVerbose) {
+        printf("\nFinish commission count :\n");
+        printf("    Daily    : %d\n"
+               "    Extra    : %d\n"
+               "    Night    : %d\n"
+               "    Urgent   : %d\n",
+               CommissionRecord.DailyCount,
+               CommissionRecord.ExtraCount,
+               CommissionRecord.NightCount,
+               CommissionRecord.UrgentCount);
 
-    printf("\nFinish commission count :\n");
-    printf("    Daily    : %d\n"
-           "    Extra    : %d\n"
-           "    Night    : %d\n"
-           "    Urgent   : %d\n",
-           CommissionRecord.DailyCount,
-           CommissionRecord.ExtraCount,
-           CommissionRecord.NightCount,
-           CommissionRecord.UrgentCount);
-
-    printf("\nDetailed :\n");
-    for (int i = 0; i < CommissionNameListCount; ++i) {
-        if (FinishedCommissionCount[i] != 0) {
-            printf("    %-25s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
+        printf("\nDetailed :\n");
+        for (int i = 0; i < CommissionNameListCount; ++i) {
+            if (FinishedCommissionCount[i] != 0) {
+                printf("    %-25s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
+            }
         }
     }
 }
