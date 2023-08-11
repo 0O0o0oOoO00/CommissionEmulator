@@ -419,6 +419,70 @@ VOID ClearCounterWhenCrossDay(){
     CommissionRecord.WaitingDailyCommissionCount = 0;
 }
 
+VOID ShowResult(_In_ PINCOME pIncome){
+    ULONGLONG TotalCoin = pIncome->Coin;
+    ULONGLONG TotalCognitiveChip = pIncome->CognitiveChip;
+    ULONGLONG TotalOil = pIncome->Oil;
+    ULONGLONG TotalDecorCoin = pIncome->DecorCoin;
+    ULONGLONG TotalBook = pIncome->Book;
+    ULONGLONG TotalBox = pIncome->Box;
+    ULONGLONG TotalCube = pIncome->Cube;
+    ULONGLONG TotalDrill = pIncome->Drill;
+    ULONGLONG TotalGem = pIncome->Gem;
+    ULONGLONG TotalPart = pIncome->Part;
+    ULONGLONG TotalRetrofit = pIncome->Retrofit;
+    ULONGLONG TotalShip = pIncome->Ship;
+
+    printf("Emulate days : %d\n"
+           "Drop rate    : %f\n"
+           "Income :\n"
+           "    Item              Average(Day)\tAverage(Month)\t\tTotal\n"
+           "    Coin              %11f\t%13f\t\t%llu\n"
+           "    CognitiveChip     %11f\t%13f\t\t%llu\n"
+           "    Oil               %11f\t%13f\t\t%llu\n"
+           "    DecorCoin         %11f\t%13f\t\t%llu\n"
+           "    Book              %11f\t%13f\t\t%llu\n"
+           "    Box               %11f\t%13f\t\t%llu\n"
+           "    Cube              %11f\t%13f\t\t%llu\n"
+           "    Drill             %11f\t%13f\t\t%llu\n"
+           "    Gem               %11f\t%13f\t\t%llu\n"
+           "    Part              %11f\t%13f\t\t%llu\n"
+           "    Retrofit          %11f\t%13f\t\t%llu\n"
+           "    Ship              %11f\t%13f\t\t%llu\n",
+           EmulateDays,
+           UrgentCommissionDropPerMinute,
+           (DOUBLE)TotalCoin / EmulateDays,             (DOUBLE)TotalCoin / EmulateDays * 30,             TotalCoin,
+           (DOUBLE)TotalCognitiveChip / EmulateDays,    (DOUBLE)TotalCognitiveChip / EmulateDays * 30,    TotalCognitiveChip,
+           (DOUBLE)TotalOil / EmulateDays,              (DOUBLE)TotalOil / EmulateDays * 30,              TotalOil,
+           (DOUBLE)TotalDecorCoin / EmulateDays,        (DOUBLE)TotalDecorCoin / EmulateDays * 30,        TotalDecorCoin,
+           (DOUBLE)TotalBook / EmulateDays,             (DOUBLE)TotalBook / EmulateDays * 30,             TotalBook,
+           (DOUBLE)TotalBox / EmulateDays,              (DOUBLE)TotalBox / EmulateDays * 30,              TotalBox,
+           (DOUBLE)TotalCube / EmulateDays,             (DOUBLE)TotalCube / EmulateDays * 30,             TotalCube,
+           (DOUBLE)TotalDrill / EmulateDays,            (DOUBLE)TotalDrill / EmulateDays * 30,            TotalDrill,
+           (DOUBLE)TotalGem / EmulateDays,              (DOUBLE)TotalGem / EmulateDays * 30,              TotalGem,
+           (DOUBLE)TotalPart / EmulateDays,             (DOUBLE)TotalPart / EmulateDays * 30,             TotalPart,
+           (DOUBLE)TotalRetrofit / EmulateDays,         (DOUBLE)TotalRetrofit / EmulateDays * 30,         TotalRetrofit,
+           (DOUBLE)TotalShip / EmulateDays,             (DOUBLE)TotalShip / EmulateDays * 30,             TotalShip
+           );
+
+    printf("\nFinish commission count :\n");
+    printf("    Daily    : %d\n"
+           "    Extra    : %d\n"
+           "    Night    : %d\n"
+           "    Urgent   : %d\n",
+           CommissionRecord.DailyCount,
+           CommissionRecord.ExtraCount,
+           CommissionRecord.NightCount,
+           CommissionRecord.UrgentCount);
+
+    printf("\nDetailed :\n");
+    for (int i = 0; i < CommissionNameListCount; ++i) {
+        if (FinishedCommissionCount[i] != 0) {
+            printf("    %-25s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
+        }
+    }
+}
+
 VOID EmulatorMain(){
     RtlFillMemory(DoingCommissionTimeList, sizeof(DoingCommissionTimeList), NONE_DATA);
     RtlFillMemory(DoingCommissionList, sizeof(DoingCommissionList), NONE_DATA);
@@ -463,46 +527,5 @@ VOID EmulatorMain(){
         }
     }
 
-    printf("Emulate days            : %d\n"
-           "Total :\n"
-           "    Coin                : %llu\n"
-           "    CognitiveChip       : %llu\n"
-           "    Oil                 : %llu\n"
-           "    DecorCoin           : %llu\n"
-           "    Book                : %llu\n"
-           "    Box                 : %llu\n"
-           "    Cube                : %llu\n"
-           "    Drill               : %llu\n"
-           "    Gem                 : %llu\n"
-           "    Part                : %llu\n"
-           "    Retrofit            : %llu\n"
-           "    Ship                : %llu\n",
-           EmulateDays,
-           TotalIncome.Coin,
-           TotalIncome.CognitiveChip,
-           TotalIncome.Oil,
-           TotalIncome.DecorCoin,
-           TotalIncome.Book,
-           TotalIncome.Box,
-           TotalIncome.Cube,
-           TotalIncome.Drill,
-           TotalIncome.Gem,
-           TotalIncome.Part,
-           TotalIncome.Retrofit,
-           TotalIncome.Ship
-           );
-
-    printf("Daily count     : %d\n"
-           "Extra count     : %d\n"
-           "Night count     : %d\n"
-           "Urgent count    : %d\n",
-           CommissionRecord.DailyCount,
-           CommissionRecord.ExtraCount,
-           CommissionRecord.NightCount,
-           CommissionRecord.UrgentCount);
-    for (int i = 0; i < CommissionNameListCount; ++i) {
-        if (FinishedCommissionCount[i] != 0) {
-            printf("%-25s : %d\n", CommissionNameList[i], FinishedCommissionCount[i]);
-        }
-    }
+    ShowResult(&TotalIncome);
 }
