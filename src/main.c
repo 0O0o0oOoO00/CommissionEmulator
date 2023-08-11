@@ -3,7 +3,9 @@
 #include "Emulator.h"
 #include <unistd.h>
 #include <string.h>
- double UrgentCommissionDropPerMinute = 0.0;
+#include <stdio.h>
+
+double UrgentCommissionDropPerMinute = 0.0;
 INT EmulateDays = 0;
 INT AvailableFilterTagCount = 0;
 INT FilterTag[ALL_FILTER_TAG_COUNT] = {0};
@@ -64,7 +66,22 @@ VOID ResolveCommandLineArguments(int argc, char* argv[]){
 }
 
 VOID CheckConfig(){
-
+    BOOL IsExit = FALSE;
+    if (EmulateDays == 0) {
+        printf("Please set emulate days ! ! !\n");
+        IsExit = TRUE;
+    }
+    if (AvailableFilterTagCount == 0) {
+        printf("Please set available filter ! ! !\n");
+        IsExit = TRUE;
+    }
+    if (UrgentCommissionDropPerMinute == 0) {
+        printf("Please set urgent commission drop rate ! ! !\n");
+        IsExit = TRUE;
+    }
+    if (IsExit) {
+        exit(-1);
+    }
 }
 
 int main(int argc, char* argv[]){
