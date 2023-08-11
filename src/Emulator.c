@@ -129,14 +129,14 @@ VOID PutCommissionIntoWaitingList(_In_ PCOMMISSION pCommission){
             UrgentCommissionWaitingTimeList[BlankIndex] = pCommission->TimeLimit;
             CommissionRecord.WaitingUrgentCommissionCount++;
             break;
-        case EXTRA_COMMISSION:
         case DAILY_COMMISSION:
+            CommissionRecord.GeneratedDailyCommission++;
+        case EXTRA_COMMISSION:
             BlankIndex = FindBlankIndexOfList(MAXIMUM_DAILY_COMMISSION_LIST_COUNT, DailyCommissionWaitingList);
             if (BlankIndex == NONE_DATA) {break;}
             DailyCommissionWaitingList[BlankIndex] = pCommission;
             DailyCommissionWaitingTimeList[BlankIndex] = pCommission->TimeLimit;
             CommissionRecord.WaitingDailyCommissionCount++;
-            if (pCommission->Type == DAILY_COMMISSION) {CommissionRecord.GeneratedDailyCommission++;}
             break;
     }
 }
