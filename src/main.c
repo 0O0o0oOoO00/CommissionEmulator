@@ -81,21 +81,8 @@ VOID ResolveCommandLineArguments(int argc, char* argv[]){
 }
 
 VOID CheckConfig(){
-    BOOL IsExit = FALSE;
-    if (EmulateDays == 0) {
-        printf("Please set emulate days ! ! !\n");
-        IsExit = TRUE;
-    }
-    if (AvailableFilterTagCount == 0) {
-        printf("Please set available filter ! ! !\n");
-        IsExit = TRUE;
-    }
-    if (UrgentCommissionDropPerMinute == 0) {
-        printf("Please set urgent commission drop rate ! ! !\n");
-        IsExit = TRUE;
-    }
-    if (IsExit) {
-        exit(-1);
+    if (EmulateDays == 0 || AvailableFilterTagCount == 0 || UrgentCommissionDropPerMinute == 0) {
+        ShowHelpManual();
     }
 }
 
