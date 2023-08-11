@@ -59,7 +59,6 @@ VOID ShowHelpManual(){
 
 VOID ResolveCommandLineArguments(int argc, char* argv[]){
     INT Option = 0;
-    PCHAR FilterTagString = NULL;
     while ((Option = getopt(argc, argv, "f:d:r:vh")) != -1) {
         switch (Option) {
             case 'f':
