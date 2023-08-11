@@ -48,10 +48,19 @@ VOID ResolveFilterTag(_In_ PCHAR FilterTagString){
     }
 }
 
+VOID ShowHelpManual(){
+    printf("-d  (must)      set emulate days\n"
+           "-r  (must)      set urgent commission drop rate\n"
+           "-f  (must)      set filter\n"
+           "-v  (option)    verbose\n"
+           "-h              show this help manul\n");
+    exit(0);
+}
+
 VOID ResolveCommandLineArguments(int argc, char* argv[]){
     INT Option = 0;
     PCHAR FilterTagString = NULL;
-    while ((Option = getopt(argc, argv, "f:d:r:v")) != -1) {
+    while ((Option = getopt(argc, argv, "f:d:r:vh")) != -1) {
         switch (Option) {
             case 'f':
                 ResolveFilterTag(optarg);
@@ -64,6 +73,9 @@ VOID ResolveCommandLineArguments(int argc, char* argv[]){
                 break;
             case 'v':
                 IsVerbose = TRUE;
+                break;
+            case 'h':
+                ShowHelpManual();
                 break;
         }
     }
