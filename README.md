@@ -5,6 +5,7 @@
 ## 环境
 - Python >= 3.11.4
 - Cmake >= 3.25
+- MSVC
 
 ## 构建
 下载源码: 
@@ -22,6 +23,8 @@
 构建:
 
     cmake --build build --config Release
+
+构建产物在`CommissionEmulator/bin`
 
 ## 使用
 这里以模拟天数为`10000`，紧急委托掉率为`0.06`，并且使用以下过滤器为例
@@ -55,6 +58,7 @@
 ## 注意事项
 - 本模拟器不对普通用户开放
 - 本项目不提供Release，需要自行编译构建
+- 目前无法在Linux系统上运行，不知道为什么(需要C语言大手子)
 - 如果不想或者不能自行构建，请移步[Zuosizhu/AzurLaneCommissionSimulator](https://github.com/Zuosizhu/AzurLaneCommissionSimulator)
 
 ## 感谢
