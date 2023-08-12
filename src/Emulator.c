@@ -267,7 +267,7 @@ BOOL IsCommissionFinished(_In_ INT CommissionTime){
     return CommissionTime == 0 ? TRUE : FALSE;
 }
 
-VOID CalculateIncome(_In_ PCOMMISSION pCommission, _Inout_ PINCOME pIncome){
+VOID CalculateIncome(_In_ PCOMMISSION pCommission, _Out_ PINCOME pIncome){
     DROP_TYPE DropType = pCommission->DropType;
     if ((DropType & DROP_COIN) == DROP_COIN) {
         pIncome->Coin += Random(pCommission->Normal.Coin.Min, pCommission->Normal.Coin.Max + 1);
