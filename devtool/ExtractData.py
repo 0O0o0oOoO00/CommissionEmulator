@@ -369,7 +369,6 @@ def main():
     GenerateCommissionDate(File, CommissionDataList)
     GenerateCommissionList(File, CommissionDataList)
     GenerateTargetCommissionList(File, CommissionDataList, "DailyCommissionIdList", "DAILY_COMMISSION")
-    GenerateTargetCommissionList(File, CommissionDataList, "MajorCommissionIdList", "MAJOR_COMMISSION")
     GenerateTargetCommissionList(File, CommissionDataList, "ExtraCommissionIdList", "EXTRA_COMMISSION")
     GenerateTargetCommissionList(File, CommissionDataList, "NightCommissionIdList", "NIGHT_COMMISSION")
     GenerateTargetCommissionList(File, CommissionDataList, "UrgentCommissionIdList", "URGENT_COMMISSION")

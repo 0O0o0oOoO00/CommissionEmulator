@@ -70,68 +70,62 @@
 #define EXTRAPART_1_1_ID                         62
 #define EXTRAPART_1_30_0_ID                      63
 #define EXTRAPART_1_30_1_ID                      64
-#define MAJOR_10_0_ID                            65
-#define MAJOR_10_1_ID                            66
-#define MAJOR_10_2_ID                            67
-#define MAJOR_10_3_ID                            68
-#define MAJOR_10_4_ID                            69
-#define MAJOR_10_5_ID                            70
-#define NIGHTBOOK_6_0_ID                         71
-#define NIGHTBOOK_8_0_ID                         72
-#define URGENTBOOK_0_30_0_ID                     73
-#define URGENTBOOK_1_0_ID                        74
-#define URGENTBOOK_1_20_0_ID                     75
-#define URGENTBOOK_1_40_0_ID                     76
-#define URGENTBOOK_2_0_ID                        77
-#define URGENTBOOK_2_30_0_ID                     78
-#define URGENTBOX_1_0_ID                         79
-#define URGENTBOX_1_1_ID                         80
-#define URGENTBOX_3_0_ID                         81
-#define URGENTBOX_3_1_ID                         82
-#define URGENTBOX_6_0_ID                         83
-#define URGENTBOX_6_1_ID                         84
-#define URGENTCUBE_1_30_0_ID                     85
-#define URGENTCUBE_1_45_0_ID                     86
-#define URGENTCUBE_2_15_0_ID                     87
-#define URGENTCUBE_3_0_ID                        88
-#define URGENTCUBE_6_0_ID                        89
-#define URGENTDRILL_1_0_ID                       90
-#define URGENTDRILL_1_10_0_ID                    91
-#define URGENTDRILL_1_30_0_ID                    92
-#define URGENTDRILL_2_0_ID                       93
-#define URGENTDRILL_2_40_0_ID                    94
-#define URGENTDRILL_4_0_ID                       95
-#define URGENTPART_0_30_0_ID                     96
-#define URGENTPART_1_0_ID                        97
-#define URGENTPART_1_20_0_ID                     98
-#define URGENTPART_1_40_0_ID                     99
-#define URGENTPART_2_0_ID                        100
-#define URGENTPART_2_30_0_ID                     101
-#define NIGHTCUBE_6_0_ID                         102
-#define NIGHTOIL_8_0_ID                          103
-#define NIGHTOIL_8_1_ID                          104
-#define NIGHTCUBE_8_0_ID                         105
-#define NIGHTOIL_8_2_ID                          106
-#define DAILYRESOURCE_2_11_ID                    107
-#define DAILYRESOURCE_2_13_ID                    108
-#define DAILYRESOURCE_2_2_ID                     109
-#define DAILYRESOURCE_2_4_ID                     110
-#define DAILYRESOURCE_2_6_ID                     111
-#define NIGHTBOOK_5_0_ID                         112
-#define NIGHTCUBE_7_0_ID                         113
-#define NIGHTDRILL_2_40_0_ID                     114
-#define NIGHTDRILL_3_20_0_ID                     115
-#define NIGHTDRILL_5_20_0_ID                     116
-#define URGENTCUBE_4_0_ID                        117
-#define URGENTGEM_2_0_ID                         118
-#define URGENTGEM_2_1_ID                         119
-#define URGENTGEM_4_0_ID                         120
-#define URGENTGEM_4_1_ID                         121
-#define URGENTGEM_8_0_ID                         122
-#define URGENTGEM_8_1_ID                         123
-#define URGENTSHIP_12_0_ID                       124
-#define URGENTSHIP_3_0_ID                        125
-#define URGENTSHIP_6_0_ID                        126
+#define NIGHTBOOK_6_0_ID                         65
+#define NIGHTBOOK_8_0_ID                         66
+#define URGENTBOOK_0_30_0_ID                     67
+#define URGENTBOOK_1_0_ID                        68
+#define URGENTBOOK_1_20_0_ID                     69
+#define URGENTBOOK_1_40_0_ID                     70
+#define URGENTBOOK_2_0_ID                        71
+#define URGENTBOOK_2_30_0_ID                     72
+#define URGENTBOX_1_0_ID                         73
+#define URGENTBOX_1_1_ID                         74
+#define URGENTBOX_3_0_ID                         75
+#define URGENTBOX_3_1_ID                         76
+#define URGENTBOX_6_0_ID                         77
+#define URGENTBOX_6_1_ID                         78
+#define URGENTCUBE_1_30_0_ID                     79
+#define URGENTCUBE_1_45_0_ID                     80
+#define URGENTCUBE_2_15_0_ID                     81
+#define URGENTCUBE_3_0_ID                        82
+#define URGENTCUBE_6_0_ID                        83
+#define URGENTDRILL_1_0_ID                       84
+#define URGENTDRILL_1_10_0_ID                    85
+#define URGENTDRILL_1_30_0_ID                    86
+#define URGENTDRILL_2_0_ID                       87
+#define URGENTDRILL_2_40_0_ID                    88
+#define URGENTDRILL_4_0_ID                       89
+#define URGENTPART_0_30_0_ID                     90
+#define URGENTPART_1_0_ID                        91
+#define URGENTPART_1_20_0_ID                     92
+#define URGENTPART_1_40_0_ID                     93
+#define URGENTPART_2_0_ID                        94
+#define URGENTPART_2_30_0_ID                     95
+#define NIGHTCUBE_6_0_ID                         96
+#define NIGHTOIL_8_0_ID                          97
+#define NIGHTOIL_8_1_ID                          98
+#define NIGHTCUBE_8_0_ID                         99
+#define NIGHTOIL_8_2_ID                          100
+#define DAILYRESOURCE_2_11_ID                    101
+#define DAILYRESOURCE_2_13_ID                    102
+#define DAILYRESOURCE_2_2_ID                     103
+#define DAILYRESOURCE_2_4_ID                     104
+#define DAILYRESOURCE_2_6_ID                     105
+#define NIGHTBOOK_5_0_ID                         106
+#define NIGHTCUBE_7_0_ID                         107
+#define NIGHTDRILL_2_40_0_ID                     108
+#define NIGHTDRILL_3_20_0_ID                     109
+#define NIGHTDRILL_5_20_0_ID                     110
+#define URGENTCUBE_4_0_ID                        111
+#define URGENTGEM_2_0_ID                         112
+#define URGENTGEM_2_1_ID                         113
+#define URGENTGEM_4_0_ID                         114
+#define URGENTGEM_4_1_ID                         115
+#define URGENTGEM_8_0_ID                         116
+#define URGENTGEM_8_1_ID                         117
+#define URGENTSHIP_12_0_ID                       118
+#define URGENTSHIP_3_0_ID                        119
+#define URGENTSHIP_6_0_ID                        120
 #define DAILYCHIP_1_FILTER                       0
 #define DAILYCHIP_2_FILTER                       1
 #define DAILYRESOURCE_1_FILTER                   2
@@ -157,51 +151,50 @@
 #define EXTRAPART_0_30_FILTER                    22
 #define EXTRAPART_1_FILTER                       23
 #define EXTRAPART_1_30_FILTER                    24
-#define MAJOR_10_FILTER                          25
-#define NIGHTBOOK_6_FILTER                       26
-#define NIGHTBOOK_8_FILTER                       27
-#define URGENTBOOK_0_30_FILTER                   28
-#define URGENTBOOK_1_FILTER                      29
-#define URGENTBOOK_1_20_FILTER                   30
-#define URGENTBOOK_1_40_FILTER                   31
-#define URGENTBOOK_2_FILTER                      32
-#define URGENTBOOK_2_30_FILTER                   33
-#define URGENTBOX_1_FILTER                       34
-#define URGENTBOX_3_FILTER                       35
-#define URGENTBOX_6_FILTER                       36
-#define URGENTCUBE_1_30_FILTER                   37
-#define URGENTCUBE_1_45_FILTER                   38
-#define URGENTCUBE_2_15_FILTER                   39
-#define URGENTCUBE_3_FILTER                      40
-#define URGENTCUBE_6_FILTER                      41
-#define URGENTDRILL_1_FILTER                     42
-#define URGENTDRILL_1_10_FILTER                  43
-#define URGENTDRILL_1_30_FILTER                  44
-#define URGENTDRILL_2_FILTER                     45
-#define URGENTDRILL_2_40_FILTER                  46
-#define URGENTDRILL_4_FILTER                     47
-#define URGENTPART_0_30_FILTER                   48
-#define URGENTPART_1_FILTER                      49
-#define URGENTPART_1_20_FILTER                   50
-#define URGENTPART_1_40_FILTER                   51
-#define URGENTPART_2_FILTER                      52
-#define URGENTPART_2_30_FILTER                   53
-#define NIGHTCUBE_6_FILTER                       54
-#define NIGHTOIL_8_FILTER                        55
-#define NIGHTCUBE_8_FILTER                       56
-#define NIGHTBOOK_5_FILTER                       57
-#define NIGHTCUBE_7_FILTER                       58
-#define NIGHTDRILL_2_40_FILTER                   59
-#define NIGHTDRILL_3_20_FILTER                   60
-#define NIGHTDRILL_5_20_FILTER                   61
-#define URGENTCUBE_4_FILTER                      62
-#define URGENTGEM_2_FILTER                       63
-#define URGENTGEM_4_FILTER                       64
-#define URGENTGEM_8_FILTER                       65
-#define URGENTSHIP_12_FILTER                     66
-#define URGENTSHIP_3_FILTER                      67
-#define URGENTSHIP_6_FILTER                      68
-#define SHORTEST_FILTER                          69
+#define NIGHTBOOK_6_FILTER                       25
+#define NIGHTBOOK_8_FILTER                       26
+#define URGENTBOOK_0_30_FILTER                   27
+#define URGENTBOOK_1_FILTER                      28
+#define URGENTBOOK_1_20_FILTER                   29
+#define URGENTBOOK_1_40_FILTER                   30
+#define URGENTBOOK_2_FILTER                      31
+#define URGENTBOOK_2_30_FILTER                   32
+#define URGENTBOX_1_FILTER                       33
+#define URGENTBOX_3_FILTER                       34
+#define URGENTBOX_6_FILTER                       35
+#define URGENTCUBE_1_30_FILTER                   36
+#define URGENTCUBE_1_45_FILTER                   37
+#define URGENTCUBE_2_15_FILTER                   38
+#define URGENTCUBE_3_FILTER                      39
+#define URGENTCUBE_6_FILTER                      40
+#define URGENTDRILL_1_FILTER                     41
+#define URGENTDRILL_1_10_FILTER                  42
+#define URGENTDRILL_1_30_FILTER                  43
+#define URGENTDRILL_2_FILTER                     44
+#define URGENTDRILL_2_40_FILTER                  45
+#define URGENTDRILL_4_FILTER                     46
+#define URGENTPART_0_30_FILTER                   47
+#define URGENTPART_1_FILTER                      48
+#define URGENTPART_1_20_FILTER                   49
+#define URGENTPART_1_40_FILTER                   50
+#define URGENTPART_2_FILTER                      51
+#define URGENTPART_2_30_FILTER                   52
+#define NIGHTCUBE_6_FILTER                       53
+#define NIGHTOIL_8_FILTER                        54
+#define NIGHTCUBE_8_FILTER                       55
+#define NIGHTBOOK_5_FILTER                       56
+#define NIGHTCUBE_7_FILTER                       57
+#define NIGHTDRILL_2_40_FILTER                   58
+#define NIGHTDRILL_3_20_FILTER                   59
+#define NIGHTDRILL_5_20_FILTER                   60
+#define URGENTCUBE_4_FILTER                      61
+#define URGENTGEM_2_FILTER                       62
+#define URGENTGEM_4_FILTER                       63
+#define URGENTGEM_8_FILTER                       64
+#define URGENTSHIP_12_FILTER                     65
+#define URGENTSHIP_3_FILTER                      66
+#define URGENTSHIP_6_FILTER                      67
+#define SHORTEST_FILTER                          68
 #define AWAKENING_TACTICAL_RESEARCH_I            0
 #define AWAKENING_TACTICAL_RESEARCH_II           1
 #define DAILY_RESOURCE_EXTRACTION_I              2
@@ -239,69 +232,63 @@
 #define VEIN_PROTECTION_COMMISSION_II            34
 #define FOREST_PROTECTION_COMMISSION_III         35
 #define VEIN_PROTECTION_COMMISSION_III           36
-#define CARGO_TRANSPORT_III                      37
-#define DEFENSE_EXERCISE_III                     38
-#define RESEARCH_MISSION_III                     39
-#define SELF_TRAINING_III                        40
-#define TACTICAL_CLASS_III                       41
-#define TOOL_PREP_III                            42
-#define MEDIUM_MERCHANT_ESCORT_N                 43
-#define LARGE_MERCHANT_ESCORT_N                  44
-#define AIDING_TYRANT_S_ISLAND                   45
-#define AIDING_PORO                              46
-#define AIDING_MAKIRA                            47
-#define AIDING_KAPOLO                            48
-#define AIDING_ST__MARY_S_ISLAND                 49
-#define AIDING_KOTLIN_ISLAND                     50
-#define BIW_GEAR_TRANSPORT                       51
-#define NYB_GEAR_TRANSPORT                       52
-#define BIW_HANDOVER                             53
-#define NYB_HANDOVER                             54
-#define BIW_GEAR_RESEARCH                        55
-#define NYB_GEAR_RESEARCH                        56
-#define MERCHANT_RESCUE_I                        57
-#define ENEMY_ATTACK_I                           58
-#define MERCHANT_RESCUE_II                       59
-#define ENEMY_ATTACK_II                          60
-#define ENEMY_ATTACK_III                         61
-#define CARGO_DEFENSE_I                          62
-#define DESTROY_ENEMY_SCOUTS                     63
-#define CARGO_DEFENSE_II                         64
-#define DESTROY_ENEMY_FORCE                      65
-#define CARGO_DEFENSE_III                        66
-#define DESTROY_ENEMY_ELITES                     67
-#define AIDING_VELLA_LAVELLA                     68
-#define AIDING_MAUI                              69
-#define AIDING_RENDOVA_ISLAND                    70
-#define AIDING_KONGBANNA                         71
-#define AIDING_MANNE_ISLAND                      72
-#define AIDING_ISLE_OF_MAN                       73
-#define INITIAL_FLEET_EXERCISE                   74
-#define LARGE_OILFIELD_DEVELOPMENT_I             75
-#define LARGE_OILFIELD_DEVELOPMENT_II            76
-#define FLEET_ADVANCED_EXERCISE                  77
-#define LARGE_OILFIELD_DEVELOPMENT_III           78
-#define SMALL_MERCHANT_ESCORT_N                  79
-#define FLEET_MID_LEVEL_EXERCISE                 80
-#define COASTAL_DEFENSE_PATROL_N                 81
-#define BUOY_INSPECTION_N                        82
-#define FRONTIER_DEFENSE_PATROL_N                83
-#define MERCHANT_RESCUE_III                      84
-#define BIW_VIP_ESCORT                           85
-#define NYB_VIP_ESCORT                           86
-#define BIW_HOLIDAY_ESCORT                       87
-#define NYB_HOLIDAY_ESCORT                       88
-#define BIW_PATROL_ESCORT                        89
-#define NYB_PATROL_ESCORT                        90
-#define ALLIANCE_LAUNCH_CEREMONY                 91
-#define SMALL_LAUNCH_CEREMONY                    92
-#define FLEET_LAUNCH_CEREMONY                    93
+#define MEDIUM_MERCHANT_ESCORT_N                 37
+#define LARGE_MERCHANT_ESCORT_N                  38
+#define AIDING_TYRANT_S_ISLAND                   39
+#define AIDING_PORO                              40
+#define AIDING_MAKIRA                            41
+#define AIDING_KAPOLO                            42
+#define AIDING_ST__MARY_S_ISLAND                 43
+#define AIDING_KOTLIN_ISLAND                     44
+#define BIW_GEAR_TRANSPORT                       45
+#define NYB_GEAR_TRANSPORT                       46
+#define BIW_HANDOVER                             47
+#define NYB_HANDOVER                             48
+#define BIW_GEAR_RESEARCH                        49
+#define NYB_GEAR_RESEARCH                        50
+#define MERCHANT_RESCUE_I                        51
+#define ENEMY_ATTACK_I                           52
+#define MERCHANT_RESCUE_II                       53
+#define ENEMY_ATTACK_II                          54
+#define ENEMY_ATTACK_III                         55
+#define CARGO_DEFENSE_I                          56
+#define DESTROY_ENEMY_SCOUTS                     57
+#define CARGO_DEFENSE_II                         58
+#define DESTROY_ENEMY_FORCE                      59
+#define CARGO_DEFENSE_III                        60
+#define DESTROY_ENEMY_ELITES                     61
+#define AIDING_VELLA_LAVELLA                     62
+#define AIDING_MAUI                              63
+#define AIDING_RENDOVA_ISLAND                    64
+#define AIDING_KONGBANNA                         65
+#define AIDING_MANNE_ISLAND                      66
+#define AIDING_ISLE_OF_MAN                       67
+#define INITIAL_FLEET_EXERCISE                   68
+#define LARGE_OILFIELD_DEVELOPMENT_I             69
+#define LARGE_OILFIELD_DEVELOPMENT_II            70
+#define FLEET_ADVANCED_EXERCISE                  71
+#define LARGE_OILFIELD_DEVELOPMENT_III           72
+#define SMALL_MERCHANT_ESCORT_N                  73
+#define FLEET_MID_LEVEL_EXERCISE                 74
+#define COASTAL_DEFENSE_PATROL_N                 75
+#define BUOY_INSPECTION_N                        76
+#define FRONTIER_DEFENSE_PATROL_N                77
+#define MERCHANT_RESCUE_III                      78
+#define BIW_VIP_ESCORT                           79
+#define NYB_VIP_ESCORT                           80
+#define BIW_HOLIDAY_ESCORT                       81
+#define NYB_HOLIDAY_ESCORT                       82
+#define BIW_PATROL_ESCORT                        83
+#define NYB_PATROL_ESCORT                        84
+#define ALLIANCE_LAUNCH_CEREMONY                 85
+#define SMALL_LAUNCH_CEREMONY                    86
+#define FLEET_LAUNCH_CEREMONY                    87
 #define ALL_DAILY_COMMISSION_COUNT               40
-#define ALL_MAJOR_COMMISSION_COUNT               6
+#define ALL_MAJOR_COMMISSION_COUNT               0
 #define ALL_EXTRA_COMMISSION_COUNT               30
 #define ALL_NIGHT_COMMISSION_COUNT               12
 #define ALL_URGENT_COMMISSION_COUNT              39
-#define ALL_FILTER_TAG_COUNT                     70
+#define ALL_FILTER_TAG_COUNT                     69
 static COMMISSION DAILYCHIP_1_0 = {
        .Id = DAILYCHIP_1_0_ID,
        .Type = DAILY_COMMISSION,
@@ -2447,204 +2434,6 @@ static COMMISSION EXTRAPART_1_30_1 = {
        .BigSuccess.Ship.Min = 0,
        .BigSuccess.Ship.Max = 0,
 };
-static COMMISSION MAJOR_10_0 = {
-       .Id = MAJOR_10_0_ID,
-       .Type = MAJOR_COMMISSION,
-       .NameId = CARGO_TRANSPORT_III,
-       .FilterTag = MAJOR_10_FILTER,
-       .Duration = 600,
-       .TimeLimit = 0,
-       .DropType = DROP_COIN | DROP_BOX,
-       .Normal.Oil.Min = 0,
-       .Normal.Oil.Max = 0,
-       .Normal.Coin.Min = 4502,
-       .Normal.Coin.Max = 5990,
-       .Normal.DecorCoin.Min = 0,
-       .Normal.DecorCoin.Max = 0,
-       .BigSuccess.CognitiveChip.Min = 0,
-       .BigSuccess.CognitiveChip.Max = 0,
-       .BigSuccess.Book.Min = 0,
-       .BigSuccess.Book.Max = 0,
-       .BigSuccess.Box.Min = 1,
-       .BigSuccess.Box.Max = 1,
-       .BigSuccess.Cube.Min = 0,
-       .BigSuccess.Cube.Max = 0,
-       .BigSuccess.Drill.Min = 0,
-       .BigSuccess.Drill.Max = 0,
-       .BigSuccess.Gem.Min = 0,
-       .BigSuccess.Gem.Max = 0,
-       .BigSuccess.Part.Min = 0,
-       .BigSuccess.Part.Max = 0,
-       .BigSuccess.Retrofit.Min = 0,
-       .BigSuccess.Retrofit.Max = 0,
-       .BigSuccess.Ship.Min = 0,
-       .BigSuccess.Ship.Max = 0,
-};
-static COMMISSION MAJOR_10_1 = {
-       .Id = MAJOR_10_1_ID,
-       .Type = MAJOR_COMMISSION,
-       .NameId = DEFENSE_EXERCISE_III,
-       .FilterTag = MAJOR_10_FILTER,
-       .Duration = 600,
-       .TimeLimit = 0,
-       .DropType = DROP_COIN | DROP_CUBE,
-       .Normal.Oil.Min = 0,
-       .Normal.Oil.Max = 0,
-       .Normal.Coin.Min = 4501,
-       .Normal.Coin.Max = 5999,
-       .Normal.DecorCoin.Min = 0,
-       .Normal.DecorCoin.Max = 0,
-       .BigSuccess.CognitiveChip.Min = 0,
-       .BigSuccess.CognitiveChip.Max = 0,
-       .BigSuccess.Book.Min = 0,
-       .BigSuccess.Book.Max = 0,
-       .BigSuccess.Box.Min = 0,
-       .BigSuccess.Box.Max = 0,
-       .BigSuccess.Cube.Min = 5,
-       .BigSuccess.Cube.Max = 8,
-       .BigSuccess.Drill.Min = 0,
-       .BigSuccess.Drill.Max = 0,
-       .BigSuccess.Gem.Min = 0,
-       .BigSuccess.Gem.Max = 0,
-       .BigSuccess.Part.Min = 0,
-       .BigSuccess.Part.Max = 0,
-       .BigSuccess.Retrofit.Min = 0,
-       .BigSuccess.Retrofit.Max = 0,
-       .BigSuccess.Ship.Min = 0,
-       .BigSuccess.Ship.Max = 0,
-};
-static COMMISSION MAJOR_10_2 = {
-       .Id = MAJOR_10_2_ID,
-       .Type = MAJOR_COMMISSION,
-       .NameId = RESEARCH_MISSION_III,
-       .FilterTag = MAJOR_10_FILTER,
-       .Duration = 600,
-       .TimeLimit = 0,
-       .DropType = DROP_COIN | DROP_RETROFIT,
-       .Normal.Oil.Min = 0,
-       .Normal.Oil.Max = 0,
-       .Normal.Coin.Min = 4500,
-       .Normal.Coin.Max = 5999,
-       .Normal.DecorCoin.Min = 0,
-       .Normal.DecorCoin.Max = 0,
-       .BigSuccess.CognitiveChip.Min = 0,
-       .BigSuccess.CognitiveChip.Max = 0,
-       .BigSuccess.Book.Min = 0,
-       .BigSuccess.Book.Max = 0,
-       .BigSuccess.Box.Min = 0,
-       .BigSuccess.Box.Max = 0,
-       .BigSuccess.Cube.Min = 0,
-       .BigSuccess.Cube.Max = 0,
-       .BigSuccess.Drill.Min = 0,
-       .BigSuccess.Drill.Max = 0,
-       .BigSuccess.Gem.Min = 0,
-       .BigSuccess.Gem.Max = 0,
-       .BigSuccess.Part.Min = 0,
-       .BigSuccess.Part.Max = 0,
-       .BigSuccess.Retrofit.Min = 2,
-       .BigSuccess.Retrofit.Max = 2,
-       .BigSuccess.Ship.Min = 0,
-       .BigSuccess.Ship.Max = 0,
-};
-static COMMISSION MAJOR_10_3 = {
-       .Id = MAJOR_10_3_ID,
-       .Type = MAJOR_COMMISSION,
-       .NameId = SELF_TRAINING_III,
-       .FilterTag = MAJOR_10_FILTER,
-       .Duration = 600,
-       .TimeLimit = 0,
-       .DropType = DROP_COIN | DROP_PART,
-       .Normal.Oil.Min = 0,
-       .Normal.Oil.Max = 0,
-       .Normal.Coin.Min = 4500,
-       .Normal.Coin.Max = 5998,
-       .Normal.DecorCoin.Min = 0,
-       .Normal.DecorCoin.Max = 0,
-       .BigSuccess.CognitiveChip.Min = 0,
-       .BigSuccess.CognitiveChip.Max = 0,
-       .BigSuccess.Book.Min = 0,
-       .BigSuccess.Book.Max = 0,
-       .BigSuccess.Box.Min = 0,
-       .BigSuccess.Box.Max = 0,
-       .BigSuccess.Cube.Min = 0,
-       .BigSuccess.Cube.Max = 0,
-       .BigSuccess.Drill.Min = 0,
-       .BigSuccess.Drill.Max = 0,
-       .BigSuccess.Gem.Min = 0,
-       .BigSuccess.Gem.Max = 0,
-       .BigSuccess.Part.Min = 0,
-       .BigSuccess.Part.Max = 15,
-       .BigSuccess.Retrofit.Min = 0,
-       .BigSuccess.Retrofit.Max = 0,
-       .BigSuccess.Ship.Min = 0,
-       .BigSuccess.Ship.Max = 0,
-};
-static COMMISSION MAJOR_10_4 = {
-       .Id = MAJOR_10_4_ID,
-       .Type = MAJOR_COMMISSION,
-       .NameId = TACTICAL_CLASS_III,
-       .FilterTag = MAJOR_10_FILTER,
-       .Duration = 600,
-       .TimeLimit = 0,
-       .DropType = DROP_COIN | DROP_BOOK,
-       .Normal.Oil.Min = 0,
-       .Normal.Oil.Max = 0,
-       .Normal.Coin.Min = 4500,
-       .Normal.Coin.Max = 5997,
-       .Normal.DecorCoin.Min = 0,
-       .Normal.DecorCoin.Max = 0,
-       .BigSuccess.CognitiveChip.Min = 0,
-       .BigSuccess.CognitiveChip.Max = 0,
-       .BigSuccess.Book.Min = 1,
-       .BigSuccess.Book.Max = 2,
-       .BigSuccess.Box.Min = 0,
-       .BigSuccess.Box.Max = 0,
-       .BigSuccess.Cube.Min = 0,
-       .BigSuccess.Cube.Max = 0,
-       .BigSuccess.Drill.Min = 0,
-       .BigSuccess.Drill.Max = 0,
-       .BigSuccess.Gem.Min = 0,
-       .BigSuccess.Gem.Max = 0,
-       .BigSuccess.Part.Min = 0,
-       .BigSuccess.Part.Max = 0,
-       .BigSuccess.Retrofit.Min = 0,
-       .BigSuccess.Retrofit.Max = 0,
-       .BigSuccess.Ship.Min = 0,
-       .BigSuccess.Ship.Max = 0,
-};
-static COMMISSION MAJOR_10_5 = {
-       .Id = MAJOR_10_5_ID,
-       .Type = MAJOR_COMMISSION,
-       .NameId = TOOL_PREP_III,
-       .FilterTag = MAJOR_10_FILTER,
-       .Duration = 600,
-       .TimeLimit = 0,
-       .DropType = DROP_COIN | DROP_DRILL,
-       .Normal.Oil.Min = 0,
-       .Normal.Oil.Max = 0,
-       .Normal.Coin.Min = 4503,
-       .Normal.Coin.Max = 5999,
-       .Normal.DecorCoin.Min = 0,
-       .Normal.DecorCoin.Max = 0,
-       .BigSuccess.CognitiveChip.Min = 0,
-       .BigSuccess.CognitiveChip.Max = 0,
-       .BigSuccess.Book.Min = 0,
-       .BigSuccess.Book.Max = 0,
-       .BigSuccess.Box.Min = 0,
-       .BigSuccess.Box.Max = 0,
-       .BigSuccess.Cube.Min = 0,
-       .BigSuccess.Cube.Max = 0,
-       .BigSuccess.Drill.Min = 3,
-       .BigSuccess.Drill.Max = 5,
-       .BigSuccess.Gem.Min = 0,
-       .BigSuccess.Gem.Max = 0,
-       .BigSuccess.Part.Min = 0,
-       .BigSuccess.Part.Max = 0,
-       .BigSuccess.Retrofit.Min = 0,
-       .BigSuccess.Retrofit.Max = 0,
-       .BigSuccess.Ship.Min = 0,
-       .BigSuccess.Ship.Max = 0,
-};
 static COMMISSION NIGHTBOOK_6_0 = {
        .Id = NIGHTBOOK_6_0_ID,
        .Type = NIGHT_COMMISSION,
@@ -4559,12 +4348,6 @@ static PCOMMISSION CommissionList[] = {
        &EXTRAPART_1_1,
        &EXTRAPART_1_30_0,
        &EXTRAPART_1_30_1,
-       &MAJOR_10_0,
-       &MAJOR_10_1,
-       &MAJOR_10_2,
-       &MAJOR_10_3,
-       &MAJOR_10_4,
-       &MAJOR_10_5,
        &NIGHTBOOK_6_0,
        &NIGHTBOOK_8_0,
        &URGENTBOOK_0_30_0,
@@ -15303,14 +15086,6 @@ static INT DailyCommissionIdList[] = {
        DAILYRESOURCE_2_6_ID,
        DAILYRESOURCE_2_6_ID,
        DAILYRESOURCE_2_6_ID
-};
-static INT MajorCommissionIdList[] = {
-       MAJOR_10_0_ID,
-       MAJOR_10_1_ID,
-       MAJOR_10_2_ID,
-       MAJOR_10_3_ID,
-       MAJOR_10_4_ID,
-       MAJOR_10_5_ID
 };
 static INT ExtraCommissionIdList[] = {
        EXTRABOOK_5_0_ID,
@@ -34555,12 +34330,6 @@ static PCHAR CommissionNameList[] = {
        "Extra-中级矿脉护卫委托",
        "Extra-高级林木护卫委托",
        "Extra-高级矿脉护卫委托",
-       "Major-高阶货物运输",
-       "Major-高阶对抗演习",
-       "Major-高阶科研任务",
-       "Major-高阶自主训练",
-       "Major-高阶战术课程",
-       "Major-高阶工具整备",
        "Night-中型商船护卫",
        "Night-大型商船护卫",
        "Urgent-支援土豪尔岛",
@@ -34639,7 +34408,6 @@ static PCHAR FilterTagName[] = {
        "ExtraPart-0:30",
        "ExtraPart-1",
        "ExtraPart-1:30",
-       "Major-10",
        "NightBook-6",
        "NightBook-8",
        "UrgentBook-0:30",
