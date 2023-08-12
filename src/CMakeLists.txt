@@ -1,1 +1,1 @@
-add_executable(emulator main.c Commission.h CommissionData.h Emulator.c Emulator.h)
+add_executable(emulator main.c Commission.h CommissionData.h Emulator.c Emulator.h TypeDef.h)

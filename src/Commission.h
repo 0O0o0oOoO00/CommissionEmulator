@@ -1,4 +1,4 @@
-#include <windef.h>
+#include "TypeDef.h"
 
 #ifndef COMMISSION_EMULATOR_COMMISSION_H
 #define COMMISSION_EMULATOR_COMMISSION_H

@@ -1,9 +1,11 @@
-#include <windef.h>
+#include "TypeDef.h"
 #include <stdio.h>
 #include <time.h>
 #include "Commission.h"
 #include "CommissionData.h"
 #include "Emulator.h"
+#include <stdlib.h>
+#include <string.h>
 
 
 #define NONE_DATA (~0)
@@ -369,8 +371,8 @@ BOOL IsDayFinished(_In_ ULONGLONG Minute){
 }
 
 VOID ClearCommission(){
-    RtlFillMemory(DailyCommissionWaitingList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT * sizeof(PCOMMISSION), NONE_DATA);
-    RtlFillMemory(DailyCommissionWaitingTimeList, MAXIMUM_DAILY_COMMISSION_LIST_COUNT * sizeof(INT), NONE_DATA);
+    memset(DailyCommissionWaitingList, NONE_DATA, MAXIMUM_DAILY_COMMISSION_LIST_COUNT * sizeof(PCOMMISSION));
+    memset(DailyCommissionWaitingTimeList, NONE_DATA, MAXIMUM_DAILY_COMMISSION_LIST_COUNT * sizeof(INT));
     CommissionRecord.WaitingDailyCommissionCount = 0;
 }
 
@@ -485,12 +487,12 @@ VOID ShowResult(_In_ PINCOME pIncome){
 }
 
 VOID EmulatorMain(){
-    RtlFillMemory(DoingCommissionTimeList, sizeof(DoingCommissionTimeList), NONE_DATA);
-    RtlFillMemory(DoingCommissionList, sizeof(DoingCommissionList), NONE_DATA);
-    RtlFillMemory(DailyCommissionWaitingTimeList, sizeof(DailyCommissionWaitingTimeList), NONE_DATA);
-    RtlFillMemory(DailyCommissionWaitingList, sizeof(DailyCommissionWaitingList), NONE_DATA);
-    RtlFillMemory(UrgentCommissionWaitingTimeList, sizeof(UrgentCommissionWaitingTimeList), NONE_DATA);
-    RtlFillMemory(UrgentCommissionWaitingList, sizeof(UrgentCommissionWaitingList), NONE_DATA);
+    memset(DoingCommissionTimeList, NONE_DATA, sizeof(DoingCommissionTimeList));
+    memset(DoingCommissionList, NONE_DATA, sizeof(DoingCommissionList));
+    memset(DailyCommissionWaitingTimeList, NONE_DATA, sizeof(DailyCommissionWaitingTimeList));
+    memset(DailyCommissionWaitingList, NONE_DATA, sizeof(DailyCommissionWaitingList));
+    memset(UrgentCommissionWaitingTimeList, NONE_DATA, sizeof(UrgentCommissionWaitingTimeList));
+    memset(UrgentCommissionWaitingList, NONE_DATA, sizeof(UrgentCommissionWaitingList));
 
     INCOME TotalIncome = {0};
 

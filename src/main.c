@@ -3,6 +3,7 @@
 #include "Emulator.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 double UrgentCommissionDropPerMinute = 0.0;
 INT EmulateDays = 0;
