@@ -1,7 +1,6 @@
 #include "Commission.h"
 #include "CommissionData.h"
 #include "Emulator.h"
-#include <unistd.h>
 #include <string.h>
 #include <stdio.h>
 
@@ -58,24 +57,25 @@ VOID ShowHelpManual(){
 }
 
 VOID ResolveCommandLineArguments(int argc, char* argv[]){
-    INT Option = 0;
-    while ((Option = getopt(argc, argv, "f:d:r:vh")) != -1) {
-        switch (Option) {
-            case 'f':
-                ResolveFilterTag(optarg);
-                break;
-            case 'd':
-                EmulateDays = atoi(optarg);
-                break;
-            case 'r':
-                UrgentCommissionDropPerMinute = atof(optarg);
-                break;
-            case 'v':
-                IsVerbose = TRUE;
-                break;
-            case 'h':
-                ShowHelpManual();
-                break;
+    for (int i = 0; i < argc; ++i) {
+        PCHAR Argument = argv[i];
+        if (strcmp(Argument, "-d") == 0) {
+            EmulateDays = atoi(argv[i + 1]);
+            i++;
+        }
+        if (strcmp(Argument, "-r") == 0) {
+            UrgentCommissionDropPerMinute = atof(argv[i + 1]);
+            i++;
+        }
+        if (strcmp(Argument, "-f") == 0) {
+            ResolveFilterTag(argv[i + 1]);
+            i++;
+        }
+        if (strcmp(Argument, "-v") == 0) {
+            IsVerbose = TRUE;
+        }
+        if (strcmp(Argument, "-h") == 0) {
+            ShowHelpManual();
         }
     }
 }
