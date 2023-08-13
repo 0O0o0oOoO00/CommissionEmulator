@@ -342,15 +342,19 @@ def GenerateFilterTagCounterDefine(File: TextIO, DataList: List[Commission]):
     File.write("#define {:40} {}\n".format("ALL_FILTER_TAG_COUNT", len(TagList)))
 
 
-def main():
+def GetCommissionDataList() -> List[Commission]:
     CommissionDataList: List[Commission] = []
-
     with open(file=FILE_PATH / ".." / "data" / "DetailedData.csv", mode="r", encoding="utf-8-sig") as f:
         DetailedDataStr = f.read()
         DetailedDataList = DetailedDataStr.split("\n")
         for i in DetailedDataList[1:]:
             if i:
                 CommissionDataList.append(Commission(i.split(",")))
+    return CommissionDataList
+
+
+def main():
+    CommissionDataList = GetCommissionDataList()
 
     File = open(file=FILE_PATH / ".." / "src" / "CommissionData.h", mode="w", encoding="gbk")
     for _ in range(3):
