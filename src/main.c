@@ -22,13 +22,12 @@ VOID ResolveFilterTag(_In_ PCHAR FilterTagString){
         }
     }
     Filter[0] = FilterTagString;
-    AvailableFilterTagCount++;
+    AvailableFilterTagCount = SymbolCount + 1;
     for (int i = 0; i < SymbolCount; ++i) {
         PCHAR SymbolPosition = SymbolPositionList[i];
         for (int j = 1;; ++j) {
             if (*(SymbolPosition + j) != ' ') {
                 Filter[i + 1] = SymbolPosition + j;
-                AvailableFilterTagCount++;
                 break;
             }
         }
