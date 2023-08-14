@@ -63,7 +63,8 @@ class Emulator:
             self.Result[DataList[4]] = int(DataList[-1].split("\t")[-1])
 
     def Run(self):
-        with subprocess.Popen(" ".join(self.__GetCommandList())) as proc:
+        with subprocess.Popen(" ".join(self.__GetCommandList()), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                              encoding="utf-8") as proc:
             try:
                 self.RawResult = proc.stdout.read()
             except AttributeError:
