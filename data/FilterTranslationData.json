@@ -8,6 +8,9 @@
     "Gem-2": [
         "UrgentGem-2"
     ],
+    "Extra-0:20": [
+        "ExtraDrill-0:20"
+    ],
     "Extra-0:30": [
         "ExtraCube-0:30",
         "ExtraPart-0:30"
@@ -101,6 +104,7 @@
         "DailyResource-1",
         "DailyResource-2"
     ],
+    "Daily-0:20": [],
     "Daily-0:30": [],
     "Daily-1": [
         "DailyChip-1",

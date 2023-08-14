@@ -41,7 +41,7 @@ def GenerateCompositeFilter(DataDict: Dict[str, List[str]], DataList: List[Commi
 
 
 def BatchGeneration(DataDict: Dict[str, List[str]], DataList: List[Commission], Category="", Genre="", Duration=True):
-    DurationList = ["0:30",
+    DurationList = ["0:20", "0:30",
                     "1", "1:00", "1:10", "1:20", "1:30", "1:40", "1:45",
                     "2", "2:00", "2:15", "2:30", "2:40",
                     "3", "3:00", "3:20",
