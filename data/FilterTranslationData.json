@@ -12,20 +12,37 @@
         "ExtraCube-0:30",
         "ExtraPart-0:30"
     ],
+    "Extra-1": [
+        "ExtraDrill-1",
+        "ExtraOil-1",
+        "ExtraPart-1"
+    ],
     "Extra-1:00": [
         "ExtraDrill-1",
         "ExtraOil-1",
         "ExtraPart-1"
     ],
+    "Extra-1:10": [],
+    "Extra-1:20": [],
     "Extra-1:30": [
         "ExtraCube-1:30",
         "ExtraPart-1:30"
     ],
+    "Extra-1:40": [],
+    "Extra-1:45": [],
+    "Extra-2": [
+        "ExtraDrill-2"
+    ],
     "Extra-2:00": [
         "ExtraDrill-2"
     ],
+    "Extra-2:15": [],
+    "Extra-2:30": [],
     "Extra-2:40": [
         "ExtraDrill-2:40"
+    ],
+    "Extra-3": [
+        "ExtraCube-3"
     ],
     "Extra-3:00": [
         "ExtraCube-3"
@@ -33,9 +50,17 @@
     "Extra-3:20": [
         "ExtraDrill-3:20"
     ],
+    "Extra-4": [
+        "ExtraCube-4",
+        "ExtraOil-4"
+    ],
     "Extra-4:00": [
         "ExtraCube-4",
         "ExtraOil-4"
+    ],
+    "Extra-5": [
+        "ExtraBook-5",
+        "ExtraCube-5"
     ],
     "Extra-5:00": [
         "ExtraBook-5",
@@ -44,14 +69,30 @@
     "Extra-5:20": [
         "ExtraDrill-5:20"
     ],
+    "Extra-6": [
+        "ExtraBook-6"
+    ],
     "Extra-6:00": [
         "ExtraBook-6"
+    ],
+    "Extra-7": [],
+    "Extra-7:00": [],
+    "Extra-8": [
+        "ExtraBook-8",
+        "ExtraCube-8",
+        "ExtraOil-8"
     ],
     "Extra-8:00": [
         "ExtraBook-8",
         "ExtraCube-8",
         "ExtraOil-8"
     ],
+    "Extra-9": [],
+    "Extra-9:00": [],
+    "Extra-10": [],
+    "Extra-10:00": [],
+    "Extra-12": [],
+    "Extra-12:00": [],
     "DailyChip": [
         "DailyChip-1",
         "DailyChip-2"
@@ -60,6 +101,51 @@
         "DailyResource-1",
         "DailyResource-2"
     ],
+    "Daily-0:30": [],
+    "Daily-1": [
+        "DailyChip-1",
+        "DailyResource-1"
+    ],
+    "Daily-1:00": [
+        "DailyChip-1",
+        "DailyResource-1"
+    ],
+    "Daily-1:10": [],
+    "Daily-1:20": [],
+    "Daily-1:30": [],
+    "Daily-1:40": [],
+    "Daily-1:45": [],
+    "Daily-2": [
+        "DailyChip-2",
+        "DailyResource-2"
+    ],
+    "Daily-2:00": [
+        "DailyChip-2",
+        "DailyResource-2"
+    ],
+    "Daily-2:15": [],
+    "Daily-2:30": [],
+    "Daily-2:40": [],
+    "Daily-3": [],
+    "Daily-3:00": [],
+    "Daily-3:20": [],
+    "Daily-4": [],
+    "Daily-4:00": [],
+    "Daily-5": [],
+    "Daily-5:00": [],
+    "Daily-5:20": [],
+    "Daily-6": [],
+    "Daily-6:00": [],
+    "Daily-7": [],
+    "Daily-7:00": [],
+    "Daily-8": [],
+    "Daily-8:00": [],
+    "Daily-9": [],
+    "Daily-9:00": [],
+    "Daily-10": [],
+    "Daily-10:00": [],
+    "Daily-12": [],
+    "Daily-12:00": [],
     "NightOil": [
         "NightOil-8"
     ],
