@@ -42,8 +42,12 @@ VOID ResolveFilterTag(_In_ PCHAR FilterTagString){
         for (int j = 0; j < FilterTagCount; ++j) {
             if (strcmp(Filter[i], FilterTagName[j]) == 0) {
                 FilterTag[i] = j;
+                goto EndLoop;
             }
         }
+        printf("Warning : unknown filter tag '%s'\n", Filter[i]);
+        AvailableFilterTagCount--;
+        EndLoop:
     }
 }
 
